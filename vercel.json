@@ -1,8 +1,0 @@
-{
-  "crons": [
-    {
-      "path": "/api/sync-anthropic",
-      "schedule": "0 0 * * *"
-    }
-  ]
-}
