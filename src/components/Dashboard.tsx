@@ -1,15 +1,14 @@
 'use client'
 
+import Link from 'next/link'
 import { useState, useMemo, useCallback } from 'react'
 import type { Opportunity, Activity, LastRefresh, TabId } from '@/lib/types'
 import PipelineDashboard from './PipelineDashboard'
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
-const SF_BASE = 'https://trilogy-sales.lightning.force.com/lightning/r/Opportunity'
-
-function sfLink(id: string, name: string) {
-  return <a href={`${SF_BASE}/${id}/view`} target="_blank" rel="noreferrer">{name}</a>
+function oppLink(id: string, name: string) {
+  return <Link href={`/opportunity/${id}`}>{name}</Link>
 }
 
 function fmt(val: number | null, prefix = '') {
@@ -87,7 +86,7 @@ function OppRow({ opp }: { opp: Opportunity }) {
 
   return (
     <tr>
-      <td>{sfLink(opp.id, opp.name ?? opp.id)}</td>
+      <td>{oppLink(opp.id, opp.name ?? opp.id)}</td>
       <td>{opp.owner_name ?? '—'}</td>
       <td>{opp.account ?? '—'}</td>
       <td>
@@ -251,7 +250,7 @@ function GateCard({ tab, opps, onViewAll }: { tab: TabDef; opps: Opportunity[]; 
           <tbody>
             {preview.map(o => (
               <tr key={o.id}>
-                <td>{sfLink(o.id, o.name ?? o.id)}</td>
+                <td>{oppLink(o.id, o.name ?? o.id)}</td>
                 <td className="ct-col">{formatDate(o.renewal_date)}</td>
                 <td className="ct-col">{fmt(o.arr, '$')}</td>
               </tr>
