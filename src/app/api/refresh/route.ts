@@ -1,15 +1,7 @@
-import { createClient } from '@/lib/supabase/server'
 import { NextResponse } from 'next/server'
 
 export async function POST() {
-  // Verify the caller is an authenticated @trilogy.com user
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-
-  if (!user || !user.email?.endsWith('@trilogy.com')) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-  }
-
+  // Auth bypass — allow anyone to trigger refresh for now
   const token = process.env.GITHUB_TOKEN
   const repo  = process.env.GITHUB_REPO ?? 'jamesqtrilogy/isr-dash'
 
