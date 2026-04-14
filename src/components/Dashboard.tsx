@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState, useMemo, useCallback } from 'react'
 import type { Opportunity, Activity, LastRefresh, TabId } from '@/lib/types'
 import PipelineDashboard from './PipelineDashboard'
+import WorkflowQueue from './WorkflowQueue'
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -287,7 +288,7 @@ interface Props {
 
 export default function Dashboard({ opportunities, activities, lastRefresh }: Props) {
   const [activeTab, setActiveTab] = useState<TabId | null>(null)
-  const [view, setView] = useState<'pipeline' | 'gates'>('pipeline')
+  const [view, setView] = useState<'pipeline' | 'gates' | 'signals'>('pipeline')
   const [dark, setDark] = useState(false)
   const [refreshing, setRefreshing] = useState(false)
   const [refreshMsg, setRefreshMsg] = useState('')
@@ -353,6 +354,12 @@ export default function Dashboard({ opportunities, activities, lastRefresh }: Pr
           >
             Accountability
           </button>
+          <button
+            className={`view-toggle-btn${view === 'signals' ? ' active' : ''}`}
+            onClick={() => { setView('signals'); setActiveTab(null) }}
+          >
+            Signals
+          </button>
         </div>
         <button className="theme-toggle" onClick={() => setDark(d => !d)}>
           {dark ? '☀ Light' : '☾ Dark'}
@@ -365,6 +372,11 @@ export default function Dashboard({ opportunities, activities, lastRefresh }: Pr
       {/* ── Pipeline view ── */}
       {!activeTab && view === 'pipeline' && (
         <PipelineDashboard opportunities={opportunities} />
+      )}
+
+      {/* ── Signals view ── */}
+      {view === 'signals' && (
+        <WorkflowQueue />
       )}
 
       {/* ── Accountability view: gate detail ── */}
