@@ -1,0 +1,55 @@
+[
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000003lehSIAQ"
+    },
+    "Id": "006Ih000003lehSIAQ",
+    "Name": "1_Bayerisches Staatsinstitut für Hochschulforschung und Hochschulplanung - Tivian - 1737969 - Renewal - 9_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/005Ih0000013hKUIAY"
+      },
+      "Name": "Fredrik Scheike",
+      "Email": "fredrik.scheike@trilogy.com"
+    },
+    "StageName": "Outreach",
+    "Opportunity_Status__c": "Warning",
+    "Probable_Outcome__c": "Undetermined",
+    "ARR__c": 20852.64,
+    "Current_ARR__c": 12749.5,
+    "ARR_Increase__c": 63.56,
+    "Offer_ARR__c": 20852.64,
+    "Renewal_Date__c": "2026-09-01",
+    "CloseDate": "2026-08-02",
+    "CreatedDate": "2025-04-01T08:05:04.000+0000",
+    "LastActivityDate": "2026-04-07",
+    "LastModifiedDate": "2026-04-11T21:01:47.000+0000",
+    "Next_Follow_Up_Date__c": "2026-03-25",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Legacy",
+    "CurrentContractHasAutoRenewalClause__c": "Yes",
+    "Auto_Renewed_Last_Term__c": true,
+    "Product__c": "Tivian",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/001Ih000003ZrWKIA0"
+      },
+      "Name": "Bayerisches Staatsinstitut für Hochschulforschung und Hochschulplanung (IHF)"
+    },
+    "Churn_Risks__c": "Price Floor;Poor customer communication;Unresponsive",
+    "High_Value_Opp__c": false,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": "Other",
+    "Type": "Renewal",
+    "NextStep": "03-11-2026 Fredrik Scheike: Renewal intent unknown: Establish.",
+    "Description": "4/3/26 Venus Laney: called Maike, no answer. email sent. \r\n\r\n3/26/26 Venus Laney: called Maike, no answer.\r\n\r\n03-11-2026 Fredrik Scheike: Chase to establish renewal intent.\r\n\r\n2/5/26 Manick Walia: Opp transferred to Fredrik.\r\n\r\n01/29/2026 Alvy Gordo: NNR Requested - https://trilogy-sales.lightning.force.com/lightning/r/Case/500fu00000NzCruAAF/view\r\n\r\n01/29/2026 Alvy Gordo:  Non-HVO Opp Prep task completed. Results:\r\nSDR/ISR field updated: Confirmed\r\nDocuments -  SO added \r\nProduct Family - Tivian \r\nPartner - N\r\nAuto-renewal - Yes page 1 Mindestvertragslaufzeit section\r\nNotice period - 90D Kalendertage page 1 Kündigungsfrist section\r\nPrice cap - 3% \r\nNetsuite IDs Validated -\r\nARR - EUR 12,749.50\r\nTCV - EUR 25,499.00\r\nParent Opp Checked - Y \r\nCo-term - N \r\nContacts and Addresses Updated - Y \r\nCreate Quotes - PQ ready\r\nNS Status Active - Active \r\nAR'd last renewal - N \r\nLast Invoice paid - Y \r\nCollection Red Flag:  N \r\nEscalated to VP/BU?: N \r\nContract Summary created - Y \r\nContract is on standard ESW? - N \r\nIf No, is NNR required -  Y \r\nNNR must be sent by - June 2, 2026 \r\nNNR Letter drafted -Y  \r\nNNR Sending task created - Y \r\n\r\n12/23/2025 DB: Moved back to Pending stage so we can re-engage at 180 days.\r\n\r\n07/24/2025 SYSTEM - Could not find the parent opportunity record based on the Parent Subscription ID or the Parent Subscription ID is null.\r\n\r\n07/07/2025 SYSTEM - Could not find the parent opportunity record based on the Parent Subscription ID or the Parent Subscription ID is null.\r\n\r\n06/23/2025 Alvy Gordo: added add'l contacts based on emial janousch@ihf.bayern.de and burkert@ihf.bayern.de\r\n06/06/2025 Julius Librando: O2C ticket is already delivered where they activated renewal Sub ID, 1525415, to cover the second year as per the contract. Raised this again to Roger of TSI for guidance on how to close (invalidate) this opp.\r\n\r\n05/27/2025 Julius Librando: Checking with TSI team again about resolution for this opp so we can mark it as invalid since the renewal should be in 2026\r\n\r\n05/19/2025 Julius Librando: Followed up again with Roger at TSI via Stuck Opps for guidance on how to proceed with this opp since O2C has already resolved the issue of incorrect sub end date.\r\n\r\n05/14/2025 Julius Librando: O2C already delivered; reached out to Roger for next steps.\r\n\r\n04/30/2025 Julius Librando: Replied to customer's email about their renewal that should actually be in 2026 since they signed a 2Y contract in 2024. \r\n\r\n04/25/2025 Julius Librando: Raised RM for this opp to update the end date since the sub was only created for 1Y whereas the customer has signed a 2Y quote valid until 2026: https://devgraph-alp.atlassian.net/browse/O2C-76730\r\n\r\n04/17/2025 Julius Librando: Posted in Stuck Opps for clarity if this opp is valid. This renewal is based on a signed quote for 2Y from 2024 (seems the continuation of this opp: https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006Ih000003lej4IAA/view), with a renewal in 2026. However, this opp was created for 2025. The customer said they have renewed last year for another 2Y  so their renewal is not until 2026\r\n\r\n04/16/2025 Julius Librando: Maike answered the call and confirmed herself as the PC (set her as such in the opp). She did receive my email but was only planning to look into it tomorrow as she's OOO. I told her about the SSP where she could review the details of their subscription, get pricing and request quotes and she liked it. She didn't have any other questions but said she'll probably have them once she's looked in the details. Told her to get in touch if she'd need any further assistance.\r\n\r\n04/15/2025 Julius Librando: Called Maike twice, no answer. Email sent\r\n\r\n04/15/2025 Julius Librando: Opp prep results -\r\nSDR field updated: Confirmed.\r\nDocuments - Checked\r\nProduct Family - Tivian\r\nPartner - N\r\nAuto-renewal - Y (per the value shown in Customer Termination Notice Period and data from Tivian Contracts BU Data)\r\nNetsuite - IDs validated\r\nARR & TCV - validated\r\nParent Opp - Checked\r\nCo-term - N\r\nContacts and Addresses - Updated.\r\nCreate Quotes - PQ ready, Q-40192 (1Y on Standard at 25K floor). ARQ not ready, Q-40193 (1Y on Standard with 3% at EUR13,131.98)\r\nContracts/Legal - Contract is not on standard ESW terms\r\n- If not on ESW standard terms, add the following:\r\n- Subsidiary needs to change.\r\n- Contract has AR clause: Notice of Non-Renewal must be sent by 05/15/2025.\r\n\r\n04/04/2025 SYSTEM - Email Template \"Impending Renewal Invoice VF 120 Outreach\" (Template ID 00XIh000000gm0dMAA) with the subject, \"Bayerisches Staatsinstitut für Hochschulforschung und Hochschulplanung (IHF) - Tivian\" could not be sent out because  no contacts with valid email found.\r\nthe \"Has Auto Renewal Clause\" field on the opportunity is blank.\r\nPlease update the data asap\r\n \r\n04/04/2025 SYSTEM - Email Template \"Impending Renewal Invoice VF 120 Outreach\" (Template ID 00XIh000000gm0dMAA) with the subject, \"Bayerisches Staatsinstitut für Hochschulforschung und Hochschulplanung (IHF) - Tivian\" could not be sent out because  no contacts with valid email found.\r\nthe \"Has Auto Renewal Clause\" field on the opportunity is blank.\r\nPlease update the data asap\r\n \r\n04/02/2025 SYSTEM - Email Template \"Name\" with the subject, Important: Bayerisches Staatsinstitut für Hochschulforschung und Hochschulplanung (IHF)'s Upcoming RenewalRenewal Contact with a valid email was not found. \r\n04/01/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"Sales Order DEU4634-Tivian-New- 9 _20242 Renew 1\".",
+    "Gate_3_Violation_Date__c": null
+  }
+]

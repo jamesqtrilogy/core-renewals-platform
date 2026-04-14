@@ -1,0 +1,55 @@
+[
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006fu000002uM1WAAU"
+    },
+    "Id": "006fu000002uM1WAAU",
+    "Name": "CT1_P2S - Jive - Renewal - 1743487 - 7_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/0052x000003qiyMAAQ"
+      },
+      "Name": "James Quigley",
+      "Email": "james.quigley@trilogy.com"
+    },
+    "StageName": "Proposal",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Undetermined",
+    "ARR__c": 14540.76,
+    "Current_ARR__c": 7863.35,
+    "ARR_Increase__c": 84.92,
+    "Offer_ARR__c": 14540.76,
+    "Renewal_Date__c": "2026-07-01",
+    "CloseDate": "2026-06-01",
+    "CreatedDate": "2025-08-03T01:31:27.000+0000",
+    "LastActivityDate": "2026-04-10",
+    "LastModifiedDate": "2026-04-14T13:55:24.000+0000",
+    "Next_Follow_Up_Date__c": "2026-04-21",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Platinum",
+    "Current_Success_Level__c": "Platinum",
+    "CurrentContractHasAutoRenewalClause__c": "Yes",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Jive",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/0012x00000XV9zEAAT"
+      },
+      "Name": "P2S"
+    },
+    "Churn_Risks__c": "Product issues;Poor account management",
+    "High_Value_Opp__c": false,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "04/14/2026 James Quigley: renewing - chasing up",
+    "Description": "04/14/2026 James Quigley: renewing - chasing up\r\n\r\n4/5/2026 System - A physical copy of the AR warning letter dispatched to the customer billing address. \r\n\r\n3/20/2026 System - A physical copy of the AR warning letter dispatched to the customer billing address. \r\n\r\n03/17/2026 James Quigley: Summary:\r\n\r\nThe meeting reviewed the upcoming renewal of the organization's Jive intranet and clarified support and contact arrangements. Nikki confirmed the organization will continue using Jive and noted that their IT team typically handles the software but there is no clear internal contact for small issues. James identified himself as the Renewals manager, confirmed he will serve as the renewal contact and can escalate support tickets, and shared the support desk link in the chat. He committed to emailing the support link and an introduction to account manager Amir Merchant, and said he would include a Calendly link for booking short follow-ups. The group noted a renewal date of July 1st and agreed to schedule a follow-up meeting closer to renewal; Nikki said she would remind Nettie, and Nettie indicated she will schedule the meeting nearer the renewal window.\r\n\r\n03/10/2026 James Quigley: inviting to call - on 03/17\r\n\r\n2/11/26 Venus Laney: called Nedie and Nikki, no answer.\r\n\r\n1/29/26 Venus Laney: called Nedie, no answer. called Carlo, spoke with Ariana. Carlo already left the company and new POC should be Nikki Ramos, Decision Maker and Nedie Stokosa as the technical buyer. They still use the license but they are both ooo today. confirmed all the details are correct and reminded of timeline. updated SF to reflect new POCs. Carlo removed. \r\n\r\n1/15/26 Venus Laney: called Nedie, no answer.\r\n\r\n01/14/2026 James Quigley: Engaging with client\r\n\r\n1/2/2026 Ana Roman: Non-HVO Opp Prep task completed. Results:\r\n\r\nSDR field updated - Checked.\r\nDocuments - Checked.\r\nProduct Family - Jive.\r\nAre product-specific checks required? - N.\r\nPartner - N.\r\nAuto-renewal - Y.\r\n-Notice period: 60 days.\r\n-Clause reference: Special Terms, Section 3 (Automatic Renewal).\r\n-Contract: Quote – New Terms (SaaS) #68425, dated 23-Jul-2025.\r\nNetsuite - Checked.\r\n-Sub NetSuite ID: 1747399.\r\n-Parent Subscription ID: 1743487.\r\nARR & TCV - Validated.\r\n-Current ARR/TCV: USD 7,863.35.\r\nParent Opp - P2S - Jive - New Business\r\nCo-term - There is another opp renewing in July 2026 but it is marked as 'Renewal handled by BU': P2S - Jive - Renewal - 7_2026\r\nContacts and Addresses - Checked.\r\nCreate Quotes - ready by SI: \r\n-Primary Quote: Q-45937, 1yr, Platinum Success, 45% uplift. NDR is at 184.9% being that the current term is only 11MO and renewal quote is 12MO. \r\n-AR Quote: Q-45940, 11 months, Platinum Success 45% uplift + 10% AR fee. \r\nContracts/Legal - Contract is on standard ESW terms.\r\n\r\n08/03/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"P2S 08-2025 Renew 1\"",
+    "Gate_3_Violation_Date__c": null
+  }
+]

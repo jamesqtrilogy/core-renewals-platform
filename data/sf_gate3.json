@@ -1,0 +1,850 @@
+[
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004gXrBIAU"
+    },
+    "Id": "006Ih000004gXrBIAU",
+    "Name": "DPLAY ENTERTAINMENT LTD - Cloudsense - Renewal - 1729540 - 4_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/0052x000003XpHxAAK"
+      },
+      "Name": "Tim Courtenay",
+      "Email": "tim.courtenay@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Likely to Win",
+    "ARR__c": 471801.96,
+    "Current_ARR__c": 325380.56,
+    "ARR_Increase__c": 45,
+    "Offer_ARR__c": 471801.96,
+    "Renewal_Date__c": "2026-04-15",
+    "CloseDate": "2026-03-16",
+    "CreatedDate": "2025-07-02T12:23:35.000+0000",
+    "LastActivityDate": "2026-04-14",
+    "LastModifiedDate": "2026-04-14T12:17:58.000+0000",
+    "Next_Follow_Up_Date__c": "2026-04-14",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Platinum",
+    "Current_Success_Level__c": "Legacy",
+    "CurrentContractHasAutoRenewalClause__c": "No",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Cloudsense",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/001Ih0000052ZzaIAE"
+      },
+      "Name": "DPLAY ENTERTAINMENT LTD"
+    },
+    "Churn_Risks__c": "Product issues;Contract terms and conditions",
+    "High_Value_Opp__c": true,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "LIKELY TO WIN. Customer to return extension request form; complete legal review asap. 04/13/2026 Tim Courtenay",
+    "Description": "04/14/2026 Tim Courtenay: Responded to Henry's concerns about the acknowledgment letter (objected to standard T&Cs and lack of countersignature). Declined to countersign the form, explaining it is a customer-only submission. Proposed an alternative: DPLAY/WBD issues a PO to Skyvera LLC for GBP 471,801.81 (per the 2026 SOW), replicating the approach used in 2025, while the SOW is finalized in parallel. Requested prompt confirmation.\r\n\r\n04/14/2026 Tim Courtenay: Replied to Henry (WBD/DPLAY) who requested a deadline extension on Contract 1729540 (due 15/04/26) due to last-minute legal delays. Agreed to a temporary extension on condition that Henry returns a completed acknowledgment form today confirming good faith intent to renew; warned that failure to meet the new timeline may result in immediate license termination.\r\n\r\n04/12/2026 Tim Courtenay: Sent urgent email to Dario (WBD) warning that platform access will be suspended from April 15th if no committed path to signature is confirmed by EOD Monday. SOW was sent Feb 25th with follow-ups on April 2nd and 8th and no substantive response received. Requested immediate update on legal review status and a Monday call to align on next steps. Provided Dario with my contact number and requested his number.\r\n\r\n04/08/2026 Tim Courtenay: Sent a follow-up to Dario checking on the status of the legal review of the 2026 SOW renewal.\r\n\r\n04/05/2026 Tim Courtenay:  Marked opportunity as 'Likely to Win'. It is 'Likely to Win' because the customer is engaged in PS activities and is actively using the product, with no indications of switching or termination. We are close to renewal, and they have requested substantially the same terms as 2025-2026, which we have provided. Budget has been approved, bottleneck is with their legal.\r\n\r\n04/02/2026 Tim Courtenay: Followed up with Dario on the DPLAY CloudSense 2026 SOW renewal, now less than 2 weeks from the April 14 deadline. Referenced delays on the prior renewal and flagged internal pressure to close. Offered to jump on a call, provide documentation, or assist with internal coordination to unblock progress.\r\n\r\n03/25/2026 Tim Courtenay: Following a call with Dario earlier today, I sent a follow-up email emphasizing the need to complete the DPLAY CloudSense 2026 SOW renewal before the April 14 expiry. I stressed the no-extension policy, flagged significant resistance to granting another exception as last year, and asked Dario to align his internal stakeholders on the urgency.\r\n\r\n03/25/2026 Tim Courtenay:  Renewal call with Dario Donesi to review status of 2026 CloudSense SOW. Customer confirmed SOW is with legal (no response yet), but budget and business approvals are complete. Main risk is legal delay ahead of mid-April expiry. Discussion also covered upgrade planning and version support policy, with follow-ups required from supplier.\r\nActions:\r\n* Dario to escalate legal and provide update by Monday\r\n* Tim to send impact email and confirm version and upgrade policy\r\n* Tim to follow up next week\r\n* Dario to raise PO once SOW is signed\r\n\r\n03/19/2026 Tim Courtenay:  Sent Dario my calendar link and advised him to book a time directly. He booked for 3/25.\r\n\r\n03/17/2026 Tim Courtenay: Dario confirms the 2026 SOW is with their legal team for review — he forwarded it immediately upon receipt and is awaiting feedback. He is traveling this week with limited availability but will follow up with legal and update when he has news. Will try to find time to meet.\r\n\r\n03/17/2026 Tim Courtenay: Followed up with Dario requesting a call tomorrow afternoon (UK time) — offering slots 12:00–13:00 or 13:30–15:30. Flagged urgency: 1 month to renewal of 2025 SOW, 2026 SOW still not signed. Asked for his assistance to progress in time.\r\n\r\n03/13/2026 Tim Courtenay: Chased Dario for feedback on the 2026 SOW, noting that the 2025 SOW expires in approximately one month. Requested a quick call today to align on next steps, with a calendar link provided.\r\n\r\n03/09/2026 Tim Courtenay: Dario shared the final 2025 SOW (pending signature) and asked us to review the 2026 SOW to ensure it matches the same format and level of detail. I responded that the 2026 SOW was drafted as close as possible to the 2025 version, with the novation preamble removed as the only material change. I asked if it has been submitted to their legal team yet, and offered a call to resolve any blockers.\r\n\r\n02/25/26 SYSTEM - Quote Q-45259 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/25/2026 SYSTEM - Quote Q-45259 is Accepted. Approver Comments  -  Quote approved - David M 02/25/2026\r\n\r\n02/25/2026 Tim Courtenay:  Submitted the quote for approval. Will be sent to Opp Owner, as we are generating this as a dummy quote (the actual document is the SOW, already sent to the customer). Details:\r\nQ-45259:\r\nTerm: 1 year\r\nStandard Success, 25% uplift:\r\nARR = GBP 325,380.56 * 1.25 = GBP 471,801.81\r\nEntitlements: as per footer text in quote (too lengthy, not repeated here)\r\nRecipient: Dario Donesi, but quote is to be sent to Opportunity Owner and will NOT be sent to the customer.\r\n\r\n02/25/2026 Tim Courtenay:  Sent the clean 2026 SOW to Dario for review. Requested a follow-up call.\r\n\r\n02/23/2026 Tim Courtenay:  Approved final changes to SOW, requested legal to produce a version I can share with the customer. Advised the customer the SOW will be on its way shortly.\r\n\r\n02/20/2026 Tim Courtenay:  Legal picked up we still have outstanding questions that need input from the BU. Sent the document to the BU and requested their assistance. They replied and have provided everything we need. Updated the legal case accordingly.\r\n\r\n02/18/2026 Tim Courtenay:  Followed up again with the BU - I need their approval before legal can finalize the document. The customer is chasing me for the quote.\r\n\r\n02/16/2026 Tim Courtenay:  AM has commented on the 2026 SOW, checking with CEO whether there are any further changes, then can send it back to legal.\r\n\r\n02/13/2026 Tim Courtenay:  Legal raised question on the OF, I have drawn the BU in to respond. Sent update email to Dario.\r\n\r\n02/10/2026 Tim Courtenay:  Created Amendment 3 - SOW 2026 draft, based on Amendment 2 - 2025. Sent to legal with markups for them to approve version to send to the customer.\r\n\r\nSent update email to the customer.\r\n\r\n01/29/2026 Tim Courtenay:  Dario will invite us to their supplier portal to complete the vendor reg requirements, suggested he invite Clarisa as the POC for that.He also requested we draft the 2026 SOW for them to get into the legal queue, I said I would initiate that process.\r\n\r\n01/28/2026 Tim Courtenay:  Dario has requested company information, I asked for a form or template to follow. Also asked if he could escalate the urgency on the 2025 SOW, we can't proceed with 2026 until 2025 is signed.\r\n\r\n01/21/2026 Tim Courtenay:  Asked the BU for the 2025 quote in circulation for signature and info on the add-on pricing.\r\n\r\n01/20/2026 Tim Courtenay:  NOTE: It is premature to send a quote to the customer until the 2025 commercial position has been finalized. This is high-risk.\r\n\r\n01/20/2026 Tim Courtenay:  Had a check-in call with Dario Donesi. The timing on this renewal is overlapping with the closure of the 2025 renewal. Coordination required with the BU to agree a plan for effective engagement. Notes from the call:\r\nRenewal call with Dario Donesi (DPLAY Entertainment) regarding CloudSense. Tim reviewed contract and product usage. Dario confirmed organizational changes have paused rollout, but CloudSense is now live in the UK. 2025 contract nearly finalized; 2026 renewal faces customer request challenge with reduced license count (~30). Programmatic and scalability gaps noted. We need to clarify the interface with the custoemr and the overlap of the 2025 and 2026 renewal activities.\r\nActions:\r\n* Tim to check with Neeraj on current license usage and reduction for 2026\r\n* Dario to check internal legal status of 2025 agreement\r\n* Dario to trigger Skyvera vendor registration process\r\n* Tim to coordinate with Clarisa and Neeraj to support renewal\r\n* Tim to look at feasibility of reuse of 2025 contract format for 2026\r\nSent follow-up email to Dario.\r\n\r\n01/19/2026 Tim Courtenay:  Quote shows CloudSense as the SP, it should be Skyvera, LLC. Requested Sales Ops to assist to correct it.\r\n\r\n01/19/2026 Tim Courtenay:  Located the signed 'consent to assign from CloudSense to Skyvera' letter. Requested BU confirmation that no new agreement was signed in 2025.\r\n\r\n01/13/2026 Tim Courtenay:  Had to postpone meeting. Booked it for 01/20.\r\n\r\n12/3/2025 Tim Courtenay:  Dario responded. Asked us to remove Melanie Gielen and Katie Coteman as they are no longer involved. Confirmed that Clarisa is running the novation activity. Meeting confirmed for 13 January 2026.\r\n\r\n12/3/2025 Tim Courtenay:  Dario reached out - a meeting is booked for 1/13/2026. I responded, set out a rough timeline and requested their response. Advised that we need to change the contracting entity to Skyvera, LLC, what needs to be done.\r\nMarked Dario as the PC.\r\n\r\n11/20/2025 Tim Courtenay: Asked the BU whether they pursued discussions with the customer to sign an agreement. Neeraj advised it is still under negotiation, along with a novation agreement. I will monitor the progress on that item because it has a material impact on how we proceed with this renewal.\r\n\r\n11/19/2025 Tim Courtenay: Sent a 'cold' intro email to the contacts we have.\r\n \r\n11/19/2025 Tim Courtenay: The contract is under legal review. The existing contract is completely dictated by the PO.  Sent a reminder request to the AM (Neeraj Sharma) to intro me to the customer.\r\n\r\n11/12/25 Venus Laney: requested warm intro for AM.\r\n\r\n10/23/2025 Ana Roman: HVO Opp Prep task completed. Results:\r\n\r\nSDR field updated: Confirmed.\r\nDocuments - Checked. \r\nProduct Family - CloudSense. \r\nAre product-specific checks required? N.\r\nPartner - N. \r\nAuto-renewal - N. \r\nNetsuite - IDs validated. \r\nARR & TCV - validated.\r\nParent Opp - Checked. \r\nCo-term - N. \r\nContacts and Addresses - Updated. \r\nCreate Quotes - PQ ready, Q-45259, 1yr, Platinum Success, 45% uplift. \r\nContracts/Legal - Contract is not on standard ESW terms. \r\n  - Subsidiary needs to change.\r\n  - Contract does not have AR clause: Notice of Non-Renewal is not required. \r\n- RAISE A LEGAL CASE - Legal case #: 00028867.\r\n\r\n07/01/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"DPLAY ENTERTAINMENT LTD 04-2025 Renew 1\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004f8oLIAQ"
+    },
+    "Id": "006Ih000004f8oLIAQ",
+    "Name": "Carahsoft Technology Corp. - Airforce 754 ELSG - Lyris (AEM) - Renewal - 1695101 - 4_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/0052x0000049sbGAAQ"
+      },
+      "Name": "James Stothard",
+      "Email": "james.stothard@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Likely to Win",
+    "ARR__c": 50976.12,
+    "Current_ARR__c": 35155.9,
+    "ARR_Increase__c": 45,
+    "Offer_ARR__c": 50976.12,
+    "Renewal_Date__c": "2026-04-16",
+    "CloseDate": "2026-03-17",
+    "CreatedDate": "2025-05-09T01:31:16.000+0000",
+    "LastActivityDate": "2026-04-09",
+    "LastModifiedDate": "2026-04-11T17:47:46.000+0000",
+    "Next_Follow_Up_Date__c": null,
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Platinum",
+    "Current_Success_Level__c": "Platinum",
+    "CurrentContractHasAutoRenewalClause__c": "No",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Lyris (AEM)",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/0012x00000hOdgxAAC"
+      },
+      "Name": "Airforce 754 ELSG"
+    },
+    "Churn_Risks__c": "Poor account management;Unresponsive",
+    "High_Value_Opp__c": false,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "Followed up with reseller, tender deadline should have passed  04/08/2026 James Stothard",
+    "Description": "Reseller has made contact with the end user, renewal has been put out to tender with a deadlin of tomorrow 04/06/2026 James Stothard\r\n\r\n4/3/26 Venus Laney: received case 00031814, another reseller asking for a quote. looped ISR\r\n\r\nfollowed up the reseller to see if they made contact 03/27/2026 James Stothard\r\n\r\n03/10/2026 James Stothard: Reseller has still been unable to make contact with the end user, despite multiple attempts and sending them a quote, knowing how past gov renewals have worked they will likely reach out last minute\r\n\r\n02/02/2026 James Stothard: Reseller said they have sent a quote to the end user, but are yet to hear anything back \r\n01/26/2025 James Stothard: Reached out to the reseller to see if they have a decision from the end user and asked for a call\r\n\r\n01/07/26 SYSTEM - Quote Q-46754 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n01/07/2026 SYSTEM - Quote Q-46754 is Accepted. Approver Comments  -  Quote approved - David M 01/07/2026\r\n\r\n01/07/26 SYSTEM - Quote Q-44014 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n01/07/2026 SYSTEM - Quote Q-44014 is Accepted. Approver Comments  -  Quote approved - David M 01/07/2026\r\n\r\n1/6/26 Venus Laney: called Firass, reminded of timeline. He asked that we just send the quote since he handles all the Lyris renewal--he needs 1year and 3year as is quotes. did not discuss pricing and offered RC and he said, send him the link to the calendar and he'll cross check when they can connect. Quotes sent for approval - gate2 Q-44014 and Q-46754\r\nITEM: Lyris (AEM) List Manager, \r\nSuccess: PLATINUM \r\nTerm: 12months and 36months\r\nAmount: USD 50,976.06 and 152,928.18\r\n\r\n12/15/25 Venus Laney: called Firass, he did not manage to join the last RC invite so he asked to send the calendar link so he can cross check his availability. reminded of timeline and to revert back for any questions. \r\n\r\n12/2/25 Venus Laney: called Firass, no answer. invited for RC Thu, Dec 11 2:30 PM GMT-05:00\r\n\r\n11/26/25 Venus Laney: called Firass, no answer.\r\n\r\n11/20/25 Venus Laney: called Firass, no answer.\r\n\r\n11/5/25 Venus Laney: received a callback from Firass, he confirmed that all Lyris and Aurea Platform for Carahsoft will be under him. reminded of renewal timeline. informed of SSP. too early for now and he still needs to connect with End user to know how we stand.\r\n\r\n11/3/25 Venus Laney: called Gabrielle, no answer. called Carahsoft Main, there was a bit of connection issues so it took a while for us to figure out the details of renewal spoke with Rob and was told renewal will remain with Firass. reminded of timeline and he asked when we connect to provide the PO number for reference. called Firass, no answer.\r\n\r\n11/3/25 Venus Laney: Non-HVO Opp Prep task completed. Results:\r\n\r\nSDR field updated: Confirmed.\r\nDocuments - uploaded.\r\nNNR is required? - No\r\nProduct Family - Lyris\r\nPartner - Yes, Carahsoft\r\nAuto-renewal - No\r\nNetsuite - IDs validated.\r\nARR & TCV - Checked\r\nParent Opp - Checked.\r\nCo-term - No\r\nContacts and Addresses - Updated.\r\nCreate Quotes - PQ Ready by automation\r\n\r\n05/09/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"Carahsoft Technology Corp.(Airforc 04-2025 Renew Renew 1\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004ebhbIAA"
+    },
+    "Id": "006Ih000004ebhbIAA",
+    "Name": "IO Integration - ReSources IT-Saatchi & Saatchi Los Angeles - NorthPlains - Renewal - 1682363 - 4_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/005Ih0000013hKUIAY"
+      },
+      "Name": "Fredrik Scheike",
+      "Email": "fredrik.scheike@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Likely to Churn",
+    "ARR__c": 19125,
+    "Current_ARR__c": 15300,
+    "ARR_Increase__c": 25,
+    "Offer_ARR__c": 19125,
+    "Renewal_Date__c": "2026-04-16",
+    "CloseDate": "2026-03-17",
+    "CreatedDate": "2025-04-18T01:31:08.000+0000",
+    "LastActivityDate": "2026-04-14",
+    "LastModifiedDate": "2026-04-14T14:24:31.000+0000",
+    "Next_Follow_Up_Date__c": "2026-04-15",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Standard",
+    "CurrentContractHasAutoRenewalClause__c": "No",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "NorthPlains",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/0012x00000cGRTwAAO"
+      },
+      "Name": "ReSources IT-Saatchi & Saatchi Los Angeles"
+    },
+    "Churn_Risks__c": "Poor account management;Unresponsive",
+    "High_Value_Opp__c": false,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "04-14-2026 Fredrik Scheike: Likely churn. Close as lost by EoB tomorrow",
+    "Description": "04-14-2026 Fredrik Scheike: Called Cam to push for PO. No answer.\r\n04-13-2026 Fredrik Scheike: Emailed for update.\r\n04-09-2026 Fredrik Scheike: Called Cam - no answer.\r\n\r\n04-07-2026 Fredrik Scheike: Called, no answer. Left VM. Tagged SalesOps in Chatter to close as lost on Thursday.\r\n\r\n03-30-2026 Fredrik Scheike: Emailed for update. Pushed for PO and SQ by Friday 04/10.\r\n\r\n03-23-2026 Fredrik Scheike: Called Cam and Karmen. Both, no answer.\r\n\r\n03-17-2026 Fredrik Scheike: Wrote for update. Complete with commitment date.\r\n03-16-2026 Fredrik Scheike: Called Cameron, no answer\r\n03-11-2026 Fredrik Scheike: Emailed again. Cam OOO.\r\n\r\n03-05-2026 Fredrik Scheike: Emailed for update.\r\n\r\n01/22/26 SYSTEM - Quote Q-44013 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n01/22/2026 SYSTEM - Quote Q-44013 is Accepted. Approver Comments  -  Quote approved - David M 01/22/2026\r\n\r\n1/21/26 Venus Laney: called Karmen and Cameron, both no answer. updated PQ for approval-gate2.\r\nITEM: NorthPlains Xinet (On-Prem), \r\nSuccess: STANDARD\r\nTerm: 12months\r\nAmount: USD 19,125.00\r\n\r\n12/2/25 Venus Laney: called Cameron, no answer.\r\n\r\n11/4/25 Venus Laney: called Mainline, spoke with Bill, he said they are rewiring their phone line hence connection was routed to him. Aaron is not available but would still be the main POC. he asked to add Mike as an alternate to all IO opps as well as him. new opps updated to reflect same, - Phototype Texas, ReSources IT-Saatchi & Saatchi Los Angeles, Phototype and Imtech Graphics.\r\n\r\n11/4/25 Venus Laney: NON HVO opp prep:\r\n\r\nSDR field updated: Confirmed.\r\nDocuments - Checked.\r\nProduct Family - Xinet\r\nNNR Required? N\r\nPartner - Y\r\nAuto-renewal - N\r\nNetsuite - IDs validated.\r\nARR & TCV - validated.\r\nParent Opp - Checked.\r\nCo-term - N\r\nContacts and Addresses - Updated.\r\nCreate Quotes - PQ Ready\r\n\r\n04/18/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"IO Integration(ReSources IT-Saatch 04-2025 Renew Renew 1\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004enY6IAI"
+    },
+    "Id": "006Ih000004enY6IAI",
+    "Name": "Akhter Computers Ltd - MoD Army Digital Services - Kayako - Renewal - 1689281 - 4_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/0052x0000049sbGAAQ"
+      },
+      "Name": "James Stothard",
+      "Email": "james.stothard@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Undetermined",
+    "ARR__c": 56250,
+    "Current_ARR__c": 45000,
+    "ARR_Increase__c": 25,
+    "Offer_ARR__c": 56250,
+    "Renewal_Date__c": "2026-04-18",
+    "CloseDate": "2026-03-19",
+    "CreatedDate": "2025-04-25T01:32:07.000+0000",
+    "LastActivityDate": "2026-04-14",
+    "LastModifiedDate": "2026-04-14T08:07:08.000+0000",
+    "Next_Follow_Up_Date__c": null,
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Standard",
+    "CurrentContractHasAutoRenewalClause__c": "No",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Kayako",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/001Ih000009yHwLIAU"
+      },
+      "Name": "MoD Army Digital Services"
+    },
+    "Churn_Risks__c": "Lack of innovation;Lack of ROI;Loss of use case",
+    "High_Value_Opp__c": false,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": "Self-Serve",
+    "Type": "Renewal",
+    "NextStep": "Follow up with Derek for update on inbound enquiries (Phoenix, QBS) and internal discussions with Asma to confirm procurement status. Decision required by mid-week on whether to pursue extension if no order received. 04/16/2026 James Stothard",
+    "Description": "04/14/2026 James Stothard: Renewal call with partner (Derek Rouse) and supplier (James Stothard). Discussed multiple inbound tender enquiries (Phoenix, QBS) indicating customer is running a procurement process. Renewal deadline confirmed as 18th with no order yet received. Agreed partner to investigate internally and reconvene mid-week; extension possible only with written commitment.\r\n\r\nActions:\r\n\r\nDerek to review enquiries and check with Asma – ASAP\r\nDerek to update James – within a few days\r\n\r\n04/03/2026 James Stothard: Followed up again with the reseller, warned they will lose access \r\n\r\n03/09/2026 James Stothard: Followed up with the reseller \r\n\r\n02/18/2025 James Stothard: The meeting focused on the Kayako renewal for Army HQ, where budget constraints and a proposed 25% post-acquisition price increase may put the renewal at risk. Latifa asked whether the uplift could be reduced, and James confirmed it is standard policy but committed to review internally with Jay and provide a definitive update by end of the next business day. Latifa also requested reseller protection, citing her organisation’s 45-year MOD relationship; James confirmed Kayako typically maintains a single reseller per account, except where frameworks require multiple quotes. Ajith outlined Kayako’s SaaS and AI capabilities, plus adjacent products including Contently, and a follow-up session will be scheduled to explore broader commercial opportunities.\r\n\r\n02/18/26 SYSTEM - Quote Q-47478 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/18/2025 James Stothard: Tried to call, left a message with Dereks colleauge and my number for him to call me back \r\n\r\n01/12/2026 James Stothard: Followed up with the reseller as requested \r\n\r\n11/19/25 SYSTEM - Quote Q-45787 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n11/19/2025 SYSTEM - Quote Q-45787 is Accepted. Approver Comments  -  Quote approved - David M 11/19/2025\r\n\r\n11/19/2025 James Stothard:  RC \r\nSummary:\r\n\r\nThe discussion focused on the renewal process for Kayako licenses, highlighting the challenges faced by AXA as an IT reseller in the UK public sector, particularly with the Ministry of Defence (MOD). Insights were shared regarding the complexities of the renewal, including pricing concerns and the impact of public sector budgeting practices on multi-year contracts. James Stothard outlined the updated renewal timeline, emphasizing the need to finalize contracts at least 30 days prior to the renewal date.\r\n\r\nA planned 25% increase in renewal pricing was noted, which may be necessary due to the current pricing being below the Trilogy price. Both parties acknowledged the MOD's use of Kayako as a secondary support system and discussed the ongoing demand for on-premises solutions amidst a shift towards cloud-based services.\r\n\r\nThe conversation also addressed the estimated renewal pricing of approximately $56,250 and the potential for the client to seek competitive bids, which could complicate negotiations. Stothard reassured the conference room participants that auto-renewal has been disabled to facilitate direct discussions. They agreed on the importance of preparing the client for the renewal and discussed the timeline for a formal quote, which Stothard committed to providing by the end of the week.\r\n\r\nAdditionally, they explored the implications of upgrading to Platinum Success Services for clients currently on lower-tier plans and the need for clarity on warranty details. The meeting concluded with an agreement on next steps, including the provision of a quote and acknowledgment of the importance of remaining competitive for future contracts.\r\n\r\nAction Items:\r\n-James Stothard will send a quote to the conference room participant by the end of the week.\r\n-The conference room participant will prepare to engage with the MOD regarding the upcoming renewal and pricing concerns.\r\n-Follow up Jan 2026\r\n\r\n\r\n11/17/2025 Julius Librando: Spoke to Derek who confirmed himself as the PC for thisi renewal. Offered an RC and he booked for Wed, Nov 19, 10:15 AM, UK time\r\n\r\n11/17/2025 Julius Librando: Opp prep results -\r\nSDR field updated: Confirmed.\r\nDocuments - Checked\r\nProduct Family - Kayako\r\nPartner - Y\r\nAuto-renewal - N\r\nNetsuite - IDs Validated\r\nARR & TCV - Validated\r\nParent Opp - Checked\r\nCo-term - N\r\nContacts and Addresses - Updated\r\nCreate Quotes - PQ ready\r\n\r\n11/13/25 Venus Laney: added - Puchasing. moving to JL for better time coverage. reseller +44\r\n\r\n04/25/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"Akhter Computers Ltd(MoD Army Digi 04-2025 Renew 1\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004fjl8IAA"
+    },
+    "Id": "006Ih000004fjl8IAA",
+    "Name": "Databricks - Khoros - Renewal - 1702576 - 4_2026_Community&Care",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/005Ih0000015jXkIAI"
+      },
+      "Name": "Sebastian Desand",
+      "Email": "sebastian.desand@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Undetermined",
+    "ARR__c": 337500,
+    "Current_ARR__c": 270000,
+    "ARR_Increase__c": 25,
+    "Offer_ARR__c": 337500,
+    "Renewal_Date__c": "2026-04-21",
+    "CloseDate": "2026-03-22",
+    "CreatedDate": "2025-06-01T18:55:53.000+0000",
+    "LastActivityDate": "2026-04-14",
+    "LastModifiedDate": "2026-04-11T17:50:19.000+0000",
+    "Next_Follow_Up_Date__c": "2026-04-14",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Legacy",
+    "CurrentContractHasAutoRenewalClause__c": "No",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Khoros",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/001Ih00000Ab14BIAR"
+      },
+      "Name": "Databricks"
+    },
+    "Churn_Risks__c": "Pricing rigidity;Product issues;Support issues;Poor account management;Loss of trust in product/company",
+    "High_Value_Opp__c": true,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "04/08/2026 Sebastian Desand: Escalate pricing objection to VP and confirm MSA reuse feasibility.",
+    "Description": "04/08/2026 Sebastian Desand: Renewal call with Databricks procurement and Mandy Ross to discuss upcoming Khoros renewal. Customer strongly objected to 25% price increase with no scope change, stating it exceeds internal approval thresholds (~3%). Multi-year option rejected due to internal policy. Customer does not value bundled features or Aurora migration as justification for increase and raised concerns about IgniteTech relationship and Aurora being unproven. Procurement indicated that without pricing movement, they will initiate an RFP and evaluate alternative vendors. Escalation to VP requested; renewal deadline in ~2 weeks with legal and approval processes still pending.\r\n\r\nActions:\r\n* Khoros to schedule VP escalation call (Monday)\r\n* Khoros to confirm MSA reuse feasibility\r\n* Databricks to review internally and attend escalation call\r\n\r\n04/06/2026 Sebastian Desand: Customer sent link to vendor registration form. Forwarded to the BU (Saurish) to include Anca in the process. \r\n\r\n04/02/2026 Sebastian Desand: Followed up to clarify Aurora migration is contingent on signed quote before renewal date.\r\n\r\n04/01/2026 Sebastian Desand: Procurement contact Amber Zamlich (Databricks) requested a pricing breakdown and justification for the price increase. Provided detailed context on the business-wide pricing uplift following the Khoros acquisition, the shift to a bundled platform model, and the expanded entitlements included (Khoros One, AI capabilities, Aurora migration). Highlighted the 3-year option with full price lock and unlimited usage as the most compelling choice. Offered a call to walk through the entitlements comparison and stressed urgency given the renewal date is less than 3 weeks away.\r\n\r\n03/30/2026 Sebastian Desand: Quote follow-up email sent to customer. \r\n\r\n03/23/2026 Sebastian Desand: Quote follow-up email sent to customer. \r\n\r\n03/23/26 SYSTEM - Quote Q-47975 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n03/23/2026 SYSTEM - Quote Q-47975 is Accepted. Approver Comments  -  Quote approved - David M 03/23/2026\r\n\r\n03/20/2026 Alvy Gordo:    Created quote Q-47975\r\n  1-year legacy quote with 25% uplift   per SD's request \r\nItem:   Khoros Legacy \r\nQty:  see below \r\nAmount:  USD 337,500.00 \r\nSupport:  Premium \r\nTerm:    12mos \r\nSPLIT PRICING:\r\nCalls (10M)\t29,332.50\r\nCare\t10,864.49\r\nCommunity\t43,086.78\r\nCRM\t21,028.04\r\nEvents\t8,750.00\r\nIdeas\t8,750.00\r\nMonitor\t6,250.00\r\nPS - Care\t3,504.68\r\nPS -Com\t23,525.81\r\nQ&A\t14,532.71\r\nSeats (5)\t6,250.00\r\nVisit (10M)\t161,625.00\r\nGrand Total\t337,500.00\r\n\r\n03/19/2026 Sebastian Desand: Renewal call with Mandy Ross (Databricks). Customer expressed strong dissatisfaction with Khoros due to support failures, bot attack incident, and lack of data recovery, resulting in very low trust. Despite this, customer is willing to proceed with a 1-year renewal primarily due to free Aurora migration and timing constraints. Customer requires significant improvement in SLA performance, a 6-month review checkpoint, and has strong pushback on pricing (target below $300K). Renewal considered high-risk but salvageable.\r\n\r\nActions:\r\n- Sebastian to review pricing escalation and contract clause feasibility\r\n- Mandy to submit proposed 6-month review clause and attend Aurora demo\r\n- Internal alignment on SLA improvements and account strategy\r\n\r\n03/18/2026 Sebastian Desand: Renewal call with Misty scheduled for 03/19/2026\r\n\r\n03/15/2026 Sebastian Desand: Resolved Aurora migration blocker for Databricks — confirmed no-charge migration with Saurish. Christy referred Mandy Ross to lead next steps on renewal.\r\n\r\n03/13/2026 Sebastian Desand: Follow-up/reminder email to the customer, urging to schedule a call. \r\n\r\n03/06/2026 Sebastian Desand: Follow-up/reminder email to the customer, urging to schedule a call. \r\n\r\n03/02/2026 Sebastian Desand: the BU confirmed that they will offer the Aurora Migration free of charge. Followed-up with the customer to finalize the renewal discussions. \r\n\r\n02/20/2026 Sebastian Desand: Follow-up email to check on progress on Aurora migration plan discussions with the BU. \r\n\r\n02/18/26 SYSTEM - Quote Q-47437 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/18/2026 SYSTEM - Quote Q-47437 is Accepted. Approver Comments  -  Quote Approved - David M 02/18/2026\r\n\r\n02/17/2026 Alvy Gordo:   Created quote per SD's request - Standard items at 25% uplift\r\n1YR quote  Q-47437 \r\nItem:   Khoros Suite: Community & Care  Enterprise \r\nQty:  1 \r\nAmount:  USD 337,500.00\r\nSupport:  Standard \r\nTerm:    12 mos \r\n\r\n3Y quote  Q-47438\r\nItem:   Khoros Suite: Community & Care Ultimate Silver\r\nQty:  1 \r\nAmount:  USD 1,012,500.00 \r\nSupport:  Standard \r\nTerm:     36 mos \r\n\r\n02/06/2026 Sebastian Desand: Renewal escalation call with Christy Seto regarding Khoros Community. Customer reported no progress on promised migration from Classic to Aurora, continued platform issues, and lack of responsiveness from account team. Aurora was promised at contract signing (pre-IgniteTech) without mention of a migration fee, and customer strongly objects to paying for migration now. Classic is viewed as no longer actively supported. Renewal decision is fully dependent on Khoros providing a clear Aurora migration roadmap and demonstrating commitment. Renewal discussions paused until Aurora issue is resolved.\r\n\r\nActions:\r\n* Escalate Aurora migration and historical commitment review to leadership\r\n* Validate migration fee expectations vs. legacy promises\r\n* Provide clear Aurora migration path (timeline, ownership)\r\n\r\n02/04/2026 Sebastian Desand: Billing address confirmed by customer. \r\n\r\n02/02/2026 Sebastian Desand: Asked customer to confirm billing address. \r\n\r\n01/20/2026 Sebastian Desand: Renewal call scheduled on 02/06/2026. \r\n\r\n01/18/2026 Sebastian Desand: Follow-up email sent to customer, suggesting a call. \r\n\r\n01/11/2026 Sebastian Desand: Follow-up email sent to customer, suggesting a call. \r\n\r\n12/19/2025 Sebastian Desand: Informed the BU (Saurish) about customer concerns. Shared call recording. \r\n\r\n12/11/2025 Sebastian Desand: Renewal call with Christy Seto (customer) and Sebastian Desand (sales).\\nCustomer expressed deep dissatisfaction with Khoros Classic performance and support. Key concerns include unresolved bugs, long-standing support tickets, a bot attack that compromised metrics and user experience, and perceived neglect of Classic in favor of Aurora. Christy is unwilling to pay for migration and wants to be \"made whole\" for what she sees as a mismatch between what was sold and what was delivered. Open to re-engaging in January 2026 but needs strong evidence of improvement and commitment from IgniteTech.\r\n* Sebastian to confirm Classic support status and Aurora migration details.\r\n* Product/Marketing to prepare messaging on Classic roadmap.\r\n\r\n12/03/2025 Sebastian Desand: Check-in call scheduled on 12/10/2025. \r\n\r\n11/30/2025 Sebastian Desand: Follow-up/reminder email sent to customer, urging them to schedule a check-in call. \r\n\r\n11/19/25 Venus Laney: intro completed. created and updated all contacts for renewal per recent engagement.\r\n\r\n11/12/2025 Sebastian Desand: Outreach after warm introduction from BU. \r\n\r\n11/11/2025 Alvy Gordo:     \r\nHVO Opp Prep task completed – Results:\r\nSDR/ISR field updated: Confirmed\r\nDocuments: MSA added\r\nProduct Family: Khoros Community  \r\nPartner: N\r\nAuto-renewal: No  \r\nNotice period: N/A – renewal only upon new written agreement\r\nPrice cap: None – renewal pricing subject to mutual agreement (SO Page 2 Item 8)\r\nNetsuite IDs Validated:\r\nARR: USD 270,000.00\r\nTCV: USD 270,000.00\r\nParent Opp Checked: None, first time renewal \r\nCo-term: N \r\nContacts and Addresses Updated: Y \r\nCreate Quotes: PQ  ready \r\nNS Status Active: Active \r\nAR’d last renewal: N\r\nLast Invoice paid:  CM’d\r\nContract Summary created: Y\r\nContract is on standard ESW?: N\r\nIf No, is NNR required: N \r\nLegal case for first time renewal:  https://trilogy-sales.lightning.force.com/lightning/r/Case/500fu00000HPv7lAAD/view\r\n\r\n06/01/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"SO-13672 Renew 1\"\r\n06/01/25 SYSTEM : Could not import products because this is a legacy NetSuite subscription record.",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004fI2aIAE"
+    },
+    "Id": "006Ih000004fI2aIAE",
+    "Name": "1_SHI INTERNATIONAL CORP (BVSN) - Lockheed Martin Aeronotics - BroadVision - Renewal - 1697512 - 4_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/0052x0000049sbGAAQ"
+      },
+      "Name": "James Stothard",
+      "Email": "james.stothard@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Warning",
+    "Probable_Outcome__c": "Likely to Win",
+    "ARR__c": 15789.48,
+    "Current_ARR__c": 20000,
+    "ARR_Increase__c": -21.05,
+    "Offer_ARR__c": 15789.48,
+    "Renewal_Date__c": "2026-04-25",
+    "CloseDate": "2026-03-26",
+    "CreatedDate": "2025-05-15T01:31:00.000+0000",
+    "LastActivityDate": "2026-04-11",
+    "LastModifiedDate": "2026-04-13T12:11:20.000+0000",
+    "Next_Follow_Up_Date__c": null,
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Standard",
+    "CurrentContractHasAutoRenewalClause__c": "No",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "BroadVision",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/0012x00000fySsaAAE"
+      },
+      "Name": "Lockheed Martin Aeronotics"
+    },
+    "Churn_Risks__c": "Collections / Legal action;Unresponsive",
+    "High_Value_Opp__c": false,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "03/27/2026 James Stothard: Followed up with SHI reseller, it still look like this will be cotermed to end in  11/23/27",
+    "Description": "04/09/2026 James Stothard: Sending a quote that ends 11/23/27  so this renews at the same time as the main renewal which isn't in the renewal cycle yet \r\n\r\n03/27/2026 James Stothard: Followed up with SHI reseller, it still look like this will be cotermed to end in  11/23/27 \r\n\r\n3/19/26 Venus Laney: received CASE - Henry asking for quote details. looped in ISR as it appears that another opp is being co termed.\r\n\r\n03/17/26 SYSTEM - Quote Q-47889 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n03/17/2026 SYSTEM - Quote Q-47889 is Accepted. Approver Comments  -  Co-term quote approval - David M 03/17/2026\r\n\r\n3/16/2026 Ana Roman: Generated C/T quote:\r\nQ-47889\r\nProduct: BroadVision QuickSilver MAINTENANCE, STANDARD EDITION, STANDARD SUCCESS\r\nEntitlements: Opp 1: 5 licenses + Opp 2: 115 licenses\r\nSuccess: Standard (25% uplift)\r\nTerm: 19 months (opp 1 renewing from 4/25/26 to 11/22/27 | opp2 renewing for 1yr from 11/23/26 to 11/22/27)\r\nARR: USD 193,100.775\r\nTCV: USD 207,684.11\r\nOpp1: Current ARR 20,000 * 1.25 = 25,000 for 12MO term (renewal term is for 19 MO, TCV: 39,583.33)\r\nOpp2: Current ARR 134,480.62 * 1.25 = 168,100.775\r\nTCV: opp1 39,583.33 + opp 2 168,100.775 = 207,684.11\r\n\r\n03/16/2026 James Stothard: SHI has asked us to co-term this opportunity to the one linked below, with an end date of 11/23/2027, sending a new quote \r\nhttps://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006fu00000EhUh7AAF/view\r\n\r\n03/08/2026 James Stothard: SHI have been chasing the end user but are yet to have any communication from them \r\n\r\n02/12/26 SYSTEM - Quote Q-47370 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/12/2025 James Stothard: Charles Garber from SHI requested a quote, sending it out and requested a call \r\n\r\n01/15/26 SYSTEM - Quote Q-42910 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n01/15/2026 SYSTEM - Quote Q-42910 is Accepted. Approver Comments  -  Quote approved - David M - 01/15/2026\r\n\r\n1/14/26 Venus Laney: called Charles, Henry, NIck and CHris, all no answer. updated PQ-gate2\r\nITEM: BroadVision QuickSilver MAINTENANCE,\r\nSuccess: Standard\r\nTerm: 12months\r\nAmount: USD 25,000.00\r\n\r\n1/7/26 Venus Laney: called Charles, Henry and Nick, no answer. called CHris, connection issues so call dropped. called again, this time no answer.\r\n\r\n12/17/25 Venus Laney: called Chris, Charles, Nick and Henry, no answer.\r\n\r\n12/8/25 Venus Laney: called Charles, Nick and Henry, all no answer.\r\n\r\n12/3/25 Venus Laney: per ISR and Sales Ops, this was not cotermed to main opp. called Charles and Nick, both no answer. called Henry, left VM\r\n\r\n09/01/2025 Ana Roman: NON-HVO Opp Prep task completed. Results:\r\n\r\nSDR field updated: Confirmed.\r\nDocuments - Checked. \r\nProduct Family - BroadVision.\r\nPartner - Y. \r\nAuto-renewal - N. \r\nNetsuite - IDs validated. \r\nARR & TCV - validated.\r\nParent Opp - Checked. \r\nCo-term - Y. Can be C/T with the below MAIN opp: \r\n - https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006Ih000003ifAGIAY/view\r\nContacts and Addresses - Updated. \r\nCreate Quotes - PQ ready, Q-42910 1yr, STD success, 25% uplift.\r\nContracts/Legal - Contract is on standard ESW terms.\r\n\r\n05/15/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"SHI INTERNATIONAL CORP (BVSN)(Lock 2 04-2025 Renew 1\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004erShIAI"
+    },
+    "Id": "006Ih000004erShIAI",
+    "Name": "IO Integration - Imtech Graphics - NorthPlains - Renewal - 1681963 - 4_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/005Ih0000013hKUIAY"
+      },
+      "Name": "Fredrik Scheike",
+      "Email": "fredrik.scheike@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Likely to Churn",
+    "ARR__c": 19125,
+    "Current_ARR__c": 15300,
+    "ARR_Increase__c": 25,
+    "Offer_ARR__c": 19125,
+    "Renewal_Date__c": "2026-04-26",
+    "CloseDate": "2026-03-27",
+    "CreatedDate": "2025-04-28T01:31:04.000+0000",
+    "LastActivityDate": "2026-04-13",
+    "LastModifiedDate": "2026-04-14T14:33:43.000+0000",
+    "Next_Follow_Up_Date__c": "2026-04-13",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Standard",
+    "CurrentContractHasAutoRenewalClause__c": "No",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "NorthPlains",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/0012x00000cGRNFAA4"
+      },
+      "Name": "Imtech Graphics"
+    },
+    "Churn_Risks__c": "Lack of ROI;Unresponsive;Loss of use case",
+    "High_Value_Opp__c": false,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "04-07-2026 Fredrik Scheike: Reseller's completely unresponsive  Chasing intent.",
+    "Description": "04-14-2026 Fredrik Scheike: Called Cam for PO, no answer.\r\n04-13-2026 Fredrik Scheike: Emailed for update.\r\n04-07-2026 Fredrik Scheike: Called, no answer. Left VM. \r\n03-31-2026 Fredrik Scheike: Emailed for update as they are being unresponsive. No known intent yet. Pushed for PO or decision by EoW next week.\r\n03-23-2026 Fredrik Scheike: Called Cam and Karmen. Both, no answer.\r\n\r\n03-17-2026 Fredrik Scheike: Wrote for update. Complete with commitment date.\r\n03-16-2026 Fredrik Scheike: Called Cameron, no answer.\r\n03-11-2026 Fredrik Scheike: Emailed again. Cam OOO.\r\n03-05-2026 Fredrik Scheike: Emailed for update.\r\n\r\n02/13/26 SYSTEM - Self Serve Activity and Self Serve User are updated\r\n\r\n02-09-2026 Fredrik Scheike: Called Cam and Karmen, no answer.\r\n\r\n02-03-2026 Fredrik Scheike: Have a chat with Karmen in regards to Imtech April, which should also be in line with Cam's latest update, it was pretty much hijacked by Cam when she was away. \r\n\r\n02-02-2026 Fredrik Scheike: Called Karmen, no answer.\r\n01-27-2026 Fredrik Scheike: Called Cameron, no answer.\r\n01-21-2026 Fredrik Scheike: Called, no answer.\r\n01-20-2026 Fredrik Scheike: Wrote Cam & Seth for update. Cam replies saying that the April Imtech-renewal is most likely not happening. Informed of cancellation process.\r\n01-19-2026 Fredrik Scheike: Called Cameron to follow up, no answer.\r\n01-14-2026 Fredrik Scheike: Spoke to Cameron and Seth who confirms that Imtech is most probably dropping the licenses due for renewal in April. He will get a 100% confirmation EoW, so will hold off on sending XL-note until then.\r\n\r\n01/09/26 SYSTEM - Quote Q-44244 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n01/09/2026 SYSTEM - Quote Q-44244 is Accepted. Approver Comments  -  1-year quote approved - David M 01/09/2026\r\n\r\n01/09/26 SYSTEM - Quote Q-46796 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n01/09/2026 SYSTEM - Quote Q-46796 is Accepted. Approver Comments  -  3-year quote approved - David M 01/09/2026\r\n\r\n01/09/2026 SYSTEM - Quote Q-46797 is Rejected. Approver Comments  -  Quote created in error - David M 01/09/2026\r\n\r\n01-08-2026 Fredrik Scheike: Cameron and Karmen reached for out quote \"ASAP\" as the EU agreed to a call - they cannot generate the quotes through the SSP. Sending both for approval:\r\n\r\nQ-44244\r\n1 Year Standard:\r\nQuantity: 24\r\nARR / Total: 19,125.00\r\n\r\nQ-46797\r\n3 Year Standard\r\nQuantity: 24\r\nARR: 19,125.00\r\nTotal: 57,375.00\r\n\r\nHave asked VP to reject Q-46796 due to a faulty calculation.\r\n\r\n12-23-2025 Fredrik Scheike: Called and spoke to Karmen regarding the upcoming renewal for Imtech Graphics. She tells me that based on previous conversations they are most likely to renew as they rely on everything being on-prem. She will pick it up after the Holidays.\r\n\r\n12-18-2025 Fredrik Scheike: Called Karmen, no answer.\r\n\r\n11/4/25 Venus Laney: called Mainline, spoke with Bill, he said they are rewiring their phone line hence connection was routed to him. Aaron is not available but would still be the main POC. he asked to add Mike as an alternate to all IO opps as well as him. new opps updated to reflect same, - Phototype Texas, ReSources IT-Saatchi & Saatchi Los Angeles, Phototype and Imtech Graphics.\r\n\r\n11/4/25 Venus Laney: NON HVO opp prep:\r\n\r\nSDR field updated: Confirmed.\r\nDocuments - Checked.\r\nProduct Family - Xinet\r\nNNR Required? N\r\nPartner - Y\r\nAuto-renewal - N\r\nNetsuite - IDs validated.\r\nARR & TCV - validated.\r\nParent Opp - Checked.\r\nCo-term - N\r\nContacts and Addresses - Updated.\r\nCreate Quotes - PQ Ready\r\n\r\n04/28/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"IO Integration(Imtech Graphics) 04-2025 Renew Renew 1\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004fFvGIAU"
+    },
+    "Id": "006Ih000004fFvGIAU",
+    "Name": "ConnectWise - Influitive - Renewal - 1696311 - 4_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/0052x000003qiyMAAQ"
+      },
+      "Name": "James Quigley",
+      "Email": "james.quigley@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Likely to Win",
+    "ARR__c": 43976.52,
+    "Current_ARR__c": 35181.25,
+    "ARR_Increase__c": 25,
+    "Offer_ARR__c": 43976.52,
+    "Renewal_Date__c": "2026-04-30",
+    "CloseDate": "2026-03-31",
+    "CreatedDate": "2025-05-14T01:30:52.000+0000",
+    "LastActivityDate": "2026-03-31",
+    "LastModifiedDate": "2026-04-11T17:00:05.000+0000",
+    "Next_Follow_Up_Date__c": "2026-03-30",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Standard",
+    "CurrentContractHasAutoRenewalClause__c": "Yes",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Influitive",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/0012x00000n5rlTAAQ"
+      },
+      "Name": "ConnectWise"
+    },
+    "Churn_Risks__c": "Lack of ROI;Unresponsive",
+    "High_Value_Opp__c": false,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "03/30/2026 James Quigley: Chasing up SQ - client pushing back on price",
+    "Description": "03/30/2026 James Quigley: Chasing up SQ - client pushing back on price\r\n\r\n03/26/2026 James Quigley: Chasing up SQ\r\n\r\n03/11/2026 James Quigley: Chasing up SQ\r\n\r\n03/04/2026 James Quigley: chasing up SQ\r\n\r\n02/28/26 SYSTEM - Quote Q-47680 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/28/2026 SYSTEM - Quote Q-47680 is Accepted. Approver Comments  -  Quote approved\r\n\r\n02/17/26 James Quigley: Chasing up SQ\r\n\r\n02/12/26 SYSTEM - Quote Q-47358 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/12/2026 SYSTEM - Quote Q-47358 is Accepted. Approver Comments  -  Quote approved - David M 02/12/2026\r\n\r\n02/11/2026 James Quigley: requested 1 year quote:\r\n\r\nQuote#: Q-47358\r\nItem: Influitive AdvocateHub Standard Edition\r\nQty: 6,000\r\nSuccess level: Standard\r\nTerm: 12\r\nARR: $43,976.56\r\n\r\n2/5/2026 System - A physical copy of the AR warning letter dispatched to the customer billing address. \r\n\r\n02/03/25 Mihai Medesan: Procurement Manager replied to an email saying \"We do intend to move forward with the renewal, but I am currently confirming with FP&A and the business stakeholders to determine whether there are any changes needed to the subscription before we finalize. Once I receive their input, I will advise on next steps and confirm the final renewal details.\"\r\n\r\n02/02/26 Mihai Medesan: called Jessica; no answer; FU email sent. Jessica replied saying they'll renew and are waiting to hear back from procurement soon.\r\n\r\n01/30/26 SYSTEM - Quote Q-44378 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n01/30/2026 SYSTEM - Quote Q-44378 is Accepted. Approver Comments  -  Auto-renewal quote approved - David M 01/30/2026\r\n\r\n1/30/2026 Ana Roman: Fixed AR quote error posted on chatter.\r\n\r\n01/30/2026 SYSTEM - Quote Q-44378 is Accepted. Approver Comments  -  Auto-renewal quote approved - David M 01/30/2026\r\n\r\n01/27/26 Mihai Medesan: called Jessica; no answer\r\n\r\n01/23/26 Mihai Medesan: called Jessica; no answer\r\n\r\n1/15/2026 System - A physical copy of the AR warning letter dispatched to the customer billing address. \r\n\r\n01/09/26 SYSTEM - Quote Q-46791 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n01/09/2026 SYSTEM - Quote Q-46791 is Accepted. Approver Comments  -  Quote approved - David M 01/09/2026\r\n\r\n01/08/26 Mihai Medesan: RC today: We reviewed the current user count, with Jessica noting a goal of increasing from 200 to 750 advocates, while Mihai confirmed the user limit of 6,000 under their platinum success plan.\r\n\r\nJessica expressed a preference for a one-year renewal due to budget constraints, although she acknowledged the potential benefits of longer-term contracts. Mihai provided pricing details, indicating that the total for the one-year contract would be approximately $43,976, with the same pricing applicable for a three-year option.\r\n\r\nWe agreed to reconnect in about a month, with Mihai committing to send a quote the following day and suggesting a follow-up call. Jessica preferred email communication for further discussions.\r\n\r\nSending Q-46791\r\nItem: Influitive AdvocateHub Standard Edition\r\nQty: 6,000\r\nSuccess level: Standard\r\nTerm: 12\r\nARR: $43,976.56\r\n\r\n01/06/26 Mihai Medesan: called Jessica; no answer; email sent\r\n\r\n01/02/26 Mihai Medesan: called Jessica; no answer\r\n\r\n12/30/25 Mihai Medesan: called Jessica; no answer\r\n\r\n12/24/25 Venus Laney: called Damian, Jessica and Nicholas, all no answer,\r\n\r\n12/23/25 Mihai Medesan: called Jessica, left VM\r\n\r\n12/18/25 Mihai Medesan: called Jessica; no answer\r\n\r\n12/16/25 Mihai Medesan: called Jessica; no answer\r\n\r\n12/11/25 Venus Laney: called Nicholas, Jessica, Damian and Aaron, all no answer. BU recent engagement dictates renewal POC is Jessica and Nicholas. updated SF to reflect same.\r\n\r\n11/18/25 Venus Laney: called Nicholas, Jessica and new alternate, Aaron, all no answer.\r\n\r\n11/7/25 Venus Laney: called Nicholas, Jessica and Damian, no answer.\r\n\r\n11/7/25 Venus Laney: NON-HVO Opp Prep task completed. Results:\r\n\r\nSDR field updated: Confirmed.\r\nDocuments - Checked.\r\nProduct Family - Influitive.\r\nNNR Required? No\r\nPartner - N.\r\nAuto-renewal - Yes, 60days\r\nNetsuite - IDs validated.\r\nARR & TCV - validated.\r\nParent Opp - Checked.\r\nCo-term - N.\r\nContacts and Addresses - Updated.\r\nCreate Quotes - PQ and AR ready.\r\nContracts/Legal - Contract is on standard ESW terms.\r\nSubsidiary does not need to change.\r\n\r\n05/14/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"ConnectWise 04-2025 Renew 1\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000003iO98IAE"
+    },
+    "Id": "006Ih000003iO98IAE",
+    "Name": "Liberty Global Services B.V. (NL) - Cloudsense - 1801104 - Renewal - 5_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/0052x000003XpHxAAK"
+      },
+      "Name": "Tim Courtenay",
+      "Email": "tim.courtenay@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Undetermined",
+    "ARR__c": 38046.72,
+    "Current_ARR__c": 28182.73,
+    "ARR_Increase__c": 35,
+    "Offer_ARR__c": 38046.72,
+    "Renewal_Date__c": "2026-05-01",
+    "CloseDate": "2026-04-01",
+    "CreatedDate": "2024-11-26T16:37:17.000+0000",
+    "LastActivityDate": "2026-04-14",
+    "LastModifiedDate": "2026-04-14T07:16:19.000+0000",
+    "Next_Follow_Up_Date__c": "2026-04-15",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Gold",
+    "Current_Success_Level__c": "Legacy",
+    "CurrentContractHasAutoRenewalClause__c": "No",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Cloudsense",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/001Ih0000052a1MIAQ"
+      },
+      "Name": "Liberty Global Services B.V. (NL)"
+    },
+    "Churn_Risks__c": "Pricing rigidity;Poor account management;Contract terms and conditions;No longer using product",
+    "High_Value_Opp__c": true,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "Follow up on quote and contract process requirements with Gia. 04/13/2026 Tim Courtenay",
+    "Description": "04/14/2026 Tim Courtenay: Sent Gia the renewal quote (Word format) referencing the existing 2014 MSA, following legal's approval. With 13 working days to renewal, requested Gia to: (1) confirm Bill To/Ship To details, (2) provide signatory name and email, (3) confirm the AdobeSign e-signing process works for them, including PO requirements, and (4) advise on any outstanding vendor registration. Proposed a call today or tomorrow to align on a closing plan.\r\n\r\n04/13/2026 Tim Courtenay:  Legal still haven't got the quote Special Terms right. Update the Case 00028671 (whic is linked to the Virgin Media CloudSense opp) with details and requested follow through.\r\n\r\n04/12/2026 Tim Courtenay:  Legal provided a quote but it did not reference the MSA. Requested that to be fixed, and the quote expiry date to be changed to 01-May-2026.\r\n\r\n04/08/2026 Tim Courtenay: Emailed Gia to advise that legal is working on a renewal quote referencing the existing MSA, and that it should be available within the next day. Apologized for the slow, incremental updates.\r\n\r\n04/08/2026 Tim Courtenay:  Quote has been generated and sent to me. Converted to Word, added to the legal case.\r\n\r\n04/08/26 SYSTEM - Quote Q-48269 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n04/08/2026 SYSTEM - Quote Q-48269 is Accepted. Approver Comments  -  Quote approved - David M 04/08/2026\r\n\r\n4/7/2026 Ana Roman: Generated Q-48269 as 'send to opp owner' to send to legal for the same redlines applied to Virgin Media.\r\nGenerated Q-48269\r\nProduct: CloudSense Platform, STANDARD EDITION, GOLD SUCCESS\r\nEntitlements: 1 \r\nSuccess: Gold (35% uplift)\r\nTerm: 12 months\r\nARR/TCV: EUR 38,046.69\r\n\r\n04/06/2026 Tim Courtenay:  Sent a brief update to Gia - legal is reviewing the use of the MSA for Liberty. Said I would keep her posted.\r\n\r\n04/02/2026 Tim Courtenay: Responded to Gia's chase for a contract update. Advised that legal has just completed a similar MSA-referencing renewal for another group company and is now being asked to apply that same approach for Liberty Global. Expect to have an update for Gia tomorrow.\r\n\r\nReopened the legal case to pursue this.\r\n\r\n3/30/2026 Ana Roman: Attaching completed questionnaire and SOC2 type 2 report shared by the support team.\r\n\r\n03/30/2026 Tim Courtenay: I updated Gia that our legal team is revisiting whether the previous MSA can be referenced with simple changes or overrides in the renewal quote, with clarity expected Wednesday or Thursday. On the grace period request, I deferred that conversation until the contract path is confirmed.\r\n\r\n3/26/2026 Ana Roman: Raised support ticket for completion of SPSR questionnaire, set as urgent priority being that close date is less than 1 week away: https://supportportal.cloudsense.com/conversation/view/60334861.\r\n\r\n03/26/2026 Tim Courtenay: Acknowledged receipt of a second procurement questionnaire from Luciano (Liberty Global), sent as part of their internal process for the CloudSense renewal. Confirmed it will be forwarded to our compliance team for completion. Advised that it is much more extensive and therefore will take several days to complete.\r\n\r\nRequested Sales Ops to open a new VR ticket to complete the SPSR questionnaire.\r\n\r\n03/25/2026 Tim Courtenay: Submitted the completed procurement questionnaire to Luciano (Liberty Global Partner Services), resolving prior clarifications on response format and drop-down options for questions 3.1–3.3.\r\n\r\n03/25/2026 Tim Courtenay: Replied to Anca confirming receipt of her final review sign-off on the Liberty Global Services data privacy/compliance questionnaire (CloudSense renewal). Questionnaire is cleared to send to the customer.\r\n\r\n03/24/2026 Tim Courtenay: Responded to Gia's pushback on T&C position. Confirmed we cannot accept Liberty Global's contract template as it is less favourable than the 2014 MSA. Advised will discuss internally and revert. Also confirmed that while the OneTrust link was not received, Lucian Fon's security assessment form is being progressed and should be ready to return in 1-2 days.\r\n\r\n03/24/2026 Tim Courtenay: Luciano had clarified that free-text answers are acceptable for those questions and provided a sample response on personal data fields. Next step is to complete and return the questionnaire.\r\n\r\n03/23/2026 Tim Courtenay: Followed up with Luciano (Liberty Global Procurement) on the vendor questionnaire required for the CloudSense renewal. Flagged that questions 3.1–3.3 lack accessible drop-down options and requested the full list before completing and returning the sheet.\r\n\r\n03/23/2026 Tim Courtenay: Emailed Anca (cc Ana) asking if she can review a data privacy compliance questionnaire for the Liberty Global Services CloudSense renewal without going through a formal support ticket. Four specific questions need review: 1.4, 1.5, 3.1, and 3.2.\r\n\r\n03/23/2026 Tim Courtenay: I informed Gia that our legal team completed their review of the 2014 MSA and concluded it is not viable for renewal — multiple clauses are problematic and key SaaS terms are absent. I noted the added complexity of the Liberty Global vs. Virgin Media context, and that resolving these issues via special terms exceeds our legal change approval threshold at this contract value. The renewal must therefore proceed on Skyvera's standard T&Cs. I asked Gia to schedule a call this week to keep us on track for the April 1 target.\r\n\r\n03/23/2026 Tim Courtenay:  Determined that we need compliance to review the questionnaire. Will request directly.\r\n\r\n3/20/2026 Ana Roman: Used existing CloudSense/Skyvera documentation to obtain answers for questionnaire using NotebookLM, sharing with opp owner for review/feedback: https://docs.google.com/spreadsheets/d/1z0e548lnQAzqcxGpnNpfrpNN4dVbtgfHz_IsVnFH02k/edit?usp=sharing.\r\n\r\n03/20/2026 Tim Courtenay: I advised Gia that legal feedback is not yet available but is a priority, and committed to update her as soon as possible.\r\n\r\n03/20/2026 Tim Courtenay: Liberty Global's Procurement (Luciano) requested completion of a vendor questionnaire (yellow-highlighted fields) needed for the CloudSense renewal, prompted by the Skyvera acquisition. I clarified whether to complete both Response and Justification columns, and queried Q1.8. Luciano confirmed to complete both columns and to disregard Q1.8. I committed to respond early next week.\r\n\r\nRequested sales ops to complete as much as possible then ping me.\r\n\r\n03/18/2026 Tim Courtenay:  Gia requested feedback by 3/20, I said I would push for that. Updated the Case to get the MSA review done. Pointed out that even though this is a low-value opp, we should treat it as HVO as Liberty and Virgin Media reference the same MSA and both require review.\r\n\r\n03/17/2026 Tim Courtenay: Gia confirmed Liberty Global will proceed with a 1-year renewal. I replied that legal is reviewing the existing 2014 MSA for feasibility; extent of any required amendments is pending. Pushing for early feedback.\r\n\r\n03/13/2026 Tim Courtenay: Gia (Liberty Global) followed up post our meeting last week asking if the existing agreement can be used for renewal. I confirmed our legal team is reviewing feasibility of using the existing 2014 MSA, with a response expected early next week. Gia also requested a 1-year renewal quote. I resent the quote (via AdobeSign/Carlos Encalada) with three caveats: (1) entity name still shows Liberty Global Services pending correction to Liberty Global Technology Services; (2) current group T&Cs apply, subject to change pending MSA feasibility outcome; (3) version support policy precondition added to quote footer.\r\n\r\n03/13/26 SYSTEM - Quote Q-47863 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n03/13/2026 Tim Courtenay: Following a call last week, Gia (Liberty Global Procurement) asked if the existing agreement (2014 MSA) can be used for the renewal. I replied that our legal team is reviewing this and expect to revert early next week.\r\n\r\n03/10/2026 Tim Courtenay:  Check-in call with Gia Baik (Procurement Manager, Liberty Global) regarding the upcoming CloudSense renewal. Discussion focused on the unexpected termination notice, explanation of the CloudSense acquisition by Skyvera, pricing increase policy following acquisition, and contractual options. Customer raised concerns about a proposed ~30–40% price increase and stated it would be difficult to justify internally. Both parties discussed the possibility of continuing under the existing 2014 framework agreement to avoid extensive legal negotiations. Customer also noted that alternatives to CloudSense are being evaluated internally. Customer requested additional pricing options and written justification for the increase.\r\nActions:\r\nTim to provide 1-year renewal quotation by Thu 03/12\r\nTim to provide multi-year quotation\r\nTim to provide written explanation of price increase and value changes\r\nTim to confirm whether existing 2014 agreement can remain in place\r\nTim to update quotation with correct legal entity\r\n\r\nGia to send official entity documentation..\r\n\r\n03/09/2026 Tim Courtenay: Gia (Procurement) pushed back on our proposed contract terms and pricing. She asked us to use Liberty Global's T&Cs instead, citing a multi-month negotiation timeline risk on our terms, and flagged the 35% price increase as unbusinessable. She also requested a 1-year quote. I responded acknowledging the time pressure (renewal May 1st, ~5-6 weeks remaining), outlined key concerns with Liberty Global's T&Cs (payment terms, liability cap, IP ownership, termination for convenience, perpetual license, unilateral amendment rights), and recommended we use our standard SaaS terms as the faster path. I addressed pricing by presenting the three Success/CSP plan tiers (Standard 25%, Gold 35%, Platinum 45%) and noting Gold is their current plan. I requested confirmation of the contracting legal entity and proposed a call via Calendly to advance discussions.\r\n\r\n03/02/2026 Tim Courtenay:  Gia responded asking to withdraw the signature request — they have an internal process before signing any legal document, and she will revert after internal discussion. I explained AdobeSign is the only delivery method but the PDF can be downloaded from within it. I asked whether they plan to use a portal/RFP process for the renewal.\r\n\r\n03/03/26 SYSTEM - Quote Q-47744 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n03/03/26 SYSTEM - Quote Q-47743 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n03/03/2026 Tim Courtenay: Re-engaged Liberty Global on the CloudSense renewal (contract date May 1, 2026; target close April 1). Original contact Dragan Zivkovic had moved on — escalated to Luuk Lummen and Gia Baik. Flagged that a Notice of Non-Renewal (NNR) was issued by hardcopy as a contractual step to move to new terms, not to terminate. Re-sent 1yr and 3yr renewal quotes (originally sent to Dragan) via AdobeSign/Carlos Encalada; requested confirmation of receipt from Gia. Requested a call to align on renewal process and timeline.\r\nSet Gia Baik as the PC.\r\n\r\n02/06/26 SYSTEM - Quote Q-45850 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/06/26 SYSTEM - Quote Q-45557 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/06/2026 SYSTEM - Quote Q-45850 is Accepted. Approver Comments  -  Quote approved - David M 02/06/2026\r\n\r\n02/06/2026 SYSTEM - Quote Q-45557 is Accepted. Approver Comments  -  Quote approved - David M 02/06/2026\r\n\r\n02/06/2026 Tim Courtenay:  Submitting the following quotes for approval (reason: <90D to renewal):\r\nQ-45850\r\nTerm: 1 yr\r\nGold Success, uplift = 35%\r\nARR = EUR 28,182.73 * 1.35 = EUR 38,046.69\r\n\r\nQ-45557 (offered to motivate for multi-year price lock)\r\nTerm: 3 yr\r\nGold Success, uplift = 35%\r\nARR = EUR 28,182.73 * 1.35 = EUR 38,046.69\r\nAmount =  EUR 38,046.69 * 3 = EUR 114,140.07\r\n\r\nRecipient in both cases is Dragan Zivkovic (note he has not confirmed himself as PC yet)\r\nQuote footer updated to list entitlements. The following items have been listed to carry over from previous quote: ClickApprove (73 licenses), Creator(34 licenses). The item 'CPQ' is not limited to 10 users as before, it is included in the core Platform bundle. \r\n\r\n\r\n02/06/2026 Tim Courtenay:  Moved the opp into the proposal stage as we need to get quotes to the customer.\r\n\r\n02/02/2026 Tim Courtenay:  Liberty Global legal reached out for further explanation on the NNR. I replied.\r\n\r\n01/30/2026 Tim Courtenay: Forwarded the Notice of Non-Renewal filed to Dragan. Invited customer to schedule call to discuss renewal process and options.\r\n\r\n1/29/2026 Ana Roman: Legal has provided an updated NNR letter, sending to PC in alignment with opp owner. \r\n\r\n1/28/2026 Ana Roman: NNR questions remain under legal review, sent clarification on Liberty Global term end date.\r\n\r\n01/26/2026 Tim Courtenay:  Updated case to request legal to check if NNR is OK to use - it must not attempt to terminate the 2014 MSA, just the Adoption Agreement and Order Form.\r\n\r\n1/21/2026 Ana Roman: attaching signed NNR to opp, to be sent if/when opp owner approves. \r\n\r\n01/20/2026 Tim Courtenay:  Sent intro email to Dragan Zivkovic.\r\n\r\n01/19/2026 Julius Librando: Current ARR is pending update from TSI and posted in Stuck Opps (it should be EUR 28,182.73)\r\n\r\n01/19/2026 Tim Courtenay:  Requested AM to confirm if we should be in contact with Dragan Zivkovic (replaced the old BU contact, according to the comms history at the account level). Sent email to Maria to get clarity on her scope of responsibility.\r\n\r\n01/05/2026 Julius Librando: Kevin Mayhew, associated contact in another HVO opp, Virgin Media Limited (https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006Ih000003iO8jIAE/view) replied via email saying  he's no longer responsible for this area and that Maria Kljajic has taken over. He also asked why we're reaching out 6 months in advance and that they \"are not in a position to discuss our renewal requirements so far in advance of May/June 2026\". It seems related to the HVO opp for Virgin Media Limited . Checking with Tim if this should be transferred to him.\r\n\r\n12/22/2025 Ana Roman: Drafted NNR letter attached to opp files, added to tracker and created task to send NNR.\r\n\r\n12/16/2025 Ana Roman: Raised O2C RM ticket to ask about ARR in NS and pricing sections not tying out to SO amounts and to request access to contractual documents for this renewal to obtain MSA and re-run contract summary report with the required documents: https://devgraph-alp.atlassian.net/browse/O2C-83078.\r\n\r\n11/21/2025 Ana Roman: Unable to determine if contract has toxic clauses to complete contract fields, will wait for MSA discovery per below note from SDR. \r\n\r\n11/21/2025 Julius Librando: Raised RM to check if customer has MSA on record: https://devgraph-alp.atlassian.net/browse/O2C-82411\r\n\r\n11/21/2025 Julius Librando: Opp prep results -\r\nSDR field updated: Confirmed.\r\nDocuments - Checked\r\nProduct Family - Cloudsense\r\nPartner - N\r\nAuto-renewal - N\r\nNetsuite - IDs Validated\r\nARR & TCV - Raised with TSI via Stucks Opps to confirm as it's been changed twice per account history. ARR should be EUR 28,182.73\r\nParent Opp - Checked\r\nCo-term - N\r\nContacts and Addresses - Updated\r\nCreate Quotes - PQ Not ready\r\nContracts/Legal - Contract is not on standard ESW terms\r\n- If not on ESW standard terms, add the following:\r\n- Subsidiary needs to change.\r\n\r\nPermitted number of Authenticated Users: 117\r\nModules: CPQ, Creator, ClickApprove, Document Generation, Digital eSignature\r\nTerritory: The Netherlands and the countries of Customer’s Affiliates\r\nNumber of production Orgs permitted is: 1\r\nNumber of sandbox Orgs permitted is: 5 (provided connected to production Ord)\r\nAuthorised Users:\r\n10 CPQ Licences\r\n34 Creator Licences\r\n73 Click Approve Licences\r\n\r\n11/20/2025 Tim Courtenay: Assigned back to sales Integration.\r\n \r\n11/19/2025 SYSTEM - Could not find the parent opportunity record based on the Parent Subscription ID or the Parent Subscription ID is null.\r\n\r\n11/26/24 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"0063g00000BwS7pAAF-CON-000559-2_2024 Renew 1\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000003iO8jIAE"
+    },
+    "Id": "006Ih000003iO8jIAE",
+    "Name": "Virgin Media Limited - Cloudsense - Renewal - 1558418 - 5_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/0052x000003XpHxAAK"
+      },
+      "Name": "Tim Courtenay",
+      "Email": "tim.courtenay@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Warning",
+    "Probable_Outcome__c": "Likely to Win",
+    "ARR__c": 623514,
+    "Current_ARR__c": 498811.21,
+    "ARR_Increase__c": 25,
+    "Offer_ARR__c": 623514,
+    "Renewal_Date__c": "2026-05-01",
+    "CloseDate": "2026-04-01",
+    "CreatedDate": "2024-11-26T16:36:58.000+0000",
+    "LastActivityDate": "2026-04-10",
+    "LastModifiedDate": "2026-04-14T00:03:33.000+0000",
+    "Next_Follow_Up_Date__c": "2026-04-14",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Legacy",
+    "CurrentContractHasAutoRenewalClause__c": "No",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Cloudsense",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/001Ih0000052a12IAA"
+      },
+      "Name": "Virgin Media Limited"
+    },
+    "Churn_Risks__c": "Contract terms and conditions",
+    "High_Value_Opp__c": true,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "I requested a follow-up meeting 4/14. 04/10/2026 Tim Courtenay",
+    "Description": "04/10/2026 Tim Courtenay: Sent Emil and Missie a draft Word quote referencing the existing MSA, with required commercial terms captured in a 'Special Terms' section. Requested they review and book a call within the next few business days.\r\n\r\n04/02/2026 Tim Courtenay: Sent Emil and Missie a draft Word quote referencing the existing MSA, with required amendments captured in the Special Terms section. Requested a review meeting within the next few business days. Received auto-responses - all of them are back from leave 4/9.\r\n\r\n04/01/2026 Tim Courtenay:  Legal has created a quote with overrides. Requesting version I can share with the customer.\r\n\r\n03/30/2026 Tim Courtenay:  Quote was sent to me as requested. Created Word version, submitted to legal to edit to refer to the MSA and add overrides to problematic clauses.\r\n\r\n03/30/26 SYSTEM - Quote Q-48159 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n03/30/2026 SYSTEM - Quote Q-48159 is Accepted. Approver Comments  -  Quote sent to the opportunity owner - David M 03/30/2026\r\n\r\n03/30/2026 Tim Courtenay: Advised Emil that legal has approved use of the existing MSA, with a few amendments to be captured in Special Terms of a new quote, expected by Wednesday.\r\n\r\n03/30/2026 Tim Courtenay:  Had a call wth legal to discuss the feasibility of using the existing MSA and then including overrides in a quote. It was agreed to be a solid approach. Legal requested a new quote referencing the existing MSA (no custom MSA text required), AR clause exlcuded, governing law excluded.\r\nGenerated Q-48159 by cloning Q-44964. Marked to be sent to me, so that we can generate a Word version for legal to edit. Submitted for approval.\r\n\r\n03/30/2026 Tim Courtenay:  Booked call with legal today.\r\n\r\n03/26/2026 Tim Courtenay: Missie chased for an update on the outstanding legal review of the contract framework (2014 MSA), noting no movement since the last update and flagging a related email received. She also advised she is moving roles and has introduced Emil Manuel as her replacement. I replied confirming legal work is ongoing and that I expect to have proposed MSA amendments ready by Monday.\r\n\r\nAdded Emil as a contact.\r\n\r\n03/25/2026 Tim Courtenay:  Reqauested a meeting wiht legal to discuss and agree the way forward. They have identified a small number of recommended amendments, we can probably include those in the renewal quote, and refer to the 2014 MSA.\r\n\r\n03/23/2026 Tim Courtenay: Sent Missie a brief update advising that legal review of the contract framework is in progress today and tomorrow, with a substantive response expected on Wednesday. Invited her to flag any additional requirements in the meantime.\r\n\r\n03/18/2026 Tim Courtenay: Missie (VMO2) acknowledged the user license position and asked to be kept updated on the legal review of the 2014 Framework Agreement. I replied confirming that legal has provided initial feedback on material deviations from our standard T&Cs, and that I am awaiting further detail before responding — expected tomorrow.\r\n\r\n03/18/2026 Tim Courtenay:  Legal provide vague and unsatisfactory feedback on the feasibility of using the 2014 MSA. Requested more detail.\r\n\r\n03/18/2026 Tim Courtenay: Telefónica/VMO2 has updated their Supplier Code of Conduct and requires Skyvera to accept the new version via the GEP SMART procurement platform. Forwarded to Clarisa (cc: Nadir, Todd) for her to process.\r\n\r\n03/16/2026 Tim Courtenay:  Updated the legal ticket to get feedback on the use of the 2014 framework agreement/MSA. Note that this is the same agreement we have used for the Telefonica UK renewal, and it has also been requested by Liberty Global. Followed up with Missie on two open items: (1) Legal review of the 2014 Framework Agreement is ongoing — expect response within a few days; (2) Sought confirmation that Missie understood our position on user license count (486 is the contracted quantity; reducing it would increase per-user cost, so we don't allow reductions). Asked if anything else is needed from our side.\r\n\r\n03/10/2026 Tim Courtenay: RFP submitted on Fri 03/06. Missie responded today with two items: (1) VMO2 expects to contract on the existing 2014 Framework Agreement — flagged internally for legal/commercial review; (2) Missie queried a user count discrepancy (RFP requested 410 users, quote submitted for 486). I clarified that 486 reflects current licensed users, reducing the count would increase the per-user price, and reduced license counts are not permitted.\r\n\r\n03/09/2026 Tim Courtenay: Sent a follow-up email to the customer to confirm submission and invited VMO2 to reach out to discuss their review.\r\n\r\n03/09/2026 Tim Courtenay:  legal has sent through an updated clean version of the quote with the version support policy. Less verbose than what was included in the quote we sent on Friday, but otherwise materially the same.\r\n\r\n03/06/2026 Tim Courtenay:  submitted all required information in the RFP portal. We have proposed going with our standard terms and conditions, and not accepting any of their terms and conditions. Our quote includes the version support policy caveats and requirements.\r\n\r\n03/05/2026 Tim Courtenay:  SVP go-ahead to accept bid terms in the portal.\r\n\r\n03/04/2026 Tim Courtenay: Requested RFP extension to March 6 (granted). Raised legal blocker: our legal team will not accept VMO2's SSA and Code of Conduct as a precondition to bid participation — accepted under time pressure in the prior Telefonica UK renewal but flagged for proper resolution this time. RFP content largely prepared; ready to submit once SSA issue resolved. Followed up today asking Missie for advice on how to proceed.\r\n\r\nInternal: I added the review of the bid SSA agreement to the legal case - we need that reviewed to identify toxic terms.\r\n\r\n02/03/2026 Tim Courtenay: Two emails sent today. (1) Requested an extension of the RFP submission deadline to Friday March 6th. (2) Flagged a legal issue: our legal team advise we should not accept the SSA agreement as a precondition to RFP participation — noting the previous acceptance for the Telefonica UK renewal was under time pressure. Most of the RFP response content is already prepared. Requested a call tomorrow to discuss a path forward.\r\n\r\n02/27/2026 Tim Courtenay:  Missie advises they have opened the RFP. Notified Clarisa (Skyvera, cc Nadir & Todd) that the VirginMedia CloudSense Renewal RFP has been issued. Submission deadline is March 4 at 1:30pm UK time. Clarisa is required to accept Virgin Media's SSA and code of conduct terms, then tag me so I can take over as primary responder.\r\n\r\n02/26/2026 Tim Courtenay: I advised that a renewal quote has been issued via AdobeSign, noted that form of contract remains an open point, and asked for an update on RFP timeline. Awaiting response.\r\n\r\n02/25/26 SYSTEM - Quote Q-44964 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/25/2026 SYSTEM - Quote Q-44964 is Accepted. Approver Comments  -  Quote approved to opp owner - David M 02/25/2026\r\n\r\n02/25/2026 Tim Courtenay:  Submitting Q-44964 for approval:\r\nPurpose: this quote is unsolicited and is to provide budgetary input to the customer, as they will request formal pricing etc through an RFP process.\r\nTerm: 1 yr\r\nStandard Success, 25% uplift\r\nARR = GBP 498,811.21 * 1.25 = GBP 623,514.00\r\nRecipient: Misse McLean\r\nSend to Opportunity Owner\r\nEntitlements: As per footer text.\r\n\r\n02/24/2026 Tim Courtenay: Sales Ops to update quote with correct line items and renewal values. Then will send to customer with supporting email so they have budgetary figures. Advised customer that a quote is on the way.\r\n\r\n02/12/2026 Tim Courtenay:  Gareth confirmed he and Missie will be the renewal contacts, same as Telefonica UK. He is liaising with the user team to determine their requirement going forward. Asked. him if they will be running an RFP again and whether there is any benefit in us providing a renewal quote at this stage.\r\n\r\nAdded Missie Mclean as a contact (had to relink her to the Virgin Media Limited account).\r\n\r\n02/11/2026 Tim Courtenay:  Requested Gareth Claffey (Telefonica UK) assistance to ID the right PC.\r\n\r\n01/19/2026 Tim Courtenay:  Emailed Maria Kljajic (referred by Kevin Mayhew) to ask if she is the PC.\r\n\r\n01/11/2026 Tim Courtenay:  Sent an email to José-Luis Massignon (procurement contact for the Telefonica UK CloudSense renewal) requesting intro to the procurement person responsible for this renewal.\r\n\r\n12/14/2025 Tim Courtenay:  BU has provided the signed 'Consent to Assignment' letter, attached it to the files tab.\r\n\r\n11/24/2025 Tim Courtenay: Sent follow up 'call to action' email. Also suggested I send a renewal quote in the meantime.\r\n\r\n11/19/2025 Tim Courtenay: Sent an email to Gareth Claffey, Kevin Mayhew, cc'd Robert Lamb to advise we have not yet been contacted by procurement ('TGS'). I requested a meeting to ensure things are on track. In parallel, the BU is trying to get a senior level meeting with Robert Lamb and his executives. Changed theAccount for Gareth Claffey to Telefonica UK Limited so that he can correctly be identified and marked as thePC (he has responded to our emails).\r\n10/28/2025 Tim Courtenay:  Legal review is clean, no issues with the legacy contract.\r\n\r\n10/13/2025 Tim Courtenay:  Sent a reminder intro email to Kevin Mayhew., He cc'd Gareth Claffey, who advised the their group procurement (TGS) will reach out at the appropriate time to start renewal discussion. I asked when that is expected to be.\r\n\r\n10/10/2025 Ana Roman:  HVO Opp Prep task completed. Results:\r\n\r\nSDR field updated: Confirmed.\r\nDocuments - Checked. \r\nProduct Family - CloudSense.\r\nAre product-specific checks required? Y, found missing documents in repository.\r\nPartner - N. \r\nAuto-renewal - N. \r\nNetsuite - IDs validated. \r\nParent Opp - n/a first CloudSense renewal.\r\nCo-term - N.\r\nContacts and Addresses - Updated.\r\nCreate Quotes - PQ ready, Q-44964 3yrs, STD success (silver), 25% uplift. \r\nContracts/Legal - Contract is not on standard ESW terms.\r\n- Subsidiary needs to change.\r\n- Contract does not have AR clause: Notice of Non-Renewal is not required.\r\n- RAISE A LEGAL CASE - Legal case #: 00028671.\r\n\r\n10/02/2025 Tim Courtenay:  AM intro'd me to Kevin Mayhew, I responded and requested a meeting. Auto-reply - he is on leave until 10/13. Set follow up task for week of 10/16.\r\nRequested Sales Ops to complete the Opp Prep.\r\n\r\n10/02/2025 Julius Librando: Warm intro requested from AM\r\n\r\n11/26/24 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"0064z00002ChYViAAN-CON-000568-5_2024 Renew 1\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004ezzAIAQ"
+    },
+    "Id": "006Ih000004ezzAIAQ",
+    "Name": "Ministry for Primary Industries - DNN - Renewal - 1692593 - 5_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/005Ih0000013hKUIAY"
+      },
+      "Name": "Fredrik Scheike",
+      "Email": "fredrik.scheike@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Warning",
+    "Probable_Outcome__c": "Likely to Win",
+    "ARR__c": 51474.84,
+    "Current_ARR__c": 35499.85,
+    "ARR_Increase__c": 45,
+    "Offer_ARR__c": 51474.84,
+    "Renewal_Date__c": "2026-05-01",
+    "CloseDate": "2026-04-01",
+    "CreatedDate": "2025-05-03T01:30:59.000+0000",
+    "LastActivityDate": "2026-04-14",
+    "LastModifiedDate": "2026-04-13T09:46:54.000+0000",
+    "Next_Follow_Up_Date__c": "2026-04-13",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Platinum",
+    "Current_Success_Level__c": "Standard",
+    "CurrentContractHasAutoRenewalClause__c": "Yes",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "DNN",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/0012x00000HQKX9AAP"
+      },
+      "Name": "Ministry for Primary Industries"
+    },
+    "Churn_Risks__c": "Pricing rigidity;Contract terms and conditions;Loss of use case",
+    "High_Value_Opp__c": false,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "04-09-2026 Fredrik Scheike: Chase signature.",
+    "Description": "04-13-2026 Fredrik Scheike: Wrote to push for SQ. \r\n04-09-2026 Fredrik Scheike: Wrote for update., asking for possibility to close out this week.\r\n\r\n03/30/26 SYSTEM - Self Serve Activity is updated\r\n\r\n03-30-2026 Fredrik Scheike: Last email says it's currently sitting with CIO. Replied to ask to close this out this week.\r\n\r\n03-23-2026 Fredrik Scheike: Emailed again.\r\n\r\n03-17-2026 Fredrik Scheike: Emailed for update again.s\r\n03-12-2026 Fredrik Scheike: Emailed for update.\r\n\r\n03-09-2026 Fredrik Scheike: Relayed the information that I got on the ticket from Carlos to Benjamin.\r\n\r\n03-06-2026 Fredrik Scheike: Raised ticket here: https://central-supportdesk.kayako.com/agent/conversations/60321136\r\n03-04-2026 Fredrik Scheike: Need to clarify terms and SaaS wording.\r\n\r\n02-25-2026 Fredrik Scheike: Had an email from Benjamin where they are asking about price negotiation. Have replied. Theey also confirm that the answers given by Atlas are good enough.\r\n\r\n02-19-2026 Fredrik Scheike: Just had a follow-up with Benjamin, who also brought on Laurence - one of the technical guys within the ministry. They want to keep this subscription and cancel the subscription that has 3. However they did have questions in regards to if they were able to transfer one of the licenses to another server. I've asked Atlas and it looks like it. Create a ticket and ask just in case.\r\n\r\n02/04/26 SYSTEM - Quote Q-44399 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/04/2026 SYSTEM - Quote Q-44399 is Accepted. Approver Comments  -  Auto-renewal quote approved - David M 01/31/2026\r\n\r\n01/31/2026 SYSTEM - Quote Q-44399 is Accepted. Approver Comments  -  Auto-renewal quote approved - David M 01/31/2026\r\n\r\n01/29/26 SYSTEM - Self Serve Activity and Self Serve User are updated\r\n\r\n01/23/26 SYSTEM - Quote Q-47023 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n01/23/2026 SYSTEM - Quote Q-47023 is Accepted. Approver Comments  -  Quote approved - David M 01/23/2026\r\n\r\n01-22-2026 Fredrik Scheike: The discussion focused on the upcoming DNN renewal and necessary licensing adjustments between Fredrik Scheike and Benjamin Wilson. Benjamin indicated that due to a current project, one of their applications would no longer require DNN, leading to the cancellation of one license. Fredrik confirmed the subscription details and outlined the cancellation steps, offering to assist with the required serial number. The conversation aimed to ensure clarity on renewal terms and licensing needs.\r\n\r\nBenjamin provided insights into DNN's current role as a document repository and corporate intranet, noting its stability despite using an older version. He mentioned a recent issue with an add-in that affected search capabilities, which was resolved internally. While expressing satisfaction with DNN's functionality for their staff, he acknowledged that they have not yet fully integrated AI features, although they are piloting some AI tools. Fredrik emphasized the importance of exploring DNN's AI functionalities to enhance efficiency and content creation, suggesting that these features could be beneficial even if SEO optimization is not a priority.\r\n\r\nThe conversation also covered the renewal pricing and the potential benefits of the Platinum Success Level Package, which includes pen testing and managed upgrades. Benjamin expressed interest in the pen testing service due to limited internal resources. They discussed the self-serve portal and the differences between the basic and engage editions, with Fredrik preparing to display pricing for the Platinum services. Benjamin outlined the multi-step contract approval process involving multiple signatories, and they agreed to follow up in four weeks to ensure progress, with Fredrik committing to send a summary of their discussion and necessary quotes. Follow up scheduled on the 20th, 10:30AM NZ time.\r\n\r\nGenerating a 3 year Platinum quote and sending for approval.\r\nQ-47023\r\nEVOQ Basic\r\nSuccess: Platinum Success\r\nQty: 2 Production, 3 non-production licenses\r\nARR: USD 51,474.84\r\nTotal: USD 154,424.35\r\n\r\n01/20/2026 Julius Librando: Received email from Benjamin asking to meet on Friday. Booked RC for Friday, 23-Jan, 10:00 AM, NZ time\r\n\r\n01/20/2026 Julius Librando: Called Benjamin again, no answer\r\n\r\n01-19-2026 Fredrik Scheike: Called Benjamin, no answer.\r\n01-15-2026 Fredrik Scheike: Tried calling Benjamin. No answer, left VM.\r\n01/14/2026 Julius Librando: Laurence replied via email: \"Benjamin is the correct contact for the DNN renewals, \r\nI’m also involved (more on the technical side) but Benjamin will be the best contact for the contractual side of things\". Set Benjamin as PC on the opp. Email sent offering an RC\r\n\r\n01/14/2026 Julius Librando: Called Benjamin, Laurence and John again in the afternoon, still no answer. John's phone was picked up but no one answered then hung up. Associated another contact, Allen Craig, and called him, no go. Another email sent\r\n\r\n01/14/2026 Julius Librando: Called Benjamin 2x, no answer. Also tried John and Laurence, no answer from them either. LVM on John's number.\r\n\r\n01/07/2026 Julius Librando: Called again 2x, no answer. LVM on his phone number. Also tried Laurence, same result. Follow up email sent\r\n\r\n12/19/2025 Julius Librando: Called Benjamin and Laurence again, no answer. \r\n\r\n12/09/2025 Julius Librando: Called Benjamin and Laurence again, no answer. Also tried John, no go\r\n\r\n11/25/2025 Julius Librando: Called Benjamin and Laurence again, no answer\r\n\r\n11/20/2025 Julius Librando: Called Benjamin twice, no answer. LVM on his number again. Also tried Laurence, no answer\r\n\r\n11/17/2025 Julius Librando: Called Benjamin again, no answer\r\n\r\n11/13/2025 Julius Librando: Called again after 2hrs, still no answer.\r\n\r\n11/13/2025 Julius Librando: Called Benjamin, no answer. LVM\r\n\r\n11/12/2025 Julius Librando: Opp prep results -\r\nSDR field updated: Confirmed.\r\nDocuments - Checked\r\nProduct Family - DNN\r\nPartner - N\r\nAuto-renewal - Y\r\nNetsuite - IDs Validated\r\nARR & TCV - Validated\r\nParent Opp - Checked\r\nCo-term - This may be cotermed with this other opp: https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006Ih000004ezzPIAQ/view\r\nContacts and Addresses - Updated\r\nCreate Quotes - PQ ready. ARQ ready\r\n\r\n05/03/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"Ministry for Primary Industries 1 05-2025 Renew Renew 1\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004fFvLIAU"
+    },
+    "Id": "006Ih000004fFvLIAU",
+    "Name": "Autodesk Construction - Influitive - Renewal - 1696511 - 5_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/0052x000003qiyMAAQ"
+      },
+      "Name": "James Quigley",
+      "Email": "james.quigley@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Likely to Win",
+    "ARR__c": 143554.68,
+    "Current_ARR__c": 114843.75,
+    "ARR_Increase__c": 25,
+    "Offer_ARR__c": 143554.68,
+    "Renewal_Date__c": "2026-05-01",
+    "CloseDate": "2026-04-01",
+    "CreatedDate": "2025-05-14T01:31:07.000+0000",
+    "LastActivityDate": "2026-04-14",
+    "LastModifiedDate": "2026-04-11T17:10:51.000+0000",
+    "Next_Follow_Up_Date__c": "2026-03-31",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Standard",
+    "CurrentContractHasAutoRenewalClause__c": "Yes",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Influitive",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/0012x00000n5rYeAAI"
+      },
+      "Name": "Autodesk Inc"
+    },
+    "Churn_Risks__c": "Lack of ROI;Poor customer communication;Poor account management;Tech stack consolidation - Internal",
+    "High_Value_Opp__c": true,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "03/27/2026 James Quigley: resending quote to signatory",
+    "Description": "03/27/26 SYSTEM - Quote Q-48102 is out for signature, moving the opportunity to the Quote Follow-Up stage.\n\n03/27/2026 James Quigley: resending quote to signatory - Chris Coumbe\r\n\r\n03/12/2026 James Quigley: chasing up SQ - renewing for 1 year\r\n\r\n03/02/2026 James Quigley: chasing up SQ - renewing for 1 year\r\n\r\n02/28/26 SYSTEM - Quote Q-47679 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/28/2026 SYSTEM - Quote Q-47679 is Accepted. Approver Comments  -  Quote approved\r\n\r\n02/24/2026 James Quigley: The meeting reviewed the renewal package, focusing on the contract and an associated technical specification. Alex Eckhart reported that the technical specification has been progressed jointly with Jay and Rashti and that he has received the contract, but he needs to confirm who within his organization is authorized to sign it. James Quigley offered to revise the contract name if required and asked Alex to identify the authorized signer so the contract can be finalized; no firm deadline for that confirmation was set. The conversation otherwise covered the current status of documents and ownership questions needed to complete the renewal, with James remaining available to make administrative updates once the signer is confirmed.\r\n\r\n02/12/26 SYSTEM - Quote Q-47375 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/12/2026 SYSTEM - Quote Q-47375 is Accepted. Approver Comments  -  Quote approved - David M 02/12/2026\r\n\r\n02/12/2026 James Quigley: quote requested:\r\n\r\nQuote#: Q-47375\r\nProduct: AdvocatedHub\r\nEntitlements: 10,000\r\nSuccess: Standard\r\nTerm: 12 months\r\nARR: 143,554.69\r\n\r\nCall Summary:\r\n\r\nRenewal & Pricing Details\r\n\r\nCurrent Status: Alex intends to renew for one year \r\n\r\nMulti-Year Options: James highlighted that three- or five-year contracts allow customers to lock in prices and avoid the standard 25% annual increase policy.\r\n\r\nExpansion Inquiry: Alex inquired about the cost of adding a second instance of Influitive for a different business arm (e.g., Media vs. Construction). James will investigate.\r\n\r\nStrategic Justification (PRD)Alex is currently developing a Performance Readiness Document (PRD) to prove Influitive’s unique value to Autodesk's leadership, who are considering less expensive alternatives or building an in-house solution. To support this, James committed to requesting (from Jay Khalife:\r\n\r\nA complete technical specifications document.\r\n\r\nThe product roadmap and feature list for 2026.\r\n\r\nTechnical & Community Feedback\r\n\r\nCommunication Gap: Alex expressed concern that he hasn't received product updates or communications from Jigsaw/Aurea leadership in over six months.\r\n\r\n2/5/2026 System - A physical copy of the AR warning letter dispatched to the customer billing address. \r\n\r\n02/05/2026 James Quigley: RC booked for 02/09\r\n\r\n02/04/2026 Tim Courtenay:  Opp transferred to James Q as part of rebalancing exercise. Sent intro email to the customer, suggest they reschedule the meeting that was planned for today.\r\n\r\n02/02/26 SYSTEM - Quote Q-44411 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/02/2026 SYSTEM - Quote Q-44411 is Accepted. Approver Comments  -  Auto-renewal quote approved - David M 02/02/2026\r\n\r\n02/02/2026 SYSTEM - Quote Q-44411 is Accepted. Approver Comments  -  Auto-renewal quote approved - David M 02/02/2026\r\n\r\n02/02/2026 SYSTEM - Quote Q-44411 is Accepted. Approver Comments  -  Auto-renewal quote approved - David M 02/02/2026\r\n\r\n01/27/2026 Tim Courtenay:  Alex requested the existing contract ahead of the meeting next week. Sent it to him.\r\n\r\n1/18/2026 System - A physical copy of the AR warning letter dispatched to the customer billing address. \r\n\r\n1/12/26 Venus Laney: received a callback from Alex. he confirmed he is the main POC since he lives and breathes Influitive. other management might be involved in the process so he cannot just sign off on anything. I informed him that the intention of reaching out ahead is so we can intro the renewals manager, answer any questions so they can make an informed decision. he will be outside of the country for work starting next week and will be available to meet 1st week of feb. Booked RC 11:00am - 11:45am, Wednesday, February 4, 2026\r\n\r\n01/12/2026 Tim Courtenay:  Find alternate contacts.\r\n\r\n1/12/26 Venus Laney: found Briani and Alex direct line. called Briani, left VM. called ALex, left VM\r\n\r\n1/6/26 Venus Laney: added recent alternate- Briani. called no answer. called Alex, no answer. sent intro email.\r\n\r\n01/06/2026 Tim Courtenay: Requested SDR to contact the customer and find alternate contacts.\r\n\r\n12/17/2025 Tim Courtenay:  Checked on LinkedIn - Michaela Alexander has left Autodesk. Sent an email to the most recent contact the BU have engaged with - Alex Eckhart. Added him as a contact, removed Michaela. Removed Jessica Langston as she has also left. \r\n\r\n12/12/2025 Julius Librando: Assigning to Venus for better time coverage (PST)\r\n\r\n11/14/2025 Ana Roman: HVO Opp Prep task completed. Results:\r\n\r\nSDR field updated: Confirmed.\r\nDocuments - Checked. \r\nProduct Family - Influitive.\r\nAre product-specific checks required? N.\r\nPartner - N. \r\nAuto-renewal - Y. \r\nNetsuite - IDs validated. \r\nARR & TCV - validated.\r\nParent Opp - Checked. \r\nCo-term - N. \r\nContacts and Addresses - Updated.\r\nCreate Quotes - PQ ready by SI, Q-44408, 1 yr, Standard Success, 25% uplift. AR ready by SI, Q-44411, 25% uplift + 10% AR fee. \r\nContracts/Legal - Contract is on standard ESW terms.\r\n\r\n11/04/2025 Julius Librando: Warm intro requested from AM\r\n\r\n05/14/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"1718682757 Autodes- Influitive - Renewal - 05_2024 Renew 2\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004ezzUIAQ"
+    },
+    "Id": "006Ih000004ezzUIAQ",
+    "Name": "Carleton University - Lyris (AEM) - Renewal - 1675152 - 5_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/0052x000003qiyMAAQ"
+      },
+      "Name": "James Quigley",
+      "Email": "james.quigley@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Likely to Win",
+    "ARR__c": 26156.28,
+    "Current_ARR__c": 20925,
+    "ARR_Increase__c": 25,
+    "Offer_ARR__c": 26156.28,
+    "Renewal_Date__c": "2026-05-01",
+    "CloseDate": "2026-04-01",
+    "CreatedDate": "2025-05-03T01:31:10.000+0000",
+    "LastActivityDate": "2026-04-08",
+    "LastModifiedDate": "2026-04-11T18:01:53.000+0000",
+    "Next_Follow_Up_Date__c": "2026-04-08",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Standard",
+    "CurrentContractHasAutoRenewalClause__c": "Yes",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Lyris (AEM)",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/0012x00000hOdi5AAC"
+      },
+      "Name": "Carleton University"
+    },
+    "Churn_Risks__c": "Lack of innovation;Loss of use case",
+    "High_Value_Opp__c": false,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": "Self-Serve",
+    "Type": "Renewal",
+    "NextStep": "04/01/2026 James Quigley: procurement looking for info on liabilities - raised VR",
+    "Description": "4/2/26 Venus Laney: PO received and uploaded. still missing SQ.\r\n\r\n4/1/2026 Ana Roman: VR ticket raised: https://central-supportdesk.kayako.com/agent/conversations/60338847\r\n\r\n04/01/2026 James Quigley: procurement looking for info on liabilities - raised VR\r\n\r\n\r\n03/26/2026 James Quigley: chasing up SQ\r\n\r\n03/12/2026 James Quigley: chasing up SQ - with client procurement\r\n\r\n03/02/2026 James Quigley: chasing up SQ - with client procurement\r\n\r\n02/28/26 SYSTEM - Quote Q-47698 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/28/2026 SYSTEM - Quote Q-47698 is Accepted. Approver Comments  -  Quote approved\r\n\r\n02/28/2026 SYSTEM - Quote Q-47694 is Rejected. Approver Comments  -  Quote created with zero values. David M 02/28/2026\r\n\r\n02/28/2026 SYSTEM - Quote Q-47693 is Rejected. Approver Comments  -  Quote created with zero values. David M 02/28/2026\r\n\r\n02/28/2026 SYSTEM - Quote Q-47692 is Rejected. Approver Comments  -  Quote created with zero values. David M 02/28/2026\r\n\r\n02/24/2026 James Quigley: chasing up SQ\r\n\r\n02/17/2026 James Quigley: Submitted form to client\r\n\r\n2/16/2026 Ana Roman: Attaching updated form completed by support.\r\n\r\n2/12/2026 Ana Roman: Submitted VR ticket, https://central-supportdesk.kayako.com/agent/conversations/60305466\r\n\r\n02/12/2026 James Quigley: chasing up SQ - passed VR request to SalesOps\r\n\r\n02/04/26 SYSTEM - Quote Q-47249 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/04/2026 SYSTEM - Quote Q-47249 is Accepted. Approver Comments  -  SSP Quote approved - David M 02/04/2026\r\n\r\n02/04/26 SYSTEM - Self Serve Activity is updated\r\n\r\n02/04/26 SYSTEM - Quote Q-44407 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/04/2026 SYSTEM - Quote Q-44407 is Accepted. Approver Comments  -  Auto-renewal quote approved - David M 01/31/2026\r\n\r\n02/04/26 SYSTEM - Self Serve Activity and Self Serve User are updated\r\n\r\n02/02/26 SYSTEM - Quote Q-47193 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/02/2026 SYSTEM - Quote Q-47193 is Accepted. Approver Comments  -  Quote approved - David M 02/02/2026\r\n\r\n02/02/2026 Julius Librando: Sending PQ for approval since opp's within 90D:\r\nItem: List Manager\r\nQty: 1\r\nAmount: USD 26,156.25\r\nSupport: Standard\r\nTerm: 12 months\r\n\r\n01/31/2026 SYSTEM - Quote Q-44407 is Accepted. Approver Comments  -  Auto-renewal quote approved - David M 01/31/2026\r\n\r\n01/28/26 Mihai Medesan: Mark emailed me confirming that they will renew; Called him back, but no answer. Replied and asked what term they prefer.\r\n\r\n01/21/26 Mihai Medesan: Mark emailed me and said he has no update yet, as the relevant people are off sick.\r\n\r\n01/16/26 Mihai Medesan: Called Mark, no decision yet. He will contact his tech colleagues and see if their interested in a demo for the new List Manager version next month.\r\n\r\n01/15/26 Mihai Medesan: Called Mark for updates, no answer.\r\n\r\n01/07/26 Mihai Medesan: RC Today. Dan Benoit questioned the necessity of continuing with Lyris, suggesting that the university explore alternatives like ARIA, especially since many users have moved away from Lyris due to its outdated interface. He emphasized the need for a listserv product and proposed consulting with the Sprott School of Business about their use of Lyris. The renewal cost for the current plan was noted as $26,156.28, reflecting a price increase. The team agreed to review the Lyris product and consider alternatives before the cancellation deadline at the end of February, with Mihai committing to follow up on the availability of a cloud version and other potential solutions by the end of the week.\r\n\r\n01/06/26 Mihai Medesan: Called Mark, no answer.\r\n\r\n01/05/26 Mihai Medesan: Called Mark, no answer. Email sent\r\n\r\n12/18/2025 Julius Librando: Spoke with Steve who confirmed he's the PC but only until today since he's actually retiring and the one taking over from him would be Mark J Brown. He told me to email him so he could forward to Mark. Email sent to get Mark's email and to request an RC\r\n\r\n12/15/2025 Julius Librando: Called Steve, no answer. LVM\r\n\r\n11/14/2025 Julius Librando: Opp prep results -\r\nSDR field updated: Confirmed.\r\nDocuments - Checked\r\nProduct Family - List Manager\r\nPartner - N\r\nAuto-renewal - Y\r\nNetsuite - IDs Validated\r\nARR & TCV - Validated\r\nParent Opp - Checked\r\nCo-term - N\r\nContacts and Addresses - Updated\r\nCreate Quotes - PQ ready. ARQ ready\r\n\r\n11/4/2025 Tim Courtenay: AM warm intro done. Sent follow-on intro email to Steve Sweeney and requested a meeting. Sales Ops to complete the HVO Opp prep.\r\n \r\n11/04/2025 Julius Librando: Warm intro requested from AM\r\n\r\n05/03/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"Carleton University - Lyris (AEM) - Ren - 05/2023 Renew 3\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000003iO6JIAU"
+    },
+    "Id": "006Ih000003iO6JIAU",
+    "Name": "1_A1 Telekom Austria AG. - Cloudsense - Renewal - 1558386 - 5_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/0052x000003XpHxAAK"
+      },
+      "Name": "Tim Courtenay",
+      "Email": "tim.courtenay@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Likely to Churn",
+    "ARR__c": 586518.48,
+    "Current_ARR__c": 450033.53,
+    "ARR_Increase__c": 30.33,
+    "Offer_ARR__c": 586518.48,
+    "Renewal_Date__c": "2026-05-01",
+    "CloseDate": "2026-04-01",
+    "CreatedDate": "2024-11-26T16:34:52.000+0000",
+    "LastActivityDate": "2026-04-02",
+    "LastModifiedDate": "2026-04-14T00:03:32.000+0000",
+    "Next_Follow_Up_Date__c": "2026-04-14",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Legacy",
+    "CurrentContractHasAutoRenewalClause__c": "No",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Cloudsense",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/001Ih0000052ZzBIAU"
+      },
+      "Name": "A1 Telekom Austria AG."
+    },
+    "Churn_Risks__c": "Lack of innovation;Lack of ROI;Pricing rigidity;Tech stack consolidation - Internal",
+    "High_Value_Opp__c": true,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "Touch base w/c 4/13. 04/05/2026 Tim Courtenay",
+    "Description": "04/05/2026 Tim Courtenay: Sent Hans-Jürgen (cc Thomas, Ferdinand) a commercial summary of each party's contractual obligations and rights at contract expiry under the CloudSense Platform Agreement (signed 21-Apr-2023), covering system access, data, backups, audit rights, usage records, software copies, and outstanding payments. Noted this is not a legal opinion.\r\n\r\n04/02/2026 Follow up call with Hans-Jurgen, Thomas and Ferdinand. The discussion focused on the April 30 renewal deadline and the implications of non-renewal. A1 is facing extreme cost pressure and internal delays due to management restructuring. Tim clarified that decommissioning and loss of system access will occur on May 1 if the agreement is not signed. A1 is currently evaluating whether to continue using the system as a reference for their transformation or to churn.\r\nActions:\r\n- Tim Courtenay: Confirm specific data retention policy in the A1 contract.\r\n- Hans-Jurgen: Finalize internal decision-making process with senior directors.\r\n- Both: Follow-up meeting scheduled for the week of April 14th.\r\n\r\n04/01/2026 Tim Courtenay: Replied to Hans-Jürgen's proposed meeting slots (tomorrow 12:00–12:30, 15:30–16:00; Friday 10:30–11:00) confirming tomorrow 12:00–12:30 works and asking him to send the meeting invite.\r\n\r\n04/01/2026 Tim Courtenay: Sent a follow-up to Hans-Jürgen and Thomas at A1 Telekom Austria ahead of the 1 May renewal deadline (4 weeks out). Recapped the co-terming offer from post-9 March call — combining CloudSense platform and Orchestrator Accelerator under a single 30 April 2027 expiry to reduce overall cost. Requested a 20-min call next week to get a status update, including on the pending board review, and shared calendar link for booking.\r\n\r\n03/20/2026 Tim Courtenay: Sent an end-of-week check-in to Hans-Jürgen and Thomas asking for an update on their renewal thinking and next steps, and proposed a brief call early next week.\r\n\r\n03/12/26 SYSTEM - Quote Q-47833 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n03/12/2026 SYSTEM - Quote Q-47833 is Accepted. Approver Comments  -  Quote Approved - David M 03/12/2026\r\n\r\n03/12/2026 Tim Courtenay: Advised Hans-Jürgen and Thomas that the co-term renewal quote covering both subscriptions (main renewal + Orchestrator Accelerator, both expiring 30 Apr 2027) will be sent today via AdobeSign from Carlos Encalada. Co-terming has resulted in a slightly reduced cost vs. renewing separately.\r\n\r\n3/11/2026 Ana Roman: Generated co-termed quote combining opps 1 & 2: \r\n\r\nGenerated Q-47833\r\nProduct: CloudSense Platform, STANDARD EDITION, STANDARD SUCCESS\r\nEntitlements: Solution Management, Orders and Subscriptions, O&S Max, Orchestrator, CloudSense Creator, Order Enrichment, Profit & Loss, Deal Management, Orchestrator Accelerator\r\nTerritory: Worldwide\r\nNumber of production Orgs permitted is: 1\r\nNumber of sandbox environments: 5 (provided connected to the production Org)\r\nUser limits:\r\n- 50 on Telco Platform\r\n- 476 on Telco Platform and Solution Management\r\n- 476 on CloudSense Creator\r\n- 526 Authenticated Users will have a subscription Orchestrator Accelerator\r\nSuccess: Standard (25% uplift)\r\nTerm: 12 months* (opp1 only, opp2 is for 9MO)\r\nARR: EUR 594,510.66 (ARR is based on full 12MO for both opps which is why it is higher than the actual TCV)\r\nTCV: EUR 586,518.48 **(This is the actual value on the quote)\r\nOpp1: Current ARR 450,033.53 * 1.25 = 562,541.91\r\nOpp2: Current ARR 25,575.00 * 1.25 (prorated to 9MO to match to opp1's term end date) = 23,976.56\r\nCombined ARR: 562,541.91 + 23,976.56 = 586,518.48\r\n\r\n03/11/2026 Tim Courtenay: Confirmed co-terming of the Orchestrator Accelerator (Aug) renewal with the main renewal, both terminating 30 Apr 2027, resulting in a cost saving for A1. Combined quote to be sent tomorrow.\r\n\r\n03/10/2026 Tim Courtenay:  SVP has approved the co-terming of the two opportunities, with the end dates being co-termed to this opp, i.e. 4/30/2027. Details:\r\n- this opp renewal will run from 5/1/2026 to 4/30/2027, amount = EUR 450,033.53 * 1.25 = EUR 562,541.91.\r\n- opp 006Ih000003iO72IAE will run from 8/1/2026 to 4/30/2027, amount = EUR 25,575.00 *1.25 * 9/12 = EUR 23,976.56.\r\nSales Ops to create a co-termed quote and update the opportunity names etc.\r\n\r\n03/09/2026 Tim Courtenay: Emailed Todd and Nadir at Skyvera to discuss preferred renewal structure — Scenario B, €586,518.42 total), rather than our standard approach of extending both to August 2027 (Scenario A, €735,146.07). Scenario A deemed unviable given A1's cost pressure. Realistic choice is Scenario B vs. no co-term (Scenario C, €594,510.60). \r\n\r\n03/09/2026 Tim Courtenay: Renewal follow-up call with Hans-Juergen Adlassnig, Thomas Lehner, and Tim Courtenay regarding the upcoming Skyvera-managed CloudSense renewal for A1 Telekom Austria. A1 challenged the 12-month renewal price of EUR 562,000 versus current spend of EUR 450,000, requested clarity on the separate Orchestrator Accelerator renewal, asked for coterm alignment to reduce complexity/cost, and made clear that lower usage, limited internal adoption, and a wider strategic review are driving a very cautious renewal stance. Customer feedback was that the current static commercial position risks damaging the wider relationship and future competitiveness, while Tim set expectations that price movement is unlikely on a one-year deal but would try to improve the coterm treatment and provide a final offer for board review.\r\nActions:\r\n* Tim Courtenay to send best and final offer by Wednesday covering both subscriptions.\r\n* Tim Courtenay to check whether Orchestrator Accelerator can be co-termed to the main renewal end date.\r\n* Tim Courtenay to escalate customer feedback internally.\r\n* A1 to use final pricing for board discussion next week.\r\n* A1 to decide whether to proceed with the 12-month renewal.\r\n\r\nSent a post-call follow-up email to Hans-Jurgen and Thomas.\r\n\r\n03/04/2026 Tim Courtenay: Thomas (A1) followed up on Feb 16 meeting, pressing for decisions on outstanding points. Todd responded, pushing back on A1's request to reduce to ~50 licenses — noting actual usage is ~322–327, and that dropping below the current 476–526 tier would lose preferential CloudSense pricing, making a reduced license count more expensive (€830K vs. current tier). Todd recommends proceeding with renewal as previously shared. I followed up inviting Thomas to reach out when ready to proceed.\r\n\r\n03/03/2026 Tim Courtenay: Thomas Lehner (A1) followed up post the Feb 16 Executive Connect meeting, noting that Todd and I committed to providing decisions on points discussed, pending management coordination. He is pressing for these decisions ASAP. Response required.\r\n\r\n02/16/2026 Tim Courtenay:  Renewal call with A1 Telekom Austria (Helmut Rogge-Wiltsche, Hans-Jurgen Adlassnig, Ferdinand Wieser-Zehetner, Thomas Lehner) regarding CloudSense renewal and license reduction request. A1 is in strategic transformation and CPQ freeze mode, reducing active users to ~40–50 vs. originally planned 300–500. They are requesting significant license reduction and cost flexibility during 2026 transformation, stating they cannot justify paying for 500 users. They rejected the 12-month €68k renewal (+4%) as too static. Skyvera confirmed 12-month minimum term is non-negotiable and that discounts would be removed if licenses are reduced due to MFN clauses. A1 expressed interest in Totogi / BSS Magic for future simplification alignment. Feedback requested within a few days.\r\nActions:\r\n* Todd to escalate flexibility request to Finance and CEO.\r\n* Skyvera to evaluate ramp-down pricing scenario.\r\n* Internal MFN pricing risk review.\r\n* Follow up to A1 within a few days.\r\n\r\n01/26/2026 Tim Courtenay:  Nadir and Todd setting up a meeting for 2/16 with the customer to discuss the overall way forward. Will sync after that meeting.\r\n\r\n01/23/2026 Tim Courtenay:  A1 has requested a meeting with BU management. I have requested more info from the BU to ensure alignment with renewals. Sent email to Hans-Juergen to close the loop.\r\n\r\n01/11/26 SYSTEM - Quote Q-46820 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n01/11/2026 Tim Courtenay:  Resent the quote. Sent email to Hans-Juergen alerting him to the quote and requesting a meeting.\r\n\r\n11/26/25 SYSTEM - Quote Q-46023 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n11/26/2025 SYSTEM - Quote Q-46023 is Accepted. Approver Comments  -  Quote approved\r\n\r\n11/26/2025 Ana Roman: Generated Q-46023, 1yr, Standard Support, 25% uplift and sent for approval. \r\n\r\n11/24/2025 Tim Courtenay:  There is a problem changing the subsidiary to Skyvera. Requested SI assistance, then we can send the renewal quote.\r\n\r\n11/19/2025 Tim Courtenay: Reverse the cancellation process - that related to the framework agreement.  \r\n\r\n11/19/25 SYSTEM: First follow-up email sent to the customer, reminding them to complete the cancellation via the cancellations bot.\r\n\r\n11/18/2025 SYSTEM - Quote Q-45760 is Rejected. Approver Comments  -  Quote rejected - there is a problem with the subsidiary (reverts to Cloudsense, but should be Skyvera, LLC).\r\n\r\n11/18/2025 SYSTEM - Quote Q-45408 is Rejected. Approver Comments  -  Quote rejected - Superseded\r\n\r\n11/18/2025 SYSTEM - Quote Q-45758 is Accepted. Approver Comments  -  Quote approved\r\n\r\n11/17/2025 Najeeha Humayun: Customer sent cancellation notice, filed it and referred to the bot.\r\n\r\n11/17/2025 Ana Roman: Updated Q-45408, 1yr, Standard Success, 25% uplift and sent for approval. \r\n\r\n11/17/2025 Tim Courtenay: Customer has submitted a cancellation notice. Was still somehow expecting a special offer, I replied that we cannot do that, committed to follow through with the 1 year Standard quote. Requested Sales Ops to create the quote and submit for approval.  \r\n\r\n10/30/2025 Tim Courtenay:  A1 have terminated their Professional Services contract, they are still holding out for the renewal to be 'frozen'. \r\n\r\n10/21/2025 Tim Courtenay:  Had a follow-up call with Hans-Jûrgen, Ferdinand and Thomas. Informed them that after discussing with my management and the business unit, we cannot agree to any of:\r\n- reduced pricing or reduced licenses\r\n- freezing the renewal process and legacy pricing\r\nThey would nevertheless want a 1yr renewal quote.\r\nThey were disappointed and felt that we are misaligned as a supplier, and will be excluded from future rfps, etc. They believe we will experence the same feedback from other customers in the telco space if we are not able to flex up and down as needed.\r\nActions (due 10/23):\r\n1. Generate a quote to send to them: 1 yr, Standard Success, 25% uplift. Need to check what terms we use.\r\n2. Email then with an overview of what we discussed, in particular capturing their feedback on our strategy.\r\n\r\n10/20/2025 Tim Courtenay:  BU replied that they are happy that renewals follows the playbook.\r\n\r\n10/16/2025 Tim Courtenay:  Send overview email to the BU to advise them what the customer requested, that Renewals cannot entertain their requests. I will be meeting the customer on 10/21, and I asked the BU to let me know if they had questions or concerns before my next meeting.\r\n\r\n10/14/2025 Tim Courtenay:  Had a call with Hans-Jürgen, Thomas and Ferdinand. Message was consistent with what they seem to have discussed with the BU. Bottom line is that they are looking to shrink and 'freeze' the system while they transform their strategy. Their products are too complex and expensive to manage, the CPQ platform struggles to support it and is too slow to implement changes. Their budget target for 2026 is 200k, which barely covers the remaining part of their existing CloudSense contract. I explained that I will discuss internally, but what they are asking is a significant deviation from we include in 'renewals. We have set a meeting for 10/21 for. follow up call, I hope to get internal clarity with the BU prior to that date.\r\nActions:\r\n1. Tim to have internal review with the BU to decide on the strategy.\r\n2. Tim to prompt BU to provide feedback to the customer on the AI-related questions they had from the previous presentation of Totogi/BSS Magic\r\n2. Prepare feedback for next meeting on 10/21.\r\n\r\n10/12/2025 Tim Courtenay:  Created the HVO Renewal Plan and Contract Report. Added the Contract Report to the files tab. Requested an update from the AM (Nadir Zia) on the product roadmap meeting that was supposed to take place on 10/2, plus any other relevant information or insights. Asked the BU if assignment or novation from CloudSense to Skyvera has started yet. The BU confirmed the notice of consent to assign the contract rom CloudSense to Skyvera  was signed by A1 on 7/30/2025 (file https://drive.google.com/file/d/1Gam5oX6lpkv-KLQ5h1Qq0cMooit94TAv/view?usp=drive_link).\r\n\r\n10/09/2025 Tim Courtenay:  Meeting confirmed 10/14.\r\n\r\n10/08/2025 Tim Courtenay:  Email with Hans-Jürgen to confirm meeting for 10/10 or 10/13.\r\n\r\n10/02/2025 Tim Courtenay:  Sent options for meeting times to Hans-Jurgen.\r\n\r\n10/02/2025 James Quigley: Transferring this opp and https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006Ih000003iO72IAE/view to Tim Courtenay as co-termed the new ARR > $500k\r\n\r\n09/18/2025 James Quigley: check-in chat - Roadmap demo next week in weekly check-in chat. Requested MSA legal review although it is not referenced in current contracts since the weekly discussion highlighted that there may be a missing contract (a module for which there is no contract has been deactivated). A1 are liaising internally with Purchasing to locate any missing pre-acquisition contracts\r\n\r\n08/28/2025 Ana Roman: HVO Opp Prep task completed. Results:”\r\n\r\nSDR field updated: Confirmed.\r\nDocuments - Checked. \r\nProduct Family - CloudSense. \r\nAre additional checks required? N.\r\nPartner - N. \r\nAuto-renewal - N. \r\nNetsuite - IDs validated. \r\nARR & TCV - validated.\r\nParent Opp - n/a first renewal.\r\nCo-term - Can potentially be C/T with this other smaller opp if customer agrees: \r\n - https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006Ih000003iO72IAE/view\r\nContacts and Addresses - Updated. \r\nCreate Quotes - PQ ready. Q-43766 25% uplift, 3yrs, STD Success.\r\nContracts/Legal - Contract is not on standard ESW terms. \r\nSubsidiary needs to change.\r\nContract does not have AR clause: Notice of Non-Renewal is not required.\r\nLEGAL CASE - submitted legal case #: 00027894.\r\n\r\n05/04/2025 Tim Courtenay:  Transferred opp to James K, sent introductory email to the customer.\r\n\r\n11/26/24 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"0063g000003Akb9AAC-CON-000495-5_2023 Renew 1\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004f26lIAA"
+    },
+    "Id": "006Ih000004f26lIAA",
+    "Name": "Geotab Italia S.R.L - Kayako - Renewal - 1671936 - 5_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/005Ih0000013hKUIAY"
+      },
+      "Name": "Fredrik Scheike",
+      "Email": "fredrik.scheike@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Undetermined",
+    "ARR__c": 42187.56,
+    "Current_ARR__c": 33750,
+    "ARR_Increase__c": 25,
+    "Offer_ARR__c": 42187.56,
+    "Renewal_Date__c": "2026-05-03",
+    "CloseDate": "2026-04-03",
+    "CreatedDate": "2025-05-05T01:30:56.000+0000",
+    "LastActivityDate": "2026-04-13",
+    "LastModifiedDate": "2026-04-14T14:30:43.000+0000",
+    "Next_Follow_Up_Date__c": "2026-04-16",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Standard",
+    "CurrentContractHasAutoRenewalClause__c": "No",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Kayako",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/0012x00000X52cNAAR"
+      },
+      "Name": "Geotab Italia S.R.L"
+    },
+    "Churn_Risks__c": "Tech stack consolidation - M&A;Unresponsive",
+    "High_Value_Opp__c": false,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "04-14-2026 Fredrik Scheike: Check on SOC2 review and chase SQ",
+    "Description": "04-14-2026 Fredrik Scheike: Have reached out for our SOC2 report which they need in order to be able to move the renewal forward. Sent the company wide one over.\r\n\r\n04/08/26 SYSTEM - Self Serve Activity and Self Serve User are updated\r\n\r\n04/07/26 SYSTEM - Quote Q-48266 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n03/30/26 SYSTEM - Quote Q-48155 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n03-27-2026 Fredrik Scheike: Chased confirmation - nothing. Ghosting. Calling next week.\r\n\r\n03-23-2026 Fredrik Scheike: Forwarded the AdobeSign to Beatrice. Push for SQ.\r\n\r\n03-19-2026 Fredrik Scheike: Followed up over email to confirm reception of quote.\r\n\r\n03/17/26 SYSTEM - Quote Q-47910 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n03/17/2026 SYSTEM - Quote Q-47910 is Accepted. Approver Comments  -  Quote approved - David M 03/17/2026\r\n\r\n03-17-2026 Fredrik Scheike: Sent new PQ to client after having updated all instances of their name:\r\n\r\nQ-47910\r\nKayako On Premise KC Fusion Silver\r\nStandard Success\r\n12 months\r\n90 seats\r\nARR: 42,187.5\r\n\r\n03/16/2026 Alvy Gordo: Name change - https://devgraph-alp.atlassian.net/browse/O2C-85492\r\n\r\n03/11/2026 Alvy Gordo:    Name change from Verizon Connect Italy spa. to Geotab Italia S.R.L. - https://trilogy-sales.lightning.force.com/lightning/r/Case/500fu00000RSEznAAH/view\r\n- RM - https://devgraph-alp.atlassian.net/browse/O2C-85428\r\n\r\n03-09-2026 Fredrik Scheike: Emailed Marco for update. Verizon Connect Italy spa, no longer exists as they have been acquired by Geotab. I have asked for supporting documents for this. New address and company name as follows:\r\n\r\nGeotab Italia SRL\r\nVia Annibale Zucchini, 53\r\n44122 Ferrara (FE), Italy\r\nVAT Code: IT 01744310382\r\n\r\nWill raise case when we have all we need.\r\n\r\n03-06-2026 Fredrik Scheike: Timeline email sent.\r\n02-27-2026 Fredrik Scheike: Called Marco, no answer. No VM.\r\n02-25-2026 Fredrik Scheike: Called Marco, no VM available. No answer.\r\n02-23-2026 Fredrik Scheike: Called Marco, left VM.\r\n02-16-2026 Fredrik Scheike: Called Marco, no answer.\r\n02-12-2026 Fredrik Scheike: Called Marco, no answer.\r\n02-11-2026 Fredrik Scheike: Called Marco, no answer.\r\n\r\n2/5/26 Manick Walia: Opp transferred to Fredrik.\r\n\r\n02/03/26 SYSTEM - Quote Q-44497 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/03/2026 SYSTEM - Quote Q-44497 is Accepted. Approver Comments  -  Quote approved. - David M 02/03/2026\r\n\r\n02/03/2026 Julius Librando: Called Marco again 2x, still no answer. Sent another email\r\n\r\n02/03/2026 Julius Librando: Sending PQ for approval since opp's within 90D:\r\nItem: KC\r\nQty: 90\r\nAmount: USD 42,187.50\r\nSupport: Standard\r\nTerm: 12 months\r\n\r\n01/27/2026 Julius Librando: Marco replied via email: \"I'm adding Alex from Geotab, as Verizon Connect Italy has been acquired by Geotab on the 1st of October 2025 I kindly ask you to propose the renewal directly to Geotab, as Verizon Connect Italy no longer exists\". Replied and reached out to Alex for an RC\r\n\r\n01/27/2026 Julius Librando: Called Marco again 2x, still no answer. Followed up with email\r\n\r\n1/26/26 Manick Walia: Tried calling Marco. no answer.\r\n\r\n01/22/2026 Julius Librando: Called Marco 2x, no answer. Also tried Pawel but he said he's no longer with Verizon for 6 months now (unticked renewal contact for him)\r\n\r\n1/19/26 Manick Walia: FU email sent.\r\n\r\n01/19/2026 Julius Librando: Follow up call to Marco on both phone and mobile, no answer\r\n\r\n01/14/2026 Julius Librando: Follow up call to Marco on both phone and mobile, no answer\r\n\r\n01/08/2026 Julius Librando: Follow up call to Marco on both phone and mobile, no answer\r\n\r\n1/6/26 Manick Walia: Tried calling Marco, I was unable to navigate through the IVR as it was in italian. Tried his cell and LVM. Again, the IVR was in Italian, not sure if it got submitted.\r\n\r\n01/05/2026 Julius Librando: Follow up call to Marco on both phone and mobile, no answer\r\n\r\n12/18/2025 Julius Librando: Follow up call to Marco on both phone and mobile, no answer\r\n\r\n12/17/2025 Julius Librando: Follow up call to Marco on both phone and mobile, no answer\r\n\r\n12/15/2025 Julius Librando: Follow up call to Marco on both phone and mobile, no answer\r\n\r\n12/09/2025 Julius Librando: Follow up call to Marco on both phone and mobile, no answer\r\n\r\n12/08/2025 Julius Librando: Follow up call to Marco on both phone and mobile, no answer\r\n\r\n11/05/2025 SYSTEM - Email Template \"Name\" with the subject, Important: Verizon Connect Italy spa's Upcoming RenewalValid renewals mailbox not found\r\n\r\n11/05/2025 Julius Librando: Called Marco on phone, no answer. Tried his mobile and he said he's still the PC for the renewal but may soon be turning over to another team though he doesn't have an ETA for that yet. I offered an RC but he said it's too early for that and considering the change in renewal ownership. He said to keep in touch in after a few months and he may be able to direct me to another team once it's finalized.\r\n\r\n11/05/2025 Julius Librando: Opp prep results -\r\nSDR field updated: Confirmed.\r\nDocuments - Checked\r\nProduct Family - KC\r\nPartner - N\r\nAuto-renewal - N, renewed on PO last renewal cycle\r\nNetsuite - IDs Validated\r\nARR & TCV - Validated\r\nParent Opp - Checked\r\nCo-term - N\r\nContacts and Addresses - Updated\r\nCreate Quotes - PQ ready\r\n\r\n11/05/2025 SYSTEM - Email Template \"Name\" with the subject, Important: Verizon Connect Italy spa's Upcoming RenewalValid renewals mailbox not found\r\n05/05/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"Verizon Connect Italy spa Kayako Renewal 05-2022 Renew 2\"",
+    "Gate_3_Violation_Date__c": null
+  },
+  {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v50.0/sobjects/Opportunity/006Ih000004fk7iIAA"
+    },
+    "Id": "006Ih000004fk7iIAA",
+    "Name": "Medion AG - Khoros - Renewal - 1707463 - 5_2026",
+    "Owner": {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v50.0/sobjects/User/005Ih0000015jXkIAI"
+      },
+      "Name": "Sebastian Desand",
+      "Email": "sebastian.desand@trilogy.com"
+    },
+    "StageName": "Quote Follow-Up",
+    "Opportunity_Status__c": "Attention Required",
+    "Probable_Outcome__c": "Likely to Churn",
+    "ARR__c": 219348.48,
+    "Current_ARR__c": 175478.78,
+    "ARR_Increase__c": 25,
+    "Offer_ARR__c": 219348.48,
+    "Renewal_Date__c": "2026-05-07",
+    "CloseDate": "2026-04-07",
+    "CreatedDate": "2025-06-01T19:19:36.000+0000",
+    "LastActivityDate": "2026-03-18",
+    "LastModifiedDate": "2026-04-11T18:03:11.000+0000",
+    "Next_Follow_Up_Date__c": "2026-04-15",
+    "AI_Churn_Risk_Category__c": null,
+    "Health_Score__c": null,
+    "Priority_Score__c": null,
+    "Success_Level__c": "Standard",
+    "Current_Success_Level__c": "Legacy",
+    "CurrentContractHasAutoRenewalClause__c": "Yes",
+    "Auto_Renewed_Last_Term__c": false,
+    "Product__c": "Khoros",
+    "Account": {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v50.0/sobjects/Account/001Ih00000AagGaIAJ"
+      },
+      "Name": "Medion AG"
+    },
+    "Churn_Risks__c": "Poor account management;Contract terms and conditions;Tech stack consolidation - Internal",
+    "High_Value_Opp__c": true,
+    "Handled_by_BU__c": false,
+    "IsClosed": false,
+    "Win_Type__c": null,
+    "Type": "Renewal",
+    "NextStep": "04/11/2026 Sebastian Desand: BU informed me that the CIO of Medion will have a call with the BU on Monday.",
+    "Description": "04/11/2026 Sebastian Desand: BU informed me that the CIO of Medion will have a call with the BU on Monday. \r\n\r\n04/07/2026 Sebastian Desand: Checking the status of the RFP with the BU.\r\n\r\n03/24/2026 Sebastian Desand: Checking the status of the RFP with the BU. \r\n\r\n03/16/26 SYSTEM - Quote Q-47874 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n03/16/2026 SYSTEM - Quote Q-47874 is Accepted. Approver Comments  -  Quote approved - David M 03/16/2026\r\n\r\n03/16/2026 Sebastian Desand: Brad shared proposal documents and confirmed that Suuchi has approved his pricing strategy (€195K platform, Year 1 target ~€298,800). ERM not involved in BU pricing strategy. Ana reviewed both the technical and commercial proposals and flagged several items including legal entity name, SLA accuracy, contract term structure (24-month vs. standard), and alignment with legal recommendations on MSA/DPA. Next step is to address Ana's feedback and submit the final proposal by EOD 3/16/2026.\r\n\r\n3/14/2026 Ana Roman: Generated 3yr ultimate quote for RFP, marking as send to opp owner as it is not intended to reach the customer yet, pricing will be sent along with RFP submission.  \r\nQ-47874\r\nProduct: Khoros Community Suite Ultimate, Silver Success\r\nEntitlements: 1 community, ultimate: unlimited API calls & visits\r\nSuccess: Standard (25% uplift)\r\nTerm: 36 months\r\nARR: EUR 219,348.48\r\nTCV: EUR 658,045.43\r\n\r\n03/10/2026 Najeeha Humayun: Customer received an automated AR email - tagged Sales Ops to have it disabled as they have shared NNR with us.\r\n\r\n02/27/2026 Sebastian Desand: Customer returned executed NDA.\r\n\r\n02/24/2026 Sebastian Desand: Sent NDA signed by us to the customer. \r\n\r\n02/20/2026 Sebastian Desand: Medion incorporated our NDA comments and returned redlined version on Feb 12. Their legal team has now approved our changes, but they are insisting on one remaining clause that requires further negotiation. Awaiting legal review and feedback to move toward execution.\r\n\r\n02/06/2026 Najeeha Humayun: Customer sent notice for cancellation because they are going through tender process, however they have welcomed us to apply as well. Keeping this opp open so that we can send RFP.\r\n\r\n02/06/26 SYSTEM - Quote Q-45545 is out for signature, moving the opportunity to the Quote Follow-Up stage.\r\n\r\n02/06/2026 SYSTEM - Quote Q-45545 is Accepted. Approver Comments  -  Quote approved - David M 02/06/2026\r\n\r\n02/06/2026 SYSTEM - Quote Q-45545 is Accepted. Approver Comments  -  Quote approved - David M 02/06/2026\r\n\r\n02/06/2026 Alvy Gordo: ARQ Failed to Generate, \r\n- Unblocked quote issue then resent ARQ Q-45545 \r\n\r\n02/06/2026 SYSTEM - Quote Q-45545 is Accepted. Approver Comments  -  Quote approved - David M 02/06/2026\r\n\r\n2/3/2026 Ana Roman: Added NDA to legal case for review and to submit for signature. \r\n\r\n02/02/2026 Sebastian Desand: Received RFP from Medion (Boban Stojkovic) for P2P community platform. Referred to Brad Gerard (account manager) who provided Khoros company details and NDA information. Awaiting next steps from Medion on NDA preparation and RFP process. Holding off sending quotes and scheduling check-in call due to ongoing RFP-process. \r\n\r\n01/18/2026 Sebastian Desand: Received RFP inquiry from Medion for P2P community platform. They require company details and NDA execution before providing RFP documents. Next step is to provide requested company information and legal details to move forward with NDA. Synchronizing with BU and Ana. \r\n\r\n12/17/2025 Sebastian Desand: Customer informed that their purchasing department will reach out to me in January. \r\n\r\n12/17/2025 Sebastian Desand: Follow-up email sent to customer. \r\n\r\n12/01/2025 Sebastian Desand: Outreach to customer after warm introduction from the BU. Will schedule a check-in call. \r\n\r\n11/30/2025 Sebastian Desand: Warm introduction requested from the BU (Brad)\r\n\r\n11/26/2025 Julius Librando: Called Martin 2x and Arnd once, no answer from anyone\r\n\r\n11/25/2025 Julius Librando: Followed up with AM for warm intro\r\n\r\n11/10/2025 Julius Librando: Warm intro requested from AM\r\n\r\n11/06/2025 Alvy Gordo:  \r\nHVO Opp Prep task completed\r\nSDR/ISR field updated: Confirmed\r\nDocuments: MSA added\r\nProduct Family: Khoros Community\r\nPartner: N\r\nAuto-renewal: Yes (p.2, item 6) \r\nNotice period: 90D (p.2, item 6)\r\nPrice cap: No cap stated – “adjust fees by any amount” (p.2, item 6)\r\nNetsuite IDs Validated: Y \r\nARR: EUR 175,478.78 (p.1)\r\nTCV: EUR 175,478.78 (12-month SO; p.1)\r\nParent Opp Checked: None, first time renewal \r\nCo-term: N\r\nContacts and Addresses Updated: Y \r\nCreate Quotes: PQ and ARQ ready  \r\nNS Status Active: Active / \r\nAR’d last renewal:   N\r\nLast Invoice paid:  CM’d\r\nContract Summary created: Y\r\nContract is on standard ESW?: N\r\nIf No, is NNR required: N\r\nLegal case for first time renewal:  https://trilogy-sales.lightning.force.com/lightning/r/Case/500fu00000GwiYwAAJ/view\r\n\r\n06/01/25 SYSTEM : Renewal opportunity imported from NetSuite. Subscription Name: \"SO-13700 Renew 1\"\r\n06/01/25 SYSTEM : Could not import products because this is a legacy NetSuite subscription record.",
+    "Gate_3_Violation_Date__c": null
+  }
+]
