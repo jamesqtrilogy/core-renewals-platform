@@ -140,7 +140,8 @@ function getOpenAI() {
 function buildContext(
   opp: Record<string, unknown>,
   activityHistory: Record<string, unknown>[],
-  config: AIConfig
+  config: AIConfig,
+  supportTickets?: Record<string, unknown>[]
 ): string {
   const description = (opp.description as string) ?? null;
   const maxActs = config.max_activity_count ?? 50;
@@ -174,7 +175,28 @@ function buildContext(
 ${config.include_description && description ? `\nDESCRIPTION/NOTES:\n${description}` : ""}
 
 ACTIVITY HISTORY (${trimmedHistory.length} entries):
-${activityLines || "  No activity recorded."}`;
+${activityLines || "  No activity recorded."}${buildSupportContext(supportTickets)}`;
+}
+
+function buildSupportContext(tickets?: Record<string, unknown>[]): string {
+  if (!tickets || tickets.length === 0) return "";
+
+  const openTickets = tickets.filter(
+    (t) => t.status === "open" || t.status === "new" || t.status === "pending"
+  );
+
+  const lines = tickets
+    .slice(0, 20)
+    .map(
+      (t) =>
+        `  - #${t.id}: ${t.subject} [${t.status}] (priority: ${t.priority}, requester: ${t.requester || t.requesterEmail || "unknown"}, created: ${t.createdAt || "unknown"})`
+    )
+    .join("\n");
+
+  return `
+
+SUPPORT TICKETS (${tickets.length} total, ${openTickets.length} open/pending):
+${openTickets.length > 0 ? "⚠ OPEN TICKETS PRESENT — flag these as potential risks on the call.\n" : ""}${lines}`;
 }
 
 function buildSystemPrompt(
@@ -212,7 +234,7 @@ function buildSystemPrompt(
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { type, emailType, opportunity, activityHistory } = body;
+    const { type, emailType, opportunity, activityHistory, supportTickets } = body;
 
     if (!type || !opportunity) {
       return NextResponse.json({ error: "Missing type or opportunity" }, { status: 400 });
@@ -229,7 +251,12 @@ export async function POST(request: NextRequest) {
 
     const systemPromptBase = promptConfig?.system_prompt ?? FALLBACK_PROMPTS[type] ?? FALLBACK_PROMPTS.summary;
     const model = promptConfig?.model ?? "gpt-4o";
-    const context = buildContext(opportunity, activityHistory ?? [], aiConfig);
+    const context = buildContext(
+      opportunity,
+      activityHistory ?? [],
+      aiConfig,
+      supportTickets as Record<string, unknown>[] | undefined
+    );
     const fullSystemPrompt = buildSystemPrompt(systemPromptBase, knowledgeBase, aiConfig);
 
     const reasoningEffort = aiConfig.reasoning_effort === "high" ? "high" : undefined;

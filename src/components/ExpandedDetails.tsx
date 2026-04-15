@@ -4,6 +4,17 @@ import { useState, useEffect, useCallback, useMemo } from "react";
 import { QueueItem, ActivityEntry } from "@/types/renewals";
 import { formatDate, formatCurrency, cn } from "@/lib/utils";
 
+interface SupportTicket {
+  id: string;
+  subject: string;
+  status: string;
+  priority: string;
+  requester: string;
+  requesterEmail: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
 interface ExpandedDetailsProps {
   item: QueueItem;
 }
@@ -38,7 +49,8 @@ const SUGGESTED_QUESTIONS = [
 function useGenerate(
   type: "email" | "summary" | "call_objective",
   item: QueueItem,
-  emailType?: string
+  emailType?: string,
+  supportTickets?: SupportTicket[]
 ) {
   const [data, setData] = useState<Record<string, string> | null>(null);
   const [loading, setLoading] = useState(false);
@@ -56,6 +68,7 @@ function useGenerate(
           emailType,
           opportunity: item.opportunity,
           activityHistory: item.activityHistory,
+          supportTickets: supportTickets ?? [],
         }),
       });
       const result = await res.json();
@@ -69,7 +82,7 @@ function useGenerate(
     } finally {
       setLoading(false);
     }
-  }, [type, emailType, item]);
+  }, [type, emailType, item, supportTickets]);
 
   return { data, loading, error, generate };
 }
@@ -235,6 +248,125 @@ function ActivityHistory({
 }
 
 // ---------------------------------------------------------------------------
+// Support Tickets — collapsed by default
+// ---------------------------------------------------------------------------
+
+const ticketStatusBadge: Record<string, string> = {
+  open: "bg-red-100 text-red-700",
+  new: "bg-red-100 text-red-700",
+  pending: "bg-yellow-100 text-yellow-700",
+  "in progress": "bg-blue-100 text-blue-700",
+  closed: "bg-green-100 text-green-700",
+  resolved: "bg-green-100 text-green-700",
+  completed: "bg-green-100 text-green-700",
+};
+
+function SupportTickets({
+  tickets,
+  loading,
+  error,
+}: {
+  tickets: SupportTicket[];
+  loading: boolean;
+  error: string | null;
+}) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <div>
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="flex items-center gap-1.5 text-sm font-semibold text-gray-900 hover:text-blue-700 cursor-pointer"
+      >
+        <svg
+          className={cn(
+            "h-4 w-4 text-gray-400 transition-transform",
+            expanded && "rotate-90"
+          )}
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2}
+          stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+        Support Tickets
+        <span className="text-xs font-normal text-gray-500">
+          {loading ? "(…)" : `(${tickets.length})`}
+        </span>
+        {!loading && tickets.filter(t => t.status === "open" || t.status === "new").length > 0 && (
+          <span className="inline-flex items-center rounded-full bg-red-100 px-2 py-0.5 text-xs font-medium text-red-700">
+            {tickets.filter(t => t.status === "open" || t.status === "new").length} open
+          </span>
+        )}
+      </button>
+      {error && (
+        <p className="mt-2 text-xs text-amber-700">{error}</p>
+      )}
+      {expanded && (
+        <>
+          {tickets.length === 0 && !loading ? (
+            <p className="mt-2 text-xs text-gray-500">No support tickets found for this account.</p>
+          ) : (
+            <div className="overflow-x-auto rounded-lg border border-gray-200 mt-2">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-gray-100 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    <th className="px-4 py-2.5">ID</th>
+                    <th className="px-4 py-2.5">Subject</th>
+                    <th className="px-4 py-2.5">Status</th>
+                    <th className="px-4 py-2.5">Priority</th>
+                    <th className="px-4 py-2.5">Requester</th>
+                    <th className="px-4 py-2.5">Created</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  {tickets.map((ticket) => (
+                    <tr key={ticket.id} className="bg-white hover:bg-gray-50">
+                      <td className="px-4 py-2.5 text-gray-600 whitespace-nowrap font-mono text-xs">
+                        #{ticket.id}
+                      </td>
+                      <td className="px-4 py-2.5 text-gray-900 font-medium max-w-xs truncate">
+                        {ticket.subject}
+                      </td>
+                      <td className="px-4 py-2.5">
+                        <span
+                          className={cn(
+                            "inline-flex rounded-full px-2 py-0.5 text-xs font-medium",
+                            ticketStatusBadge[ticket.status] ?? "bg-gray-100 text-gray-600"
+                          )}
+                        >
+                          {ticket.status}
+                        </span>
+                      </td>
+                      <td className="px-4 py-2.5 text-gray-600 whitespace-nowrap capitalize">
+                        {ticket.priority}
+                      </td>
+                      <td className="px-4 py-2.5 text-gray-600 whitespace-nowrap">
+                        {ticket.requester || ticket.requesterEmail || "—"}
+                      </td>
+                      <td className="px-4 py-2.5 text-gray-600 whitespace-nowrap">
+                        {ticket.createdAt ? formatDate(ticket.createdAt) : "—"}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+          <button
+            onClick={() => setExpanded(false)}
+            className="mt-2 text-xs font-medium text-blue-600 hover:text-blue-800"
+          >
+            Hide support tickets
+          </button>
+        </>
+      )}
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
 // Ask AI about this deal
 // ---------------------------------------------------------------------------
 
@@ -243,7 +375,7 @@ interface ChatExchange {
   answer: string;
 }
 
-function AskAI({ item }: { item: QueueItem }) {
+function AskAI({ item, supportTickets }: { item: QueueItem; supportTickets?: SupportTicket[] }) {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [exchanges, setExchanges] = useState<ChatExchange[]>([]);
@@ -268,6 +400,7 @@ function AskAI({ item }: { item: QueueItem }) {
             question,
             opportunity: item.opportunity,
             activityHistory: item.activityHistory,
+            supportTickets: supportTickets ?? [],
             conversationHistory: recentHistory,
           }),
         });
@@ -431,20 +564,59 @@ export default function ExpandedDetails({ item }: ExpandedDetailsProps) {
     };
   }, [item.opportunity.id]);
 
+  /** Support tickets from Kayako */
+  const [supportTickets, setSupportTickets] = useState<SupportTicket[]>([]);
+  const [ticketsLoading, setTicketsLoading] = useState(true);
+  const [ticketsError, setTicketsError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    const accountName = item.opportunity.accountName;
+    if (!accountName || accountName === "Unknown Account") {
+      setTicketsLoading(false);
+      return;
+    }
+
+    async function loadTickets() {
+      setTicketsLoading(true);
+      setTicketsError(null);
+      try {
+        const res = await fetch(
+          `/api/support-tickets?accountName=${encodeURIComponent(accountName)}`
+        );
+        const data = await res.json();
+        if (!res.ok) {
+          if (!cancelled) setTicketsError(data.error ?? "Failed to load tickets");
+          return;
+        }
+        if (!cancelled) setSupportTickets(data.tickets ?? []);
+      } catch (err) {
+        if (!cancelled) {
+          setTicketsError(err instanceof Error ? err.message : "Failed to load tickets");
+        }
+      } finally {
+        if (!cancelled) setTicketsLoading(false);
+      }
+    }
+
+    loadTickets();
+    return () => { cancelled = true; };
+  }, [item.opportunity.accountName]);
+
   const queueItem = useMemo(
     () => ({ ...item, activityHistory }),
     [item, activityHistory]
   );
 
   // Overview — auto-loads on mount
-  const overview = useGenerate("summary", queueItem);
+  const overview = useGenerate("summary", queueItem, undefined, supportTickets);
   useEffect(() => {
     overview.generate();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Call objective — auto-loads on mount
-  const callObj = useGenerate("call_objective", queueItem);
+  const callObj = useGenerate("call_objective", queueItem, undefined, supportTickets);
   useEffect(() => {
     callObj.generate();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -452,7 +624,7 @@ export default function ExpandedDetails({ item }: ExpandedDetailsProps) {
 
   // Email — triggered by user
   const [emailType, setEmailType] = useState<string>(EMAIL_TYPES[0].value);
-  const email = useGenerate("email", queueItem, emailType);
+  const email = useGenerate("email", queueItem, emailType, supportTickets);
 
   return (
     <div className="border-t border-gray-200 px-6 py-5 space-y-5 bg-gray-50/50">
@@ -530,6 +702,13 @@ export default function ExpandedDetails({ item }: ExpandedDetailsProps) {
         entries={activityHistory}
         loading={activitiesLoading}
         error={activitiesError}
+      />
+
+      {/* Support Tickets — collapsed by default */}
+      <SupportTickets
+        tickets={supportTickets}
+        loading={ticketsLoading}
+        error={ticketsError}
       />
 
       {/* AI suggestions — email draft + call objective */}
@@ -620,7 +799,7 @@ export default function ExpandedDetails({ item }: ExpandedDetailsProps) {
       </div>
 
       {/* Ask AI about this deal */}
-      <AskAI item={queueItem} />
+      <AskAI item={queueItem} supportTickets={supportTickets} />
 
       {/* Action buttons */}
       <div className="flex items-center gap-3 pt-2">

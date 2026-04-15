@@ -13,5 +13,8 @@ tsconfig.tsbuildinfo
 # Claude Code local settings
 .claude/
 
+# Cursor local settings (contains MCP tokens)
+.cursor/
+
 # Temporary wrapper — delete after merge step 5 completes
 renewals-portal-stage1-main/
