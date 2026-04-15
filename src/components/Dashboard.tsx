@@ -354,7 +354,7 @@ export default function Dashboard({ opportunities, activities, lastRefresh }: Pr
             className={`view-toggle-btn${view === 'gates' ? ' active' : ''}`}
             onClick={() => { setView('gates'); setActiveTab(null) }}
           >
-            Accountability
+            Gates
           </button>
         </div>
         <div className="view-toggle" aria-label="Reports">
@@ -368,7 +368,7 @@ export default function Dashboard({ opportunities, activities, lastRefresh }: Pr
             className={`view-toggle-btn${view === 'framework' ? ' active' : ''}`}
             onClick={() => { setView('framework'); setActiveTab(null) }}
           >
-            Gates
+            Triggers
           </button>
         </div>
         <button className="theme-toggle" onClick={() => setDark(d => !d)}>
