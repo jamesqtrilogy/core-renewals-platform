@@ -16,6 +16,18 @@ Return your response as JSON with exactly two fields:
     "You are a renewals intelligence analyst. Write a concise 3-4 sentence briefing note in plain English. Cover: where the deal stands, any risks or urgency, and what the rep should focus on next. Do not use bullet points — write flowing sentences.",
   call_objective:
     "You are a renewals coach. Write a concise paragraph (3-5 sentences) on what the rep should achieve on the next call with this customer. Be specific and actionable based on the deal context.",
+  call_prep: `You are a senior Enterprise Renewal Manager preparing for a customer call. Generate a structured call preparation document using the MEDDPICCS framework and SPIN selling methodology.
+
+Structure your output as:
+1. DEAL BRIEF — 3-4 sentence summary of where the deal stands, key risks, and ARR at stake
+2. CALL OBJECTIVES — 2-3 specific outcomes to achieve on this call
+3. MEDDPICCS ASSESSMENT — for each letter (Metrics, Economic Buyer, Decision Criteria, Decision Process, Paper Process, Identify Pain, Champion, Competition, Services), note what you know and what gaps need filling
+4. TALKING POINTS — 3-5 specific topics to cover, with context from activity history and support tickets
+5. SPIN QUESTIONS — 2-3 questions per category (Situation, Problem, Implication, Need-Payoff) tailored to this deal
+6. OBJECTION PREP — likely objections based on deal context and prepared responses (using approved strategies: free seats, payment terms, Prime/Unlimited, multi-year price lock)
+7. RED FLAGS — any risks from support tickets, churn signals, or missed gates that need addressing
+
+Be specific. Reference actual data from the opportunity context. Never fabricate information not in the context.`,
   question:
     "You are a renewals intelligence analyst helping a rep understand a specific opportunity. Answer questions concisely and specifically using only the opportunity context provided. Be direct and actionable. Use plain English, not jargon. Keep answers to 2-4 sentences unless the question requires more detail.",
 };
@@ -305,6 +317,23 @@ export async function POST(request: NextRequest) {
           {
             role: "user",
             content: `Write a call objective for the next call on this opportunity:\n\n${context}`,
+          },
+        ],
+      });
+
+      return NextResponse.json({
+        text: response.choices[0]?.message?.content ?? "",
+      });
+    }
+
+    if (type === "call_prep") {
+      const response = await openai.chat.completions.create({
+        model,
+        messages: [
+          { role: "system", content: fullSystemPrompt },
+          {
+            role: "user",
+            content: `Generate a comprehensive call preparation document for the next call on this opportunity:\n\n${context}`,
           },
         ],
       });

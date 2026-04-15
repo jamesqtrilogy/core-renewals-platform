@@ -47,7 +47,7 @@ const SUGGESTED_QUESTIONS = [
 // ---------------------------------------------------------------------------
 
 function useGenerate(
-  type: "email" | "summary" | "call_objective",
+  type: "email" | "summary" | "call_objective" | "call_prep",
   item: QueueItem,
   emailType?: string,
   supportTickets?: SupportTicket[]
@@ -622,6 +622,9 @@ export default function ExpandedDetails({ item }: ExpandedDetailsProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Call prep — triggered by user
+  const callPrep = useGenerate("call_prep", queueItem, undefined, supportTickets);
+
   // Email — triggered by user
   const [emailType, setEmailType] = useState<string>(EMAIL_TYPES[0].value);
   const email = useGenerate("email", queueItem, emailType, supportTickets);
@@ -796,6 +799,38 @@ export default function ExpandedDetails({ item }: ExpandedDetailsProps) {
             </p>
           ) : null}
         </div>
+      </div>
+
+      {/* Call Prep — MEDDPICCS + SPIN framework */}
+      <div className="rounded-lg border border-teal-200 bg-teal-50/50 p-4">
+        <div className="flex items-center justify-between mb-2">
+          <h4 className="text-sm font-semibold text-teal-900">
+            Call Prep
+          </h4>
+          <div className="flex items-center gap-2">
+            {callPrep.data?.text && <CopyButton text={callPrep.data.text} />}
+            <button
+              onClick={callPrep.generate}
+              disabled={callPrep.loading}
+              className="text-xs font-medium text-teal-600 hover:text-teal-800 disabled:text-teal-400"
+            >
+              {callPrep.data ? "Regenerate" : "Generate Call Prep"}
+            </button>
+          </div>
+        </div>
+        {callPrep.loading ? (
+          <Spinner />
+        ) : callPrep.error ? (
+          <p className="text-sm text-red-600">{callPrep.error}</p>
+        ) : callPrep.data?.text ? (
+          <div className="text-sm text-teal-900 leading-relaxed whitespace-pre-wrap">
+            {callPrep.data.text}
+          </div>
+        ) : (
+          <p className="text-xs text-teal-600/60">
+            Click &quot;Generate Call Prep&quot; for a MEDDPICCS briefing with SPIN questions, objection prep, and red flags.
+          </p>
+        )}
       </div>
 
       {/* Ask AI about this deal */}
