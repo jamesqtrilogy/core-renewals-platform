@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { QueueItem, ActivityEntry } from "@/types/renewals";
+import { QueueItem } from "@/types/renewals";
 import { getStatusConfig, formatDate, formatCurrency, cn } from "@/lib/utils";
 import ExpandedDetails from "@/components/ExpandedDetails";
 
@@ -14,10 +14,6 @@ export default function OpportunityPage() {
   const [item, setItem] = useState<QueueItem | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
-  // Activity loading state
-  const [activitiesLoading, setActivitiesLoading] = useState(true);
-  const [activitiesError, setActivitiesError] = useState<string | null>(null);
 
   // Fetch opportunity data from Supabase
   useEffect(() => {
@@ -45,38 +41,6 @@ export default function OpportunityPage() {
     }
     fetchOpportunity();
   }, [id]);
-
-  // Fetch activities on-demand via Anthropic MCP
-  useEffect(() => {
-    if (!item) return;
-
-    async function fetchActivities() {
-      setActivitiesLoading(true);
-      setActivitiesError(null);
-      try {
-        const res = await fetch(
-          `/api/opportunity-activities?id=${encodeURIComponent(id)}`
-        );
-        const data = await res.json();
-        if (!res.ok) {
-          setActivitiesError(data.error ?? "Failed to load activities");
-          return;
-        }
-        setItem((prev) =>
-          prev
-            ? { ...prev, activityHistory: data.activities as ActivityEntry[] }
-            : prev
-        );
-      } catch (err) {
-        setActivitiesError(
-          err instanceof Error ? err.message : "Failed to load activities"
-        );
-      } finally {
-        setActivitiesLoading(false);
-      }
-    }
-    fetchActivities();
-  }, [id, item?.opportunity.id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (loading) {
     return (
@@ -200,25 +164,7 @@ export default function OpportunityPage() {
           </div>
         </div>
 
-        {/* Activities loading banner */}
-        {activitiesLoading && (
-          <div className="flex items-center gap-2 rounded-lg border border-blue-200 bg-blue-50 px-4 py-3">
-            <div className="h-4 w-4 animate-spin rounded-full border-2 border-blue-300 border-t-blue-600" />
-            <span className="text-sm text-blue-700">
-              Loading activity history from Salesforce...
-            </span>
-          </div>
-        )}
-
-        {activitiesError && (
-          <div className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3">
-            <span className="text-sm text-amber-700">
-              Could not load activity history: {activitiesError}
-            </span>
-          </div>
-        )}
-
-        {/* Main details — reuse ExpandedDetails component */}
+        {/* Main details — activity history loaded inside ExpandedDetails via /api/opportunity-activities */}
         <div className="bg-white border border-gray-200 rounded-xl">
           <ExpandedDetails item={item} />
         </div>

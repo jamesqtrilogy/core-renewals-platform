@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
-import { QueueItem } from "@/types/renewals";
+import { useState, useEffect, useCallback, useMemo } from "react";
+import { QueueItem, ActivityEntry } from "@/types/renewals";
 import { formatDate, formatCurrency, cn } from "@/lib/utils";
 
 interface ExpandedDetailsProps {
@@ -142,7 +142,15 @@ function CollapsibleSection({
 // Activity history — collapsed by default
 // ---------------------------------------------------------------------------
 
-function ActivityHistory({ entries }: { entries: QueueItem["activityHistory"] }) {
+function ActivityHistory({
+  entries,
+  loading,
+  error,
+}: {
+  entries: QueueItem["activityHistory"];
+  loading?: boolean;
+  error?: string | null;
+}) {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -165,9 +173,12 @@ function ActivityHistory({ entries }: { entries: QueueItem["activityHistory"] })
         </svg>
         Activity History
         <span className="text-xs font-normal text-gray-500">
-          ({entries.length})
+          {loading ? "(…)" : `(${entries.length})`}
         </span>
       </button>
+      {error && (
+        <p className="mt-2 text-xs text-amber-700">{error}</p>
+      )}
       {expanded && (
         <>
           <div className="overflow-x-auto rounded-lg border border-gray-200 mt-2">
@@ -369,17 +380,71 @@ function AskAI({ item }: { item: QueueItem }) {
 // ---------------------------------------------------------------------------
 
 export default function ExpandedDetails({ item }: ExpandedDetailsProps) {
-  const { opportunity, activityHistory } = item;
+  const { opportunity } = item;
+
+  /** Loaded from GET /api/opportunity-activities (jsforce SOQL); list API leaves history empty. */
+  const [activityHistory, setActivityHistory] = useState<ActivityEntry[]>(
+    item.activityHistory
+  );
+  const [activitiesLoading, setActivitiesLoading] = useState(true);
+  const [activitiesError, setActivitiesError] = useState<string | null>(null);
+
+  useEffect(() => {
+    setActivityHistory(item.activityHistory);
+  }, [item.opportunity.id, item.activityHistory]);
+
+  useEffect(() => {
+    let cancelled = false;
+    const oppId = item.opportunity.id;
+
+    async function loadActivities() {
+      setActivitiesLoading(true);
+      setActivitiesError(null);
+      try {
+        const res = await fetch(
+          `/api/opportunity-activities?id=${encodeURIComponent(oppId)}`
+        );
+        const data = await res.json();
+        if (!res.ok) {
+          if (!cancelled) {
+            setActivitiesError(data.error ?? "Failed to load activities");
+          }
+          return;
+        }
+        if (!cancelled) {
+          setActivityHistory(data.activities as ActivityEntry[]);
+        }
+      } catch (err) {
+        if (!cancelled) {
+          setActivitiesError(
+            err instanceof Error ? err.message : "Failed to load activities"
+          );
+        }
+      } finally {
+        if (!cancelled) setActivitiesLoading(false);
+      }
+    }
+
+    loadActivities();
+    return () => {
+      cancelled = true;
+    };
+  }, [item.opportunity.id]);
+
+  const queueItem = useMemo(
+    () => ({ ...item, activityHistory }),
+    [item, activityHistory]
+  );
 
   // Overview — auto-loads on mount
-  const overview = useGenerate("summary", item);
+  const overview = useGenerate("summary", queueItem);
   useEffect(() => {
     overview.generate();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Call objective — auto-loads on mount
-  const callObj = useGenerate("call_objective", item);
+  const callObj = useGenerate("call_objective", queueItem);
   useEffect(() => {
     callObj.generate();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -387,7 +452,7 @@ export default function ExpandedDetails({ item }: ExpandedDetailsProps) {
 
   // Email — triggered by user
   const [emailType, setEmailType] = useState<string>(EMAIL_TYPES[0].value);
-  const email = useGenerate("email", item, emailType);
+  const email = useGenerate("email", queueItem, emailType);
 
   return (
     <div className="border-t border-gray-200 px-6 py-5 space-y-5 bg-gray-50/50">
@@ -461,7 +526,11 @@ export default function ExpandedDetails({ item }: ExpandedDetailsProps) {
       ) : null}
 
       {/* Activity history — collapsed by default */}
-      <ActivityHistory entries={activityHistory} />
+      <ActivityHistory
+        entries={activityHistory}
+        loading={activitiesLoading}
+        error={activitiesError}
+      />
 
       {/* AI suggestions — email draft + call objective */}
       <div className="grid grid-cols-2 gap-4">
@@ -551,7 +620,7 @@ export default function ExpandedDetails({ item }: ExpandedDetailsProps) {
       </div>
 
       {/* Ask AI about this deal */}
-      <AskAI item={item} />
+      <AskAI item={queueItem} />
 
       {/* Action buttons */}
       <div className="flex items-center gap-3 pt-2">
