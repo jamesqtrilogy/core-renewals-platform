@@ -37,6 +37,9 @@ CREATE TABLE IF NOT EXISTS opportunities (
   opp_type                TEXT,
   next_step               TEXT,
   description             TEXT,
+  account_report          TEXT,
+  opportunity_report      TEXT,
+  support_tickets_summary TEXT,
   gate3_violation_date    DATE,
 
   -- Gate membership flags (set by write_to_supabase.py on each refresh)

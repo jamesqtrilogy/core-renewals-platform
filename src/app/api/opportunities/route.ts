@@ -47,6 +47,9 @@ type OppRow = {
   churn_risk: string | null;
   health_score: number | null;
   product: string | null;
+  account_report: string | null;
+  opportunity_report: string | null;
+  support_tickets_summary: string | null;
   is_closed: boolean | null;
   in_gate1: boolean | null;
   in_gate2: boolean | null;
@@ -141,6 +144,9 @@ export async function GET() {
           hasOpenActivity: false,
           hasOverdueTask: false,
           description: row.description,
+          accountReport: row.account_report,
+          opportunityReport: row.opportunity_report,
+          supportTicketsSummary: row.support_tickets_summary,
         },
         activityHistory: [], // fetched on-demand via /api/opportunity-activities
         aiSuggestions: {

@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
 export async function POST() {
   // Auth bypass — allow anyone to trigger refresh for now
   const token = process.env.GITHUB_TOKEN
-  const repo  = process.env.GITHUB_REPO ?? 'jamesqtrilogy/isr-dash'
+  const repo  = process.env.GITHUB_REPO ?? 'jamesqtrilogy/core-renewals-platform'
 
   if (!token) {
     return NextResponse.json({ error: 'GITHUB_TOKEN not configured' }, { status: 500 })

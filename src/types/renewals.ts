@@ -67,6 +67,9 @@ export interface Opportunity {
   hasOpenActivity: boolean;
   hasOverdueTask: boolean;
   description: string | null;
+  accountReport: string | null;
+  opportunityReport: string | null;
+  supportTicketsSummary: string | null;
 }
 
 export interface ActivityEntry {
@@ -130,6 +133,9 @@ export interface SfOpportunityRecord {
   AI_Churn_Risk_Category__c: string | null;
   Priority_Score__c: number | null;
   Product__c: string | null;
+  Account_Report__c: string | null;
+  Opportunity_Report__c: string | null;
+  Support_Tickets_Summary__c: string | null;
 }
 
 export interface SfTaskRecord {
