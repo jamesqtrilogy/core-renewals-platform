@@ -44,20 +44,49 @@ function oppLink(id: string, name: string | null) {
 // ═══════════════════════════════════════════════════════════════════════════
 
 interface Signals {
-  gap14:       boolean
-  gap30:       boolean
-  followUp:    boolean
-  churnHigh:   boolean
-  churnMedium: boolean
-  imminent:    boolean  // DTR <= 30
-  window:      boolean  // DTR 30..60
-  hvoRisk:     boolean
-  silentChurn: boolean
-  gate1:       boolean
-  gate2:       boolean
-  gate3:       boolean
-  gate4:       boolean
-  pastDue:     boolean
+  gap14:             boolean
+  gap30:             boolean
+  followUp:          boolean
+  churnHigh:         boolean
+  churnMedium:       boolean
+  imminent:          boolean  // DTR <= 30
+  window:            boolean  // DTR 30..60
+  hvoRisk:           boolean
+  silentChurn:       boolean
+  gate1:             boolean
+  gate2:             boolean
+  gate3:             boolean
+  gate4:             boolean
+  pastDue:           boolean
+  openSupportTickets: boolean
+}
+
+/**
+ * Detect any open support tickets from the free-text
+ * `Account.Support_Tickets_Summary__c` field. Heuristic — the summary is
+ * AI-generated and unstructured, so we look for the common phrasings and
+ * explicitly skip "no open" / "0 open" to avoid false positives.
+ */
+function hasOpenSupportTickets(text: string | null | undefined): boolean {
+  if (!text) return false
+  const t = text.toLowerCase()
+
+  // Explicit "none" phrasing — rule out first
+  if (/\b(?:no|zero|0)\s+(?:open|unresolved|pending|active)\b/.test(t)) return false
+  if (/\bno\s+(?:support\s+)?tickets?\b/.test(t)) return false
+
+  // "N open ..." / "N unresolved ..." / "N pending ..." — N > 0
+  const m = /(\d+)\s*(?:open|unresolved|pending|active)\b/.exec(t)
+  if (m && parseInt(m[1], 10) > 0) return true
+
+  // "P1: N" / "P2 count: N" — N > 0
+  const pm = /\bp(?:riority\s*)?[1-4]\s*[:=]?\s*(\d+)/.exec(t)
+  if (pm && parseInt(pm[1], 10) > 0) return true
+
+  // Fallback — generic open/unresolved phrasing
+  if (/\b(?:open|unresolved|pending|active)\s+(?:ticket|case|issue|escalation|p[1-4])/.test(t)) return true
+
+  return false
 }
 
 const SIGNAL_COLS: { key: keyof Signals; label: string; color: string }[] = [
@@ -75,6 +104,7 @@ const SIGNAL_COLS: { key: keyof Signals; label: string; color: string }[] = [
   { key: 'churnMedium', label: 'Churn Med',      color: '#d97706' },
   { key: 'hvoRisk',     label: 'HVO at Risk',    color: '#7c3aed' },
   { key: 'silentChurn', label: 'Silent Churn',   color: '#be123c' },
+  { key: 'openSupportTickets', label: 'Open Support Tickets', color: '#0891b2' },
 ]
 
 function computeSignals(o: Opportunity, now: Date): Signals {
@@ -103,6 +133,7 @@ function computeSignals(o: Opportunity, now: Date): Signals {
     gate3: !!o.in_gate3,
     gate4: !!o.in_gate4,
     pastDue,
+    openSupportTickets: hasOpenSupportTickets(o.support_tickets_summary),
   }
 }
 
@@ -151,6 +182,7 @@ export function WorkflowSignalsView({ opportunities }: { opportunities: Opportun
       gap14: 0, gap30: 0, followUp: 0, churnHigh: 0, churnMedium: 0,
       imminent: 0, window: 0, hvoRisk: 0, silentChurn: 0,
       gate1: 0, gate2: 0, gate3: 0, gate4: 0, pastDue: 0,
+      openSupportTickets: 0,
     }
     for (const r of rows) {
       for (const k of Object.keys(t) as (keyof Signals)[]) {

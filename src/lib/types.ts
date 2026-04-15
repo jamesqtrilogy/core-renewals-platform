@@ -33,6 +33,7 @@ export interface Opportunity {
   opp_type: string | null
   next_step: string | null
   description: string | null
+  support_tickets_summary: string | null
   gate3_violation_date: string | null
   in_gate1: boolean
   in_gate2: boolean
