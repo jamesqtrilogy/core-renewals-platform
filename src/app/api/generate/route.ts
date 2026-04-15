@@ -39,7 +39,6 @@ interface PromptConfig {
 }
 
 interface AIConfig {
-  reasoning_effort: string;
   response_length: string;
   tone_override: string;
   include_description: boolean;
@@ -48,7 +47,6 @@ interface AIConfig {
 }
 
 const DEFAULT_AI_CONFIG: AIConfig = {
-  reasoning_effort: "high",
   response_length: "concise",
   tone_override: "professional",
   include_description: true,
@@ -115,7 +113,6 @@ async function fetchAIConfig(): Promise<AIConfig> {
         map[row.key] = row.value;
       }
       return {
-        reasoning_effort: (map.reasoning_effort as string) ?? DEFAULT_AI_CONFIG.reasoning_effort,
         response_length: (map.response_length as string) ?? DEFAULT_AI_CONFIG.response_length,
         tone_override: (map.tone_override as string) ?? DEFAULT_AI_CONFIG.tone_override,
         include_description: (map.include_description as boolean) ?? DEFAULT_AI_CONFIG.include_description,
@@ -259,8 +256,6 @@ export async function POST(request: NextRequest) {
     );
     const fullSystemPrompt = buildSystemPrompt(systemPromptBase, knowledgeBase, aiConfig);
 
-    const reasoningEffort = aiConfig.reasoning_effort === "high" ? "high" : undefined;
-
     if (type === "email") {
       const label = EMAIL_TYPE_LABELS[emailType] ?? emailType;
 
@@ -288,7 +283,6 @@ export async function POST(request: NextRequest) {
     if (type === "summary") {
       const response = await openai.chat.completions.create({
         model,
-        ...(reasoningEffort ? { reasoning_effort: reasoningEffort } : {}),
         messages: [
           { role: "system", content: fullSystemPrompt },
           {
@@ -306,7 +300,6 @@ export async function POST(request: NextRequest) {
     if (type === "call_objective") {
       const response = await openai.chat.completions.create({
         model,
-        ...(reasoningEffort ? { reasoning_effort: reasoningEffort } : {}),
         messages: [
           { role: "system", content: fullSystemPrompt },
           {
@@ -338,7 +331,6 @@ export async function POST(request: NextRequest) {
 
       const response = await openai.chat.completions.create({
         model,
-        ...(reasoningEffort ? { reasoning_effort: reasoningEffort } : {}),
         messages: [
           { role: "system", content: chatSystemPrompt },
           ...priorMessages,
