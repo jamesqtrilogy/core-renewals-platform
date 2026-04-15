@@ -89,6 +89,11 @@ jobs:
           echo "Querying Activities..."
           python3 lib/query_sf_direct.py data/sf_activities_latest.json --soql-key activities_soql --allow-empty
 
+      - name: Evaluate Gates
+        run: |
+          echo "Running 7-gate evaluation framework..."
+          python3 lib/evaluate_gates.py
+
       - name: Write to Supabase
         run: |
           echo "Upserting data to Supabase..."
@@ -106,3 +111,16 @@ jobs:
               echo "| $(basename $f) | $count |" >> $GITHUB_STEP_SUMMARY
             fi
           done
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [[ -f "data/gate_evaluations.json" ]]; then
+            echo "### Gate Evaluation" >> $GITHUB_STEP_SUMMARY
+            python3 -c "
+import json
+d = json.load(open('data/gate_evaluations.json'))
+s = d['summary']
+print(f\"- **Evaluated:** {s['total_opportunities']} opportunities\")
+print(f\"- **Violations:** {s['total_violations']}\")
+print(f\"- **ARR at risk:** \${s['total_arr_at_risk']:,.0f}\")
+print(f\"- **Risk:** {s['by_risk_level']['critical']} critical, {s['by_risk_level']['high']} high, {s['by_risk_level']['medium']} medium, {s['by_risk_level']['low']} low\")
+" >> $GITHUB_STEP_SUMMARY
+          fi
