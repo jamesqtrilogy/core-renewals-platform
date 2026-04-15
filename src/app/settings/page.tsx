@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState, useEffect, useCallback } from 'react'
+import AIConfigTab from './AIConfigTab'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -48,7 +49,7 @@ interface PlatformSettings {
   products_in_scope: string[]
 }
 
-type TabId = 'rules' | 'automations' | 'templates' | 'general'
+type TabId = 'rules' | 'automations' | 'templates' | 'ai_config' | 'general'
 
 // ── Constants ────────────────────────────────────────────────────────────────
 
@@ -56,6 +57,7 @@ const TABS: { id: TabId; label: string; icon: string }[] = [
   { id: 'rules', label: 'Signal Rules', icon: '⚡' },
   { id: 'automations', label: 'Automations', icon: '⚙' },
   { id: 'templates', label: 'Email Templates', icon: '✉' },
+  { id: 'ai_config', label: 'AI Configuration', icon: '🤖' },
   { id: 'general', label: 'General', icon: '☰' },
 ]
 
@@ -938,6 +940,7 @@ export default function SettingsPage() {
           {tab === 'rules' && <SignalRulesTab />}
           {tab === 'automations' && <AutomationsTab />}
           {tab === 'templates' && <EmailTemplatesTab />}
+          {tab === 'ai_config' && <AIConfigTab />}
           {tab === 'general' && <GeneralTab />}
         </main>
       </div>
