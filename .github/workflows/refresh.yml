@@ -114,13 +114,15 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           if [[ -f "data/gate_evaluations.json" ]]; then
             echo "### Gate Evaluation" >> $GITHUB_STEP_SUMMARY
-            python3 -c "
-import json
-d = json.load(open('data/gate_evaluations.json'))
-s = d['summary']
-print(f\"- **Evaluated:** {s['total_opportunities']} opportunities\")
-print(f\"- **Violations:** {s['total_violations']}\")
-print(f\"- **ARR at risk:** \${s['total_arr_at_risk']:,.0f}\")
-print(f\"- **Risk:** {s['by_risk_level']['critical']} critical, {s['by_risk_level']['high']} high, {s['by_risk_level']['medium']} medium, {s['by_risk_level']['low']} low\")
-" >> $GITHUB_STEP_SUMMARY
+            eval_count=$(python3 -c "import json;print(json.load(open('data/gate_evaluations.json'))['summary']['total_opportunities'])" 2>/dev/null || echo "0")
+            violations=$(python3 -c "import json;print(json.load(open('data/gate_evaluations.json'))['summary']['total_violations'])" 2>/dev/null || echo "0")
+            arr_risk=$(python3 -c "import json;print(int(json.load(open('data/gate_evaluations.json'))['summary']['total_arr_at_risk']))" 2>/dev/null || echo "0")
+            risk_crit=$(python3 -c "import json;print(json.load(open('data/gate_evaluations.json'))['summary']['by_risk_level']['critical'])" 2>/dev/null || echo "0")
+            risk_high=$(python3 -c "import json;print(json.load(open('data/gate_evaluations.json'))['summary']['by_risk_level']['high'])" 2>/dev/null || echo "0")
+            risk_med=$(python3 -c "import json;print(json.load(open('data/gate_evaluations.json'))['summary']['by_risk_level']['medium'])" 2>/dev/null || echo "0")
+            risk_low=$(python3 -c "import json;print(json.load(open('data/gate_evaluations.json'))['summary']['by_risk_level']['low'])" 2>/dev/null || echo "0")
+            echo "- **Evaluated:** $eval_count opportunities" >> $GITHUB_STEP_SUMMARY
+            echo "- **Violations:** $violations" >> $GITHUB_STEP_SUMMARY
+            echo "- **ARR at risk:** $arr_risk" >> $GITHUB_STEP_SUMMARY
+            echo "- **Risk:** $risk_crit critical, $risk_high high, $risk_med medium, $risk_low low" >> $GITHUB_STEP_SUMMARY
           fi
