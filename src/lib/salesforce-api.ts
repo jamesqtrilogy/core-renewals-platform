@@ -1,16 +1,46 @@
-import jsforce, { Connection } from 'jsforce'
+/**
+ * Salesforce REST API client using the Workers-native `fetch` API.
+ *
+ * Replaces jsforce, which depends on Node's `https.request` — not implemented
+ * by `unenv` (the polyfill layer OpenNext uses on Cloudflare Workers).
+ */
 
-let cachedConnection: Connection | null = null
-let tokenExpiresAt = 0
+const SF_LOGIN_URL = 'https://login.salesforce.com'
+const SF_API_VERSION = 'v59.0'
+
+interface SfAuth {
+  accessToken: string
+  instanceUrl: string
+  expiresAt: number
+}
+
+interface SfTokenResponse {
+  access_token: string
+  instance_url: string
+  issued_at: string
+}
+
+interface SfQueryResponse<T> {
+  totalSize: number
+  done: boolean
+  nextRecordsUrl?: string
+  records: T[]
+}
+
+interface SfErrorEntry {
+  message: string
+  errorCode: string
+}
+
+let cachedAuth: SfAuth | null = null
 
 /**
- * Returns an authenticated jsforce Connection using the username-password
- * OAuth2 flow. Reuses the connection across requests until the token expires.
+ * Authenticates against Salesforce via the OAuth2 username-password flow.
+ * Caches the access token + instance URL until shortly before expiry.
  */
-export async function getSalesforceConnection(): Promise<Connection> {
-  // Reuse connection if token is still valid (with 5-min buffer)
-  if (cachedConnection && Date.now() < tokenExpiresAt - 5 * 60 * 1000) {
-    return cachedConnection
+async function getSalesforceAuth(): Promise<SfAuth> {
+  if (cachedAuth && Date.now() < cachedAuth.expiresAt - 5 * 60 * 1000) {
+    return cachedAuth
   }
 
   const clientId = process.env.SF_CLIENT_ID
@@ -25,50 +55,91 @@ export async function getSalesforceConnection(): Promise<Connection> {
     )
   }
 
-  const conn = new jsforce.Connection({
-    oauth2: {
-      loginUrl: 'https://login.salesforce.com',
-      clientId,
-      clientSecret,
-    },
+  const body = new URLSearchParams({
+    grant_type: 'password',
+    client_id: clientId,
+    client_secret: clientSecret,
+    username,
+    password: `${password}${securityToken}`,
   })
 
-  // Salesforce expects password + security token concatenated
-  await conn.login(username, `${password}${securityToken}`)
+  const resp = await fetch(`${SF_LOGIN_URL}/services/oauth2/token`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: body.toString(),
+  })
 
-  cachedConnection = conn
-  // jsforce doesn't expose token expiry directly; assume 2-hour session
-  tokenExpiresAt = Date.now() + 2 * 60 * 60 * 1000
+  if (!resp.ok) {
+    const text = await resp.text()
+    throw new Error(`Salesforce auth failed (${resp.status}): ${text}`)
+  }
+
+  const data = (await resp.json()) as SfTokenResponse
+
+  cachedAuth = {
+    accessToken: data.access_token,
+    instanceUrl: data.instance_url,
+    // SF sessions default to 2 hours; refresh proactively
+    expiresAt: Date.now() + 2 * 60 * 60 * 1000,
+  }
 
   console.log('[salesforce-api] Authenticated as', username)
-  return conn
+  return cachedAuth
 }
 
 /**
  * Run a SOQL query against Salesforce and return the records array.
- * Handles authentication and auto-retries once on session expiry.
+ * Follows pagination and re-authenticates once on session expiry (401).
  */
-export async function querySalesforce<T extends Record<string, unknown> = Record<string, unknown>>(
-  soql: string
+export async function querySalesforce<
+  T extends Record<string, unknown> = Record<string, unknown>
+>(soql: string): Promise<T[]> {
+  return runQuery<T>(soql, false)
+}
+
+async function runQuery<T extends Record<string, unknown>>(
+  soql: string,
+  isRetry: boolean
 ): Promise<T[]> {
-  let conn = await getSalesforceConnection()
+  const auth = await getSalesforceAuth()
+  const records: T[] = []
 
-  try {
-    const result = await conn.query<T>(soql)
-    return result.records
-  } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : String(err)
+  let url: string | null =
+    `${auth.instanceUrl}/services/data/${SF_API_VERSION}/query/?q=${encodeURIComponent(soql)}`
 
-    // If session expired, clear cache and retry once
-    if (message.includes('INVALID_SESSION_ID') || message.includes('Session expired')) {
+  while (url) {
+    const resp = await fetch(url, {
+      headers: { Authorization: `Bearer ${auth.accessToken}` },
+    })
+
+    if (resp.status === 401 && !isRetry) {
       console.log('[salesforce-api] Session expired, re-authenticating...')
-      cachedConnection = null
-      tokenExpiresAt = 0
-      conn = await getSalesforceConnection()
-      const result = await conn.query<T>(soql)
-      return result.records
+      cachedAuth = null
+      return runQuery<T>(soql, true)
     }
 
-    throw new Error(`Salesforce query failed: ${message}`)
+    if (!resp.ok) {
+      const text = await resp.text()
+      let message = text
+      try {
+        const parsed = JSON.parse(text) as SfErrorEntry[] | SfErrorEntry
+        const first = Array.isArray(parsed) ? parsed[0] : parsed
+        if (first?.errorCode || first?.message) {
+          message = `${first.errorCode ?? 'ERROR'}: ${first.message ?? text}`
+        }
+      } catch {
+        // leave `message` as the raw response text
+      }
+      throw new Error(`Salesforce query failed (${resp.status}): ${message}`)
+    }
+
+    const data = (await resp.json()) as SfQueryResponse<T>
+    records.push(...data.records)
+
+    url = data.done || !data.nextRecordsUrl
+      ? null
+      : `${auth.instanceUrl}${data.nextRecordsUrl}`
   }
+
+  return records
 }
