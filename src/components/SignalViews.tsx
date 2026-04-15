@@ -8,13 +8,14 @@
  *   WorkflowSignalsView  — boolean trigger matrix (12 columns per opp)
  */
 
-import Link from 'next/link'
 import { Fragment, useEffect, useMemo, useState } from 'react'
 import type { Opportunity } from '@/lib/types'
 import type { QueueItem } from '@/types/renewals'
 import ExpandedDetails from './ExpandedDetails'
 
 // ── shared helpers ───────────────────────────────────────────────────────────
+
+const SF_BASE = 'https://trilogy-sales.lightning.force.com/lightning/r/Opportunity'
 
 function fmtARR(v: number | null | undefined) {
   if (v == null) return '—'
@@ -35,7 +36,7 @@ function daysSince(dateStr: string | null | undefined, now: Date) {
 }
 
 function oppLink(id: string, name: string | null) {
-  return <Link href={`/opportunity/${id}`}>{name ?? id}</Link>
+  return <a href={`${SF_BASE}/${id}/view`} target="_blank" rel="noreferrer">{name ?? id}</a>
 }
 
 

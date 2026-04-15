@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { useState, useMemo, useCallback } from 'react'
 import type { Opportunity, LastRefresh, TabId } from '@/lib/types'
 import type { PipelineKpis, PipelineOpportunity } from '@/lib/salesforce-api'
@@ -11,8 +10,10 @@ import GatesFramework from './GatesFramework'
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
+const SF_BASE = 'https://trilogy-sales.lightning.force.com/lightning/r/Opportunity'
+
 function oppLink(id: string, name: string) {
-  return <Link href={`/opportunity/${id}`}>{name}</Link>
+  return <a href={`${SF_BASE}/${id}/view`} target="_blank" rel="noreferrer">{name}</a>
 }
 
 function fmt(val: number | null, prefix = '') {
