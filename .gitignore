@@ -3,11 +3,6 @@ node_modules
 # Next.js build output
 .next
 out
-tsconfig.tsbuildinfo
-
-# OpenNext + Wrangler build output
-.open-next
-.wrangler
 
 # Environment variables
 .env
