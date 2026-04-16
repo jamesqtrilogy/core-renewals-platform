@@ -18,7 +18,6 @@ export async function POST() {
       Accept: 'application/vnd.github+json',
       'X-GitHub-Api-Version': '2022-11-28',
       'Content-Type': 'application/json',
-      'User-Agent': 'core-renewals-platform',
     },
     body: JSON.stringify({ ref: 'main' }),
   })
