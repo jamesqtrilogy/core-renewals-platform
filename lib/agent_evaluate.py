@@ -47,7 +47,7 @@ BRIEFINGS_DIR = os.path.join(BASE_DIR, "data", "briefings")
 # API config
 API_URL = "https://api.anthropic.com/v1/messages"
 MODEL = "claude-sonnet-4-6"
-MAX_TOKENS = 8192
+MAX_TOKENS = 16384
 
 # CLI args
 DRY_RUN = "--dry-run" in sys.argv
@@ -151,7 +151,16 @@ Respond with valid JSON only. No markdown, no backticks, no preamble. The JSON s
       "adjusted_scenario": "Scenario #N or null if no change"
     }
   ]
-}"""
+}
+
+CRITICAL OUTPUT CONSTRAINTS:
+- Keep executive_summary under 3 sentences
+- critical_actions: maximum 5 items. Only the most urgent.
+- at_risk_accounts: maximum 5 items.
+- positive_signals: maximum 3 items.
+- cross_portfolio_patterns: maximum 3 items.
+- opportunity_assessments: maximum 15 items. Only include opps where your assessment DIFFERS from the deterministic evaluator or adds meaningful insight. Skip opps where you agree with the existing evaluation.
+- Keep all text fields concise. One sentence per field unless the situation demands more."""
 
 # ══════════════════════════════════════════════════════════════════════════════
 # DATA LOADING
@@ -296,6 +305,11 @@ def call_claude(system, user_message, retries=3):
                 if block.get("type") == "text":
                     text += block.get("text", "")
 
+            # Check if response was truncated
+            stop_reason = data.get("stop_reason", "")
+            if stop_reason == "max_tokens":
+                print(f"    WARNING: Response truncated (hit max_tokens). Attempting salvage.", file=sys.stderr)
+
             # Parse JSON from response (strip any markdown fencing)
             text = text.strip()
             if text.startswith("```"):
@@ -304,7 +318,26 @@ def call_claude(system, user_message, retries=3):
                 text = text[:-3]
             text = text.strip()
 
-            result = json.loads(text)
+            try:
+                result = json.loads(text)
+            except json.JSONDecodeError:
+                # Attempt to salvage truncated JSON by closing open structures
+                salvaged = text
+                # Count open braces/brackets
+                opens = salvaged.count("{") - salvaged.count("}")
+                opens_arr = salvaged.count("[") - salvaged.count("]")
+                # Strip back to last complete entry
+                for char in [",", "\n"]:
+                    idx = salvaged.rfind(char)
+                    if idx > len(salvaged) * 0.8:
+                        salvaged = salvaged[:idx]
+                        break
+                salvaged += "]" * max(0, opens_arr) + "}" * max(0, opens)
+                try:
+                    result = json.loads(salvaged)
+                    print(f"    Salvaged truncated JSON successfully", file=sys.stderr)
+                except json.JSONDecodeError:
+                    raise
 
             # Log token usage
             usage = data.get("usage", {})
