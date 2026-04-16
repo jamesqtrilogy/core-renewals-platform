@@ -32,6 +32,41 @@ function deriveQueueStatus(opp: Opportunity): QueueStatus {
   if (opp.in_gate4 || opp.in_past_due || opp.in_not_touched) return QueueStatus.OverdueFollowUp;
   if (opp.in_gate3) return QueueStatus.NeedsFollowUpThisWeek;
   if (opp.in_gate1 || opp.in_gate2) return QueueStatus.NeedsRepReview;
+type OppRow = {
+  id: string;
+  name: string | null;
+  owner_name: string | null;
+  owner_email: string | null;
+  account: string | null;
+  stage: string | null;
+  arr: number | null;
+  renewal_date: string | null;
+  close_date: string | null;
+  last_activity_date: string | null;
+  next_follow_up_date: string | null;
+  next_step: string | null;
+  description: string | null;
+  churn_risk: string | null;
+  health_score: number | null;
+  product: string | null;
+  account_report: string | null;
+  opportunity_report: string | null;
+  support_tickets_summary: string | null;
+  is_closed: boolean | null;
+  in_gate1: boolean | null;
+  in_gate2: boolean | null;
+  in_gate3: boolean | null;
+  in_gate4: boolean | null;
+  in_not_touched: boolean | null;
+  in_past_due: boolean | null;
+  updated_at: string | null;
+};
+
+function deriveQueueStatus(row: OppRow): QueueStatus {
+  if (row.is_closed) return QueueStatus.NoActionNeeded;
+  if (row.in_gate4 || row.in_past_due || row.in_not_touched) return QueueStatus.OverdueFollowUp;
+  if (row.in_gate3) return QueueStatus.NeedsFollowUpThisWeek;
+  if (row.in_gate1 || row.in_gate2) return QueueStatus.NeedsRepReview;
   return QueueStatus.NeedsRepReview;
 }
 
@@ -87,6 +122,10 @@ export async function GET() {
           hasOpenActivity: false,
           hasOverdueTask: false,
           description: opp.description,
+          description: row.description,
+          accountReport: row.account_report,
+          opportunityReport: row.opportunity_report,
+          supportTicketsSummary: row.support_tickets_summary,
         },
         activityHistory: [],
         aiSuggestions: {
