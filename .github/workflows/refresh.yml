@@ -53,35 +53,15 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Query Salesforce — Gate 1
+      - name: Query Salesforce — All Opportunities
         run: |
-          echo "Querying Gate 1 opportunities..."
-          python3 lib/query_sf_direct.py data/sf_gate1.json --soql-key gate1_soql
+          echo "Querying all opportunities..."
+          python3 lib/query_sf_direct.py data/sf_latest.json
 
-      - name: Query Salesforce — Gate 2
+      - name: Split into per-gate files
         run: |
-          echo "Querying Gate 2 opportunities..."
-          python3 lib/query_sf_direct.py data/sf_gate2.json --soql-key gate2_soql
-
-      - name: Query Salesforce — Gate 3
-        run: |
-          echo "Querying Gate 3 opportunities..."
-          python3 lib/query_sf_direct.py data/sf_gate3.json --soql-key gate3_soql
-
-      - name: Query Salesforce — Gate 4
-        run: |
-          echo "Querying Gate 4 opportunities..."
-          python3 lib/query_sf_direct.py data/sf_gate4.json --soql-key gate4_soql
-
-      - name: Query Salesforce — Not Touched
-        run: |
-          echo "Querying Not Touched opportunities..."
-          python3 lib/query_sf_direct.py data/sf_not_touched.json --soql-key not_touched_soql
-
-      - name: Query Salesforce — Past Due
-        run: |
-          echo "Querying Past Due opportunities..."
-          python3 lib/query_sf_direct.py data/sf_past_due.json --soql-key past_due_soql
+          echo "Splitting sf_latest.json into gate files..."
+          python3 lib/split_gates.py
 
       - name: Query Salesforce — Activities
         if: ${{ github.event.inputs.skip_activities != 'true' }}
